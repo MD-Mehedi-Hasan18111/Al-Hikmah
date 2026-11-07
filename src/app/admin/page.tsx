@@ -602,7 +602,7 @@ export default function AdminDashboardPage() {
                   </h3>
                 )}
                 <p className="text-[11px] text-slate-500 mt-1">
-                  ৬ষ্ঠ থেকে দ্বাদশ ও আলিয়া
+                  প্লে থেকে ১০ম ও মাদ্রাসা
                 </p>
               </div>
               <div className="h-12 w-12 rounded-xl bg-lime-50 flex items-center justify-center text-[#65a30d]">

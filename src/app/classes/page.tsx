@@ -32,20 +32,24 @@ export const revalidate = 0;
 export const metadata = {
   title: "পাঠদান বিভাগ ও সক্রিয় ব্যাচসমূহ | আল-হিকমাহ্ কোচিং সেন্টার",
   description:
-    "৬ষ্ঠ থেকে দ্বাদশ শ্রেণি ও আলিয়া মাদ্রাসা স্পেশাল কেয়ারের সময়সূচী, আসন সংখ্যা ও বিষয়ভিত্তিক ব্যাচ তালিকা।",
+    "প্লে থেকে ৫ম শ্রেণি (প্রাথমিক বিভাগ) ও ৬ষ্ঠ থেকে ১০ম শ্রেণি (মাধ্যমিক বিভাগ) এবং কওমী ও আলিয়া মাদ্রাসার সময়সূচী, আসন সংখ্যা ও বিষয়ভিত্তিক ব্যাচ তালিকা।",
 };
 
 const classLevelLabels: Record<string, string> = {
+  play: "প্লে শ্রেণি",
+  nursery: "নার্সারি শ্রেণি",
+  kg: "কেজি শ্রেণি",
+  class_1: "১ম শ্রেণি",
+  class_2: "২য় শ্রেণি",
+  class_3: "৩য় শ্রেণি",
+  class_4: "৪র্থ শ্রেণি",
+  class_5: "৫ম শ্রেণি",
   class_6: "৬ষ্ঠ শ্রেণি",
   class_7: "৭ম শ্রেণি",
   class_8: "৮ম শ্রেণি",
   class_9: "৯ম শ্রেণি",
   class_10: "১০ম শ্রেণি",
-  hsc_1st: "একাদশ শ্রেণি (এইচএসসি)",
-  hsc_2nd: "দ্বাদশ শ্রেণি (এইচএসসি)",
-  alim_1st: "আলিম ১ম বর্ষ",
-  alim_2nd: "আলিম ২য় বর্ষ",
-  admission: "বিশ্ববিদ্যালয় ভর্তি",
+  dakhil: "দাখিল স্পেশাল",
 };
 
 export default async function ClassesPage() {
@@ -54,62 +58,86 @@ export default async function ClassesPage() {
     getSiteSettings(),
   ]);
 
-  const classPrograms: IClassProgram[] = settings.classPrograms?.length
+  // Al-Hikmah is strictly Play to 10th class: filter out any higher batches
+  const filteredBatches = batches.filter((b: any) => {
+    if (!b.classLevel) return true;
+    const lower = String(b.classLevel).toLowerCase();
+    return !["hsc_1st", "hsc_2nd", "alim_1st", "alim_2nd", "admission", "hsc", "alim"].includes(lower);
+  });
+
+  const defaultClassPrograms: IClassProgram[] = [
+    {
+      id: "primary",
+      title: "প্লে থেকে ৫ম শ্রেণি (প্রাথমিক বিভাগ)",
+      badge: "প্লে থেকে ৫ম (প্রাথমিক)",
+      description:
+        "কওমী ও আলিয়া মাদ্রাসার শিক্ষার্থীদের বুনিয়াদি আরবী, নূরানি কায়দা, সহিহ কুরআন ও তাজবীদ, সাধারণ বাংলা, ইংরেজি ও গণিতের মজবুত ভিত গঠন।",
+      features: [
+        "নূরানি ও নাজেরা সহিহ কুরআন শিক্ষা",
+        "সুন্দর হাতের লেখা ও বানান নির্ভুলকরণ",
+        "মৌলিক আরবী ও সাধারণ বিষয়ের নিবিড় পাঠদান",
+        "স্নেহশীল তত্ত্বাবধান ও সাপ্তাহিক মূল্যায়ন",
+      ],
+    },
+    {
+      id: "class-6-8",
+      title: "৬ষ্ঠ থেকে ৮ম শ্রেণি (জুনিয়র ফাউন্ডেশন)",
+      badge: "৬ষ্ঠ থেকে ৮ম (জুনিয়র)",
+      description:
+        "নতুন শিক্ষাক্রমের আলোকে ধারণাগত স্পষ্টতা, সাধারণ গণিত, বিজ্ঞান ও ইংরেজির পাশাপাশি আলিয়া মাদ্রাসার আরবি ১ম ও ২য় পত্র (নাহু ও সরফ)-এর বিশেষ কেয়ার।",
+      features: [
+        "আরবি ব্যাকরণ ও অনুবাদের বুনিয়াদি ক্লাস",
+        "গণিত, ইংরেজি ও বিজ্ঞানের নিয়মিত প্র্যাকটিস",
+        "অধ্যায়ভিত্তিক মডেল টেস্ট ও খাতা মূল্যায়ন",
+        "দুর্বল শিক্ষার্থীদের জন্য এক্সট্রা রিমেডিয়াল ক্লাস",
+      ],
+    },
+    {
+      id: "class-9-10",
+      title: "৯ম ও ১০ম শ্রেণি (এসএসসি ও দাখিল প্রস্তুতি)",
+      badge: "দাখিল ও এসএসসি স্পেশাল",
+      description:
+        "দাখিল ও এসএসসি পরীক্ষার্থীদের শতভাগ এ+ (A+) নিশ্চিতকরণে সাজানো পূর্ণাঙ্গ কোর্স। বিজ্ঞান, মানবিক ও ব্যবসায় শিক্ষা শাখার গভীর পাঠদান ও নিয়মিত মডেল টেস্ট।",
+      features: [
+        "পদার্থ, রসায়ন, জীববিজ্ঞান ও সাধারণ গণিত কেয়ার",
+        "আরবি সাহিত্য, কাওয়ায়েদ ও ফিকহ বিষয়ের পাঠদান",
+        "অধ্যায়ভিত্তিক মডেল টেস্ট ও বোর্ড প্রশ্ন সমাধান",
+        "মেধা তালিকা ও নিয়মিত প্রগ্রেস রিপোর্ট প্রদান",
+      ],
+    },
+    {
+      id: "madrasah",
+      title: "কওমী ও আলিয়া মাদ্রাসা সমন্বিত কেয়ার",
+      badge: "কওমী ও আলিয়া স্পেশাল",
+      description:
+        "মাদ্রাসা শিক্ষার্থীদের আরবী সাহিত্য, তারজমা, নাহু-সরফ, হাদিস ও ফিকহের পাশাপাশি সাধারণ বাংলা, ইংরেজি ও গণিতে পারদর্শী করে গড়ে তোলার নির্ভরযোগ্য প্ল্যাটফর্ম।",
+      features: [
+        "কওমী ও আলিয়া কারিকুলামের নিখুঁত সমন্বয়",
+        "আরবি সাহিত্য ও ব্যাকরণের ব্যবহারিক ক্লাস",
+        "নিয়মিত আমল, আখলাক ও আদব চর্চা",
+        "অভিভাবকদের সাথে নিয়মিত সমন্বয় ও প্রগ্রেস মিটিং",
+      ],
+    },
+  ];
+
+  const rawPrograms = settings.classPrograms?.length
     ? settings.classPrograms
-    : [
-        {
-          id: "class-6-8",
-          title: "৬ষ্ঠ থেকে ৮ম শ্রেণি (জুনিয়র ফাউন্ডেশন)",
-          badge: "জেনারেল ও মাদ্রাসা",
-          description:
-            "নতুন শিক্ষাক্রমের আলোকে ধারণাগত স্পষ্টতা, গণিত ও বিজ্ঞানের নিয়মিত প্র্যাকটিস, ইংরেজি ব্যাকরণ এবং আলিয়া মাদ্রাসার জন্য আরবি ও ধর্মীয় বিষয়ের বিশেষ কেয়ার।",
-          features: [
-            "সপ্তাহে ৪ দিন নিয়মিত ক্লাস",
-            "প্রতিটি বিষয়ের নিজস্ব লেকচার শিট",
-            "সাপ্তাহিক মূল্যায়ন পরীক্ষা",
-            "দুর্বলদের জন্য এক্সট্রা রিমেডিয়াল ক্লাস",
-          ],
-        },
-        {
-          id: "class-9-10",
-          title: "৯ম ও ১০ম শ্রেণি (এসএসসি প্রস্তুতি)",
-          badge: "এসএসসি স্পেশাল",
-          description:
-            "বিজ্ঞান, মানবিক ও ব্যবসায় শিক্ষা শাখার শিক্ষার্থীদের বোর্ড পরীক্ষায় এ+ (A+) নিশ্চিতকরণে সাজানো পূর্ণাঙ্গ কোর্স। সৃজনশীল প্রশ্নের কাঠামো ও ওএমআর প্র্যাকটিস।",
-          features: [
-            "পদার্থ, রসায়ন, উচ্চতর গণিত, জীববিজ্ঞানের বিশেষ কেয়ার",
-            "অধ্যায়ভিত্তিক মডেল টেস্ট ও বোর্ড প্রশ্ন সমাধান",
-            "ওএমআর (OMR) শিটভিত্তিক নৈর্ব্যক্তিক পরীক্ষা",
-            "মেধা তালিকা ও প্রগ্রেস রিপোর্ট প্রদান",
-          ],
-        },
-        {
-          id: "hsc",
-          title: "একাদশ ও দ্বাদশ শ্রেণি (এইচএসসি)",
-          badge: "এইচএসসি ব্যাচ",
-          description:
-            "কলেজের সময়ের সাথে সমন্বয় করে বিজ্ঞান ও বাণিজ্য বিভাগের বিষয়ভিত্তিক গভীর পাঠদান। জটিল বিষয়ের সহজ সমাধান এবং বিশ্ববিদ্যালয় ভর্তি পরীক্ষার পূর্বপ্রস্তুতি।",
-          features: [
-            "অভিজ্ঞ কলেজ শিক্ষকদের নিবিড় তত্ত্বাবধান",
-            "নিয়মিত ল্যাব ও প্র্যাকটিক্যাল ভিত্তিক ধারণা",
-            "অধ্যায়ভিত্তিক সৃজনশীল প্রশ্ন সলভিং",
-            "টেস্ট ও প্রি-টেস্ট স্পেশাল মডেল টেস্ট সিরিজ",
-          ],
-        },
-        {
-          id: "madrasah",
-          title: "দাখিল ও আলিম মাদ্রাসা স্পেশাল কেয়ার",
-          badge: "আলিয়া মাদ্রাসা",
-          description:
-            "মাদ্রাসা বোর্ডের শিক্ষার্থীদের সাধারণ বিষয়ের পাশাপাশি আরবি সাহিত্য, কাওয়ায়েদ, হাদিস ও ফিকহ শাস্ত্রে দক্ষ করে গড়ে তুলতে বিশেষায়িত শিক্ষক প্যানেল।",
-          features: [
-            "আরবি ১ম ও ২য় পত্রের বিশেষ অনুবাদ ও ব্যাকরণ ক্লাস",
-            "দাখিল ও আলিম পরীক্ষার পূর্ণাঙ্গ মডেল টেস্ট",
-            "সাধারণ গণিত ও বিজ্ঞানের সমন্বিত ক্লাস",
-            "পরীক্ষার খাতা পুঙ্খানুপুঙ্খ মূল্যায়ন",
-          ],
-        },
-      ];
+    : defaultClassPrograms;
+
+  // Filter out any higher classes (HSC/11th/12th/Alim/College) strictly for Al-Hikmah Play to 10th
+  const nonHscPrograms = rawPrograms.filter((p: any) => {
+    const text = `${p.id} ${p.title} ${p.badge} ${p.description}`.toLowerCase();
+    return (
+      !text.includes("hsc") &&
+      !text.includes("একাদশ") &&
+      !text.includes("দ্বাদশ") &&
+      !text.includes("আলিম") &&
+      !text.includes("কলেজ")
+    );
+  });
+
+  const classPrograms: IClassProgram[] =
+    nonHscPrograms.length >= 4 ? nonHscPrograms : defaultClassPrograms;
 
   return (
     <div className="flex flex-col min-h-screen bg-slate-50">
@@ -126,8 +154,10 @@ export default async function ClassesPage() {
               {settings.classesPageTitle || "পাঠদান বিভাগ ও সক্রিয় ব্যাচসমূহ"}
             </h1>
             <p className="text-sm text-slate-600 max-w-2xl mx-auto leading-relaxed">
-              {settings.classesPageSubtitle ||
-                "৬ষ্ঠ থেকে দ্বাদশ শ্রেণি এবং আলিয়া মাদ্রাসার শিক্ষার্থীদের জন্য বিষয়ভিত্তিক মানসম্মত ব্যাচ এবং সময়সূচী।"}
+              {settings.classesPageSubtitle &&
+              !settings.classesPageSubtitle.includes("দ্বাদশ")
+                ? settings.classesPageSubtitle
+                : "প্লে থেকে ১০ম শ্রেণি এবং কওমী ও আলিয়া মাদ্রাসার শিক্ষার্থীদের জন্য বিষয়ভিত্তিক মানসম্মত ব্যাচ এবং সময়সূচী।"}
             </p>
           </div>
         </section>
@@ -202,7 +232,7 @@ export default async function ClassesPage() {
               </Link>
             </div>
 
-            {batches.length === 0 ? (
+            {filteredBatches.length === 0 ? (
               <div className="p-12 text-center bg-white rounded-2xl border border-slate-200">
                 <BookOpen className="h-10 w-10 text-slate-300 mx-auto mb-2" />
                 <p className="text-sm font-semibold text-slate-700">
@@ -214,7 +244,7 @@ export default async function ClassesPage() {
               </div>
             ) : (
               <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
-                {batches.map(
+                {filteredBatches.map(
                   (b: {
                     _id: string;
                     name: string;
@@ -411,8 +441,8 @@ export default async function ClassesPage() {
         {/* Real Classrooms and Infrastructure Showcase */}
         <ClassroomGallery
           items={settings.classroomGallery}
-          title="আমাদের ক্লাসরুম ও পাঠদান অবকাঠামো"
-          subtitle="নিয়মিত পাঠদান, ওএমআর পরীক্ষা ও স্পেশাল কেয়ার ব্যাচের জন্য সম্পূর্ণ প্রস্তুত শ্রেণিকক্ষ"
+          title="আমাদের সুশৃঙ্খল ক্লাসরুম ও পাঠদান পরিবেশ"
+          subtitle="কওমী ও আলিয়া মাদ্রাসার শিক্ষার্থীদের একাগ্র পাঠদান, মডেল টেস্ট ও স্পেশাল কেয়ার ব্যাচের জন্য সম্পূর্ণ প্রস্তুত শ্রেণিকক্ষ"
         />
 
         {/* Admission Inquiry CTA */}

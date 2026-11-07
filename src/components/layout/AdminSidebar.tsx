@@ -68,9 +68,19 @@ export function AdminSidebar() {
         .then((r) => r.json())
         .then((json) => {
           if (json?.data) {
+            const rawName = json.data.institutionName || bn.institution.name;
+            const instName =
+              rawName.includes("শিক্ষণ") || rawName.includes("Shikkhon")
+                ? "আল-হিকমাহ্ কোচিং সেন্টার"
+                : rawName;
+            const rawShort = json.data.shortName || bn.institution.shortName;
+            const short =
+              rawShort.includes("শিক্ষণ") || rawShort.includes("Shikkhon")
+                ? "আল-হিকমাহ্"
+                : rawShort;
             setSiteSettings({
-              institutionName: json.data.institutionName || bn.institution.name,
-              shortName: json.data.shortName || bn.institution.shortName,
+              institutionName: instName,
+              shortName: short,
               logoUrl: json.data.logoUrl || "/images/logo.png",
             });
           }

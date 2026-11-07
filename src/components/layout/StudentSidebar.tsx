@@ -59,8 +59,13 @@ export function StudentSidebar() {
       .then((r) => r.json())
       .then((json) => {
         if (json?.data) {
+          const rawName = json.data.institutionName || bn.institution.name;
+          const instName =
+            rawName.includes("শিক্ষণ") || rawName.includes("Shikkhon")
+              ? "আল-হিকমাহ্ কোচিং সেন্টার"
+              : rawName;
           setSiteSettings({
-            institutionName: json.data.institutionName || bn.institution.name,
+            institutionName: instName,
             logoUrl: json.data.logoUrl || "/images/logo.png",
           });
         }

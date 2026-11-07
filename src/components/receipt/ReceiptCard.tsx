@@ -93,7 +93,7 @@ export function SingleReceiptCard({
       className={`receipt-copy-card relative overflow-hidden border rounded-xl bg-white p-4 sm:p-5 text-xs transition ${
         isOffice
           ? "border-slate-300 shadow-2xs"
-          : "border-teal-200/90 shadow-2xs"
+          : "border-sky-200/90 shadow-2xs"
       } ${className}`}
     >
       {/* Official Watermark Seal Stamp */}
@@ -118,7 +118,7 @@ export function SingleReceiptCard({
             </div>
             <div className="text-[9px] font-bold tracking-wider uppercase opacity-80">
               {isPaid
-                ? `${siteSettings.shortName || "SHIKKHON"} • OFFICIAL SEAL`
+                ? `${siteSettings.shortName || "AL-HIKMAH"} • OFFICIAL SEAL`
                 : `অবশিষ্ট বকেয়া: ৳${toBanglaNumber(payment.dueAmount)}`}
             </div>
           </div>

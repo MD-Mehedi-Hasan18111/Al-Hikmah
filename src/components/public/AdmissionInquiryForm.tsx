@@ -113,14 +113,20 @@ export function AdmissionInquiryForm({ initialClass }: FormProps) {
             onChange={(e) => setFormData({ ...formData, classLevel: e.target.value })}
             className="w-full px-3.5 py-2.5 text-sm bg-slate-50 border border-slate-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-primary-500 focus:bg-white transition"
           >
+            <option value="play">প্লে শ্রেণি (Play)</option>
+            <option value="nursery">নার্সারি শ্রেণি (Nursery)</option>
+            <option value="kg">কেজি শ্রেণি (KG)</option>
+            <option value="class_1">১ম শ্রেণি (Class 1)</option>
+            <option value="class_2">২য় শ্রেণি (Class 2)</option>
+            <option value="class_3">৩য় শ্রেণি (Class 3)</option>
+            <option value="class_4">৪র্থ শ্রেণি (Class 4)</option>
+            <option value="class_5">৫ম শ্রেণি (Class 5)</option>
             <option value="class_6">৬ষ্ঠ শ্রেণি</option>
             <option value="class_7">৭ম শ্রেণি</option>
-            <option value="class_8">৮ম শ্রেণি (জেএসসি/জুনিয়র)</option>
+            <option value="class_8">৮ম শ্রেণি (জুনিয়র)</option>
             <option value="class_9">৯ম শ্রেণি</option>
             <option value="class_10">১০ম শ্রেণি (এসএসসি স্পেশাল)</option>
-            <option value="hsc_1st">একাদশ শ্রেণি (এইচএসসি ১ম বর্ষ)</option>
-            <option value="hsc_2nd">দ্বাদশ শ্রেণি (এইচএসসি ২য় বর্ষ)</option>
-            <option value="admission">বিশ্ববিদ্যালয় / মেডিকেল ভর্তি</option>
+            <option value="dakhil">দাখিল স্পেশাল (১০ম শ্রেণি)</option>
           </select>
         </div>
       </div>

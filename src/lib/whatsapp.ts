@@ -66,10 +66,10 @@ export interface WhatsAppLinkOptions {
 }
 
 export const DEFAULT_WHATSAPP_ADMISSION_MESSAGE =
-  "আসসালামু আলাইকুম, আমি কোচিং এ ভর্তির ব্যাপারে তথ্য জানতে চাচ্ছি।";
+  "আসসালামু আলাইকুম, আমি আল-হিকমাহ্ কোচিং সেন্টারে ভর্তির ব্যাপারে তথ্য জানতে চাচ্ছি।";
 
 export const DEFAULT_WHATSAPP_GENERAL_MESSAGE =
-  "আসসালামু আলাইকুম, আমি কোচিং এ ভর্তির ব্যাপারে তথ্য জানতে চাচ্ছি।";
+  "আসসালামু আলাইকুম, আমি আল-হিকমাহ্ কোচিং সেন্টারে ভর্তির ব্যাপারে তথ্য জানতে চাচ্ছি।";
 
 /**
  * Generates an official wa.me click-to-chat URL.

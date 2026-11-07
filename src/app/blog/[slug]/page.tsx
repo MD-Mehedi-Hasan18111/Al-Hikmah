@@ -235,8 +235,8 @@ export default async function BlogPostPage({ params }: PageProps) {
                 <h3 className="font-bold text-lg mb-2 text-white">
                   নতুন ব্যাচে ভর্তি চলছে!
                 </h3>
-                <p className="text-xs text-teal-100 leading-relaxed mb-4">
-                  ৬ষ্ঠ থেকে দ্বাদশ শ্রেণি এবং আলিয়া মাদ্রাসা স্পেশাল কেয়ারে সীমিত আসনে
+                <p className="text-xs text-blue-100 leading-relaxed mb-4">
+                  প্লে থেকে ১০ম শ্রেণি এবং কওমী ও আলিয়া মাদ্রাসা স্পেশাল কেয়ারে সীমিত আসনে
                   ভর্তি চলছে।
                 </p>
                 <Link href="/admissions" className="block">

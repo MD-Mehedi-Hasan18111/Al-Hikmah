@@ -55,8 +55,8 @@ const defaultSiteSettings = {
   phones: ["০১৬৪২-৭৩৩১০৬", "০১৮২৪-০৬৬৫৫৫", "০১৮৭৬-৮৫০৪০৮"],
   email: "info@alhikmah.edu.bd",
   address: "বি-ব্লক, হালিশহর, চট্টগ্রাম",
-  whatsappNumber: "+8801642733106",
-  whatsAppNumber: "+8801642733106",
+  whatsappNumber: "+8801859787399",
+  whatsAppNumber: "+8801859787399",
   whatsAppPrefillMessage:
     "আসসালামু আলাইকুম, আমি আল-হিকমাহ্ কোচিং সেন্টারে ভর্তির ব্যাপারে তথ্য জানতে চাচ্ছি।",
   isWhatsAppEnabled: true,
@@ -148,39 +148,39 @@ const defaultSiteSettings = {
   classroomGallery: [
     {
       id: 1,
-      title: "আধুনিক ক্লাসরুম - ১ (মডেল টেস্ট ও লেকচার রুম)",
-      badge: "পর্যাপ্ত আলো-বাতাস",
+      title: "প্রাথমিক ও জুনিয়র পাঠদান কক্ষ (প্লে থেকে ৫ম ও ৬ষ্ঠ-৮ম)",
+      badge: "সুশৃঙ্খল ও মনোযোগী",
       description:
-        "সুপরিসর ক্লাসরুম, বড় হোয়াইটবোর্ড এবং আরামদায়ক রাইটিং-ট্যাবলেট চেয়ার যা দীর্ঘ সময় ক্লাস ও পরীক্ষায় শিক্ষার্থীদের স্বাচ্ছন্দ্য বজায় রাখে।",
-      features: ["ব্যক্তিগত চেয়ার-টেবিল", "প্রশস্ত হোয়াইটবোর্ড", "পর্দাযুক্ত জানালা"],
-      imageSrc: "/images/classrooms/classroom-1.jpg",
+        "ছোট ছোট শিক্ষার্থীদের জন্য আনন্দমুখর ও সুশৃঙ্খল পাঠদান পরিবেশ। মৌলিক আরবী, কুরআন তেলাওয়াত, বাংলা, গণিত ও ইংরেজি লেখার নিবিড় চর্চা।",
+      features: ["সারিবদ্ধ বসার ব্যবস্থা", "ব্যক্তিগত শিট ও ফাইল ফোল্ডার", "শিক্ষকের সার্বক্ষণিক তদারকি"],
+      imageSrc: "/images/classrooms/al-hikmah-classroom-1.jpg",
     },
     {
       id: 2,
-      title: "একাডেমিক ক্লাসরুম - ২ (নিয়মিত ব্যাচ পাঠদান)",
-      badge: "একাগ্র পরিবেশ",
+      title: "কওমী ও আলিয়া মাদ্রাসার নিয়মিত ব্যাচ ক্লাসরুম",
+      badge: "দীনি ও শান্ত পরিবেশ",
       description:
-        "শিক্ষার্থীর মনোযোগ অক্ষুণ্ণ রাখতে সুশৃঙ্খল বিন্যাস এবং প্রতিটি শিক্ষার্থীর দিকে শিক্ষকের সরাসরি নজরদারির উপযুক্ত পাঠদান সুবিধা।",
-      features: ["সারিবদ্ধ বসার ব্যবস্থা", "দৃষ্টিগোচর বোর্ড ভিউ", "নিরিবিলি পরিবেশ"],
-      imageSrc: "/images/classrooms/classroom-2.jpg",
+        "কওমী ও আলিয়া মাদ্রাসার শিক্ষার্থীদের জন্য নিবেদিত কক্ষ। আরবি ব্যাকরণ, নাহু-সরফ ও সাধারণ বিষয়ের সমন্বিত ও একাগ্র ক্লাসরুম।",
+      features: ["ব্ল্যাকবোর্ড ও ভিজ্যুয়াল ভিউ", "আলাদা ছেলে ও মেয়ে বসার সুবিধা", "শান্ত ও একাগ্র পড়াশোনা"],
+      imageSrc: "/images/classrooms/al-hikmah-classroom-2.jpg",
     },
     {
       id: 3,
-      title: "উন্মুক্ত আলোযুক্ত ক্লাসরুম - ৩ (প্রাকৃতিক ভেন্টিলেশন)",
-      badge: "স্বাস্থ্যকর পরিবেশ",
+      title: "মডেল টেস্ট ও সৃজনশীল অনুশীলন ক্লাসরুম",
+      badge: "উজ্জ্বল ও উন্মুক্ত পরিবেশ",
       description:
-        "বড় জানালা সমৃদ্ধ ক্লাসরুমে পর্যাপ্ত প্রাকৃতিক দিনের আলো ও বাতাস প্রবেশের ব্যবস্থা, যা শিক্ষার্থীদের ক্লান্তিহীন পড়াশোনায় সহায়তা করে।",
-      features: ["প্রাকৃতিক পর্যাপ্ত আলো", "প্রশস্ত স্পেস", "গ্রিল ও সুরক্ষা ব্যবস্থা"],
-      imageSrc: "/images/classrooms/classroom-3.jpg",
+        "মানচিত্র, হোয়াইটবোর্ড ও পর্যাপ্ত আলো-বাতাস সমৃদ্ধ বড় ক্লাসরুম। যেখানে শিক্ষার্থীরা নিয়মিত মূল্যায়ন পরীক্ষা ও লিখিত প্র্যাকটিসে অংশ নেয়।",
+      features: ["হোয়াইটবোর্ড ও সাধারণ জ্ঞান মানচিত্র", "নিয়মিত শিট ও রাইটিং প্যাড", "পর্যাপ্ত প্রাকৃতিক আলো"],
+      imageSrc: "/images/classrooms/al-hikmah-classroom-3.jpg",
     },
     {
       id: 4,
-      title: "স্পেশাল কেয়ার ক্লাসরুম - ৪ (নিবিড় পরিচর্যা ও রিভিশন)",
-      badge: "বিশেষ তদারকি",
+      title: "আল-হিকমাহ্ মূল্যায়ন পরীক্ষা ও স্পেশাল কেয়ার",
+      badge: "নিয়মিত মডেল টেস্ট",
       description:
-        "দুর্বল শিক্ষার্থীদের পৃথকভাবে যত্ন নেওয়া, নিয়মিত সমাধান ক্লাস এবং মডেল টেস্টের মূল্যায়নের জন্য প্রস্তুত সুসজ্জিত কক্ষ।",
-      features: ["ছোট গ্রুপ পাঠদান", "আকর্ষণীয় রঙের বিন্যাস", "সুশৃঙ্খল ব্যবস্থাপনা"],
-      imageSrc: "/images/classrooms/classroom-4.jpg",
+        "আল-হিকমাহ্ কোচিং সেন্টারের নিজস্ব প্যাড ও শিটে অধ্যায়ভিত্তিক লিখিত মূল্যায়ন পরীক্ষা। প্রতিটি শিক্ষার্থীর উত্তরপত্র পুঙ্খানুপুঙ্খ যাচাই।",
+      features: ["আল-হিকমাহ্ অফিশিয়াল রাইটিং প্যাড", "অধ্যায়ভিত্তিক লিখিত মূল্যায়ন", "ভুল সংশোধন ও রিভিশন"],
+      imageSrc: "/images/classrooms/al-hikmah-classroom-4.jpg",
     },
   ],
   homeCtaTitle: "২০২৬ শিক্ষাবর্ষে আসন সংখ্যা সীমিত, আজই ভর্তি নিশ্চিত করুন",
@@ -188,58 +188,58 @@ const defaultSiteSettings = {
     "শিক্ষার্থীকে সরাসরি কোচিং অফিসে এসে প্রয়োজনীয় কাগজপত্রসহ ভর্তি সম্পন্ন করতে হবে। যে কোনো তথ্যের জন্য আমাদের হেল্পলাইনে সরাসরি কল করুন।",
   classesPageTitle: "পাঠদান বিভাগ ও সক্রিয় ব্যাচসমূহ",
   classesPageSubtitle:
-    "৬ষ্ঠ থেকে দ্বাদশ শ্রেণি এবং আলিয়া মাদ্রাসার শিক্ষার্থীদের জন্য বিষয়ভিত্তিক মানসম্মত ব্যাচ এবং সময়সূচী।",
+    "প্লে থেকে ১০ম শ্রেণি এবং কওমী ও আলিয়া মাদ্রাসার শিক্ষার্থীদের জন্য বিষয়ভিত্তিক মানসম্মত ব্যাচ এবং সময়সূচী।",
   classPrograms: [
+    {
+      id: "primary",
+      title: "প্লে থেকে ৫ম শ্রেণি (প্রাথমিক বিভাগ)",
+      badge: "প্লে থেকে ৫ম (প্রাথমিক)",
+      description:
+        "কওমী ও আলিয়া মাদ্রাসার শিক্ষার্থীদের বুনিয়াদি আরবী, নূরানি কায়দা, সহিহ কুরআন ও তাজবীদ, সাধারণ বাংলা, ইংরেজি ও গণিতের মজবুত ভিত গঠন।",
+      features: [
+        "নূরানি ও নাজেরা সহিহ কুরআন শিক্ষা",
+        "সুন্দর হাতের লেখা ও বানান নির্ভুলকরণ",
+        "মৌলিক আরবী ও সাধারণ বিষয়ের নিবিড় পাঠদান",
+        "স্নেহশীল তত্ত্বাবধান ও সাপ্তাহিক মূল্যায়ন",
+      ],
+    },
     {
       id: "class-6-8",
       title: "৬ষ্ঠ থেকে ৮ম শ্রেণি (জুনিয়র ফাউন্ডেশন)",
-      badge: "জেনারেল ও মাদ্রাসা",
+      badge: "৬ষ্ঠ থেকে ৮ম (জুনিয়র)",
       description:
-        "নতুন শিক্ষাক্রমের আলোকে ধারণাগত স্পষ্টতা, গণিত ও বিজ্ঞানের নিয়মিত প্র্যাকটিস, ইংরেজি ব্যাকরণ এবং আলিয়া মাদ্রাসার জন্য আরবি ও ধর্মীয় বিষয়ের বিশেষ কেয়ার।",
+        "নতুন শিক্ষাক্রমের আলোকে ধারণাগত স্পষ্টতা, সাধারণ গণিত, বিজ্ঞান ও ইংরেজির পাশাপাশি আলিয়া মাদ্রাসার আরবি ১ম ও ২য় পত্র (নাহু ও সরফ)-এর বিশেষ কেয়ার।",
       features: [
-        "সপ্তাহে ৪ দিন নিয়মিত ক্লাস",
-        "প্রতিটি বিষয়ের নিজস্ব লেকচার শিট",
-        "সাপ্তাহিক মূল্যায়ন পরীক্ষা",
-        "দুর্বলদের জন্য এক্সট্রা রিমেডিয়াল ক্লাস",
+        "আরবি ব্যাকরণ ও অনুবাদের বুনিয়াদি ক্লাস",
+        "গণিত, ইংরেজি ও বিজ্ঞানের নিয়মিত প্র্যাকটিস",
+        "অধ্যায়ভিত্তিক মডেল টেস্ট ও খাতা মূল্যায়ন",
+        "দুর্বল শিক্ষার্থীদের জন্য এক্সট্রা রিমেডিয়াল ক্লাস",
       ],
     },
     {
       id: "class-9-10",
-      title: "৯ম ও ১০ম শ্রেণি (এসএসসি প্রস্তুতি)",
-      badge: "এসএসসি স্পেশাল",
+      title: "৯ম ও ১০ম শ্রেণি (এসএসসি ও দাখিল প্রস্তুতি)",
+      badge: "দাখিল ও এসএসসি স্পেশাল",
       description:
-        "বিজ্ঞান, মানবিক ও ব্যবসায় শিক্ষা শাখার শিক্ষার্থীদের বোর্ড পরীক্ষায় এ+ (A+) নিশ্চিতকরণে সাজানো পূর্ণাঙ্গ কোর্স। সৃজনশীল প্রশ্নের কাঠামো ও ওএমআর প্র্যাকটিস।",
+        "দাখিল ও এসএসসি পরীক্ষার্থীদের শতভাগ এ+ (A+) নিশ্চিতকরণে সাজানো পূর্ণাঙ্গ কোর্স। বিজ্ঞান, মানবিক ও ব্যবসায় শিক্ষা শাখার গভীর পাঠদান ও নিয়মিত মডেল টেস্ট।",
       features: [
-        "পদার্থ, রসায়ন, উচ্চতর গণিত, জীববিজ্ঞানের বিশেষ কেয়ার",
+        "পদার্থ, রসায়ন, জীববিজ্ঞান ও সাধারণ গণিত কেয়ার",
+        "আরবি সাহিত্য, কাওয়ায়েদ ও ফিকহ বিষয়ের পাঠদান",
         "অধ্যায়ভিত্তিক মডেল টেস্ট ও বোর্ড প্রশ্ন সমাধান",
-        "ওএমআর (OMR) শিটভিত্তিক নৈর্ব্যক্তিক পরীক্ষা",
-        "মেধা তালিকা ও প্রগ্রেস রিপোর্ট প্রদান",
-      ],
-    },
-    {
-      id: "hsc",
-      title: "একাদশ ও দ্বাদশ শ্রেণি (এইচএসসি)",
-      badge: "এইচএসসি ব্যাচ",
-      description:
-        "কলেজের সময়ের সাথে সমন্বয় করে বিজ্ঞান ও বাণিজ্য বিভাগের বিষয়ভিত্তিক গভীর পাঠদান। জটিল বিষয়ের সহজ সমাধান এবং বিশ্ববিদ্যালয় ভর্তি পরীক্ষার পূর্বপ্রস্তুতি।",
-      features: [
-        "অভিজ্ঞ কলেজ শিক্ষকদের নিবিড় তত্ত্বাবধান",
-        "নিয়মিত ল্যাব ও প্র্যাকটিক্যাল ভিত্তিক ধারণা",
-        "অধ্যায়ভিত্তিক সৃজনশীল প্রশ্ন সলভিং",
-        "টেস্ট ও প্রি-টেস্ট স্পেশাল মডেল টেস্ট সিরিজ",
+        "মেধা তালিকা ও নিয়মিত প্রগ্রেস রিপোর্ট প্রদান",
       ],
     },
     {
       id: "madrasah",
-      title: "দাখিল ও আলিম মাদ্রাসা স্পেশাল কেয়ার",
-      badge: "আলিয়া মাদ্রাসা",
+      title: "কওমী ও আলিয়া মাদ্রাসা সমন্বিত কেয়ার",
+      badge: "কওমী ও আলিয়া স্পেশাল",
       description:
-        "মাদ্রাসা বোর্ডের শিক্ষার্থীদের সাধারণ বিষয়ের পাশাপাশি আরবি সাহিত্য, কাওয়ায়েদ, হাদিস ও ফিকহ শাস্ত্রে দক্ষ করে গড়ে তুলতে বিশেষায়িত শিক্ষক প্যানেল।",
+        "মাদ্রাসা শিক্ষার্থীদের আরবী সাহিত্য, তারজমা, নাহু-সরফ, হাদিস ও ফিকহের পাশাপাশি সাধারণ বাংলা, ইংরেজি ও গণিতে পারদর্শী করে গড়ে তোলার নির্ভরযোগ্য প্ল্যাটফর্ম।",
       features: [
-        "আরবি ১ম ও ২য় পত্রের বিশেষ অনুবাদ ও ব্যাকরণ ক্লাস",
-        "দাখিল ও আলিম পরীক্ষার পূর্ণাঙ্গ মডেল টেস্ট",
-        "সাধারণ গণিত ও বিজ্ঞানের সমন্বিত ক্লাস",
-        "পরীক্ষার খাতা পুঙ্খানুপুঙ্খ মূল্যায়ন",
+        "কওমী ও আলিয়া কারিকুলামের নিখুঁত সমন্বয়",
+        "আরবি সাহিত্য ও ব্যাকরণের ব্যবহারিক ক্লাস",
+        "নিয়মিত আমল, আখলাক ও আদব চর্চা",
+        "অভিভাবকদের সাথে নিয়মিত সমন্বয় ও প্রগ্রেস মিটিং",
       ],
     },
   ],
@@ -334,14 +334,50 @@ export async function getSiteSettings() {
           ? clean.homeClasses
           : defaultSiteSettings.homeClasses,
       homeFeatures: clean.homeFeatures?.length ? clean.homeFeatures : defaultSiteSettings.homeFeatures,
-      classroomGallery: clean.classroomGallery?.length ? clean.classroomGallery : defaultSiteSettings.classroomGallery,
-      classPrograms: clean.classPrograms?.length ? clean.classPrograms : defaultSiteSettings.classPrograms,
+      classroomGallery: (clean.classroomGallery?.length
+        ? clean.classroomGallery
+        : defaultSiteSettings.classroomGallery
+      ).map((room: any, idx: number) => {
+        const fallback =
+          defaultSiteSettings.classroomGallery[idx] ||
+          defaultSiteSettings.classroomGallery[0];
+        const isLegacy =
+          !room.imageSrc ||
+          room.imageSrc.includes("/images/classrooms/classroom-") ||
+          room.imageSrc.includes("placeholder") ||
+          room.imageSrc.includes("shikkhon");
+        return {
+          ...fallback,
+          ...room,
+          imageSrc: isLegacy
+            ? `/images/classrooms/al-hikmah-classroom-${(idx % 4) + 1}.jpg`
+            : room.imageSrc,
+        };
+      }),
+      classPrograms: (() => {
+        const progs = clean.classPrograms?.length
+          ? clean.classPrograms
+          : defaultSiteSettings.classPrograms;
+        const hasHsc = progs.some((p: any) => {
+          const t = `${p.id} ${p.title} ${p.badge}`.toLowerCase();
+          return (
+            t.includes("hsc") ||
+            t.includes("একাদশ") ||
+            t.includes("দ্বাদশ") ||
+            t.includes("আলিম") ||
+            t.includes("কলেজ")
+          );
+        });
+        return hasHsc ? defaultSiteSettings.classPrograms : progs;
+      })(),
       admissionSteps: clean.admissionSteps?.length ? clean.admissionSteps : defaultSiteSettings.admissionSteps,
       admissionRequirements: clean.admissionRequirements?.length ? clean.admissionRequirements : defaultSiteSettings.admissionRequirements,
       aboutHighlights:
         !isOldShikkhon && clean.aboutHighlights?.length
           ? clean.aboutHighlights
           : defaultSiteSettings.aboutHighlights,
+      whatsAppNumber: "+8801859787399",
+      whatsappNumber: "+8801859787399",
     };
   } catch (error) {
     return defaultSiteSettings;
@@ -583,16 +619,20 @@ export async function getEventById(idOrSlug: string) {
 }
 
 const classLevelOrder: Record<string, number> = {
-  class_6: 6,
-  class_7: 7,
-  class_8: 8,
-  class_9: 9,
-  class_10: 10,
-  hsc_1st: 11,
-  hsc_2nd: 12,
-  alim_1st: 13,
-  alim_2nd: 14,
-  admission: 15,
+  play: 0,
+  nursery: 1,
+  kg: 2,
+  class_1: 3,
+  class_2: 4,
+  class_3: 5,
+  class_4: 6,
+  class_5: 7,
+  class_6: 8,
+  class_7: 9,
+  class_8: 10,
+  class_9: 11,
+  class_10: 12,
+  dakhil: 13,
 };
 
 export async function getActiveBatchesWithDetails() {
@@ -657,15 +697,33 @@ export async function getActiveBatchesWithDetails() {
       };
     });
 
-    // Sort by class progression (Class 6 -> 10 -> HSC -> Alim -> Admission) and then by batch name
+    // Sort by class progression (Play -> Class 10) and then by batch name
     result.sort((a: any, b: any) => {
-      const orderA = classLevelOrder[a.classLevel] || 99;
-      const orderB = classLevelOrder[b.classLevel] || 99;
+      const orderA = classLevelOrder[a.classLevel] ?? 99;
+      const orderB = classLevelOrder[b.classLevel] ?? 99;
       if (orderA !== orderB) return orderA - orderB;
       return (a.name || "").localeCompare(b.name || "", "bn");
     });
 
-    return result;
+    // In Al-Hikmah, students batches are Play to 10th class only: filter out higher classes (HSC/Alim/College/Admission) from public display
+    const filteredResult = result.filter((b: any) => {
+      if (!b.classLevel) return true;
+      const lower = String(b.classLevel).toLowerCase();
+      if (
+        lower.includes("hsc") ||
+        lower.includes("alim") ||
+        lower.includes("admission") ||
+        lower === "hsc_1st" ||
+        lower === "hsc_2nd" ||
+        lower === "alim_1st" ||
+        lower === "alim_2nd"
+      ) {
+        return false;
+      }
+      return true;
+    });
+
+    return filteredResult;
   } catch (error) {
     console.error("❌ [PublicData] getActiveBatchesWithDetails error:", error);
     return [];

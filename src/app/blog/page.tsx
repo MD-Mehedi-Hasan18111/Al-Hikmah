@@ -40,7 +40,7 @@ export default async function BlogPage({ searchParams }: PageProps) {
   // Common tags for educational blogs
   const popularTags = [
     "এসএসসি প্রস্তুতি",
-    "এইচএসসি প্রস্তুতি",
+    "দাখিল প্রস্তুতি",
     "পড়ার কৌশল",
     "গণিত সমাধান",
     "বিজ্ঞান চর্চা",

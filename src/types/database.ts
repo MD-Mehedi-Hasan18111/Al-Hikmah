@@ -27,11 +27,20 @@ export interface IUser {
 // 2. Student Types
 // ==========================================
 export type AcademicClassLevel =
+  | "play"
+  | "nursery"
+  | "kg"
+  | "class_1"
+  | "class_2"
+  | "class_3"
+  | "class_4"
+  | "class_5"
   | "class_6"
   | "class_7"
   | "class_8"
   | "class_9"
   | "class_10"
+  | "dakhil"
   | "hsc_1st"
   | "hsc_2nd"
   | "alim_1st"

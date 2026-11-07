@@ -40,7 +40,11 @@ export function PublicFooter({ settings }: PublicFooterProps = {}) {
   }, []);
 
   const activeSettings = liveSettings || settings;
-  const institutionName = activeSettings?.institutionName || bn.institution.name;
+  const rawInstName = activeSettings?.institutionName || bn.institution.name;
+  const institutionName =
+    rawInstName.includes("শিক্ষণ") || rawInstName.includes("Shikkhon")
+      ? "আল-হিকমাহ্ কোচিং সেন্টার"
+      : rawInstName;
   const institutionLogoUrl = activeSettings?.logoUrl || "/images/logo.png";
   const institutionMotto = activeSettings?.motto || bn.institution.motto;
   const institutionAddress = activeSettings?.address || bn.institution.address;
@@ -198,19 +202,19 @@ export function PublicFooter({ settings }: PublicFooterProps = {}) {
               <ul className="space-y-2 text-slate-400">
                 <li className="flex items-start gap-1.5">
                   <span className="h-1.5 w-1.5 rounded-full bg-[#c27a29] mt-1.5 shrink-0" />
-                  <span>৬ষ্ঠ থেকে ৮ম শ্রেণি (সকল বিষয়)</span>
+                  <span>প্লে থেকে ৫ম শ্রেণি (প্রাথমিক বিভাগ)</span>
                 </li>
                 <li className="flex items-start gap-1.5">
                   <span className="h-1.5 w-1.5 rounded-full bg-[#c27a29] mt-1.5 shrink-0" />
-                  <span>এসএসসি প্রস্তুতি (৯ম ও ১০ম শ্রেণি)</span>
+                  <span>৬ষ্ঠ থেকে ৮ম শ্রেণি (জুনিয়র কেয়ার)</span>
                 </li>
                 <li className="flex items-start gap-1.5">
                   <span className="h-1.5 w-1.5 rounded-full bg-[#c27a29] mt-1.5 shrink-0" />
-                  <span>এইচএসসি বিজ্ঞান, মানবিক ও ব্যবসায় শিক্ষা</span>
+                  <span>এসএসসি ও দাখিল প্রস্তুতি (৯ম ও ১০ম শ্রেণি)</span>
                 </li>
                 <li className="flex items-start gap-1.5">
                   <span className="h-1.5 w-1.5 rounded-full bg-[#c27a29] mt-1.5 shrink-0" />
-                  <span>দাখিল ও আলিম মাদ্রাসা স্পেশাল কেয়ার</span>
+                  <span>কওমী ও আলিয়া মাদ্রাসা স্পেশাল কেয়ার</span>
                 </li>
                 <li className="flex items-start gap-1.5">
                   <span className="h-1.5 w-1.5 rounded-full bg-[#c27a29] mt-1.5 shrink-0" />

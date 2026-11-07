@@ -30,8 +30,12 @@ export const metadata = {
 export default async function ContactPage() {
   const settings = await getSiteSettings();
 
+  const rawWhatsAppPhone =
+    settings.whatsAppNumber || settings.whatsappNumber || "+8801859787399";
   const whatsAppPhone =
-    settings.whatsAppNumber || settings.whatsappNumber || "+8801642733106";
+    rawWhatsAppPhone.includes("01642733106") || rawWhatsAppPhone.includes("01642-733106")
+      ? "+8801859787399"
+      : rawWhatsAppPhone;
   const whatsAppLink = generateWhatsAppLink({
     phone: whatsAppPhone,
     message:

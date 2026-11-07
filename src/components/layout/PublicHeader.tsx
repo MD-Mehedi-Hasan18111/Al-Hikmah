@@ -98,8 +98,18 @@ export function PublicHeader({ settings }: PublicHeaderProps = {}) {
   }, [auth.isAuthenticated, auth.user, dispatch]);
 
   const activeSettings = liveSettings || settings;
-  const institutionName = activeSettings?.institutionName || bn.institution.name;
-  const institutionShortName = activeSettings?.shortName || activeSettings?.institutionName || "আল-হিকমাহ্";
+  const rawInstName = activeSettings?.institutionName || bn.institution.name;
+  const institutionName =
+    rawInstName.includes("শিক্ষণ") || rawInstName.includes("Shikkhon")
+      ? "আল-হিকমাহ্ কোচিং সেন্টার"
+      : rawInstName;
+
+  const rawShortName =
+    activeSettings?.shortName || activeSettings?.institutionName || "আল-হিকমাহ্";
+  const institutionShortName =
+    rawShortName.includes("শিক্ষণ") || rawShortName.includes("Shikkhon")
+      ? "আল-হিকমাহ্"
+      : rawShortName;
   const institutionLogoUrl = activeSettings?.logoUrl || "/images/logo.png";
   const institutionMotto = activeSettings?.motto || bn.institution.motto;
   const institutionAddress = activeSettings?.address || bn.institution.address;

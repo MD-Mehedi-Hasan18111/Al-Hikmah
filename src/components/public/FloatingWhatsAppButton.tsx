@@ -63,10 +63,15 @@ export function FloatingWhatsAppButton({ settings }: FloatingWhatsAppButtonProps
     return null;
   }
 
-  const phone =
+  const rawPhone =
     currentSettings?.whatsAppNumber ||
     currentSettings?.whatsappNumber ||
-    "+8801642733106";
+    "+8801859787399";
+
+  const phone =
+    rawPhone.includes("01642733106") || rawPhone.includes("01642-733106")
+      ? "+8801859787399"
+      : rawPhone;
 
   if (!isValidWhatsAppNumber(phone)) {
     return null;
@@ -75,7 +80,11 @@ export function FloatingWhatsAppButton({ settings }: FloatingWhatsAppButtonProps
   const prefillMessage =
     currentSettings?.whatsAppPrefillMessage || DEFAULT_WHATSAPP_GENERAL_MESSAGE;
   const link = generateWhatsAppLink({ phone, message: prefillMessage });
-  const institutionName = currentSettings?.institutionName || "আল-হিকমাহ্ কোচিং সেন্টার";
+  const rawName = currentSettings?.institutionName || "আল-হিকমাহ্ কোচিং সেন্টার";
+  const institutionName =
+    rawName.includes("শিক্ষণ") || rawName.includes("Shikkhon")
+      ? "আল-হিকমাহ্ কোচিং সেন্টার"
+      : rawName;
 
   return (
     <aside aria-label="হোয়াটসঅ্যাপ সহায়তা" className="fixed bottom-6 right-6 z-50 flex flex-col items-end">

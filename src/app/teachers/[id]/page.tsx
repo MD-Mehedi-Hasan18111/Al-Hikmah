@@ -57,15 +57,28 @@ export default async function TeacherDetailPage({ params }: PageProps) {
   };
 
   const classLevelMap: Record<string, string> = {
+    play: "প্লে শ্রেণি",
+    nursery: "নার্সারি শ্রেণি",
+    kg: "কেজি শ্রেণি",
+    class_1: "১ম শ্রেণি",
+    class_2: "২য় শ্রেণি",
+    class_3: "৩য় শ্রেণি",
+    class_4: "৪র্থ শ্রেণি",
+    class_5: "৫ম শ্রেণি",
     class_6: "৬ষ্ঠ শ্রেণি",
     class_7: "৭ম শ্রেণি",
     class_8: "৮ম শ্রেণি",
     class_9: "৯ম শ্রেণি",
     class_10: "১০ম শ্রেণি (এসএসসি)",
-    hsc_1st: "একাদশ শ্রেণি (এইচএসসি)",
-    hsc_2nd: "দ্বাদশ শ্রেণি (এইচএসসি)",
-    admission: "বিশ্ববিদ্যালয় ভর্তি",
+    dakhil: "দাখিল স্পেশাল",
   };
+
+  // Filter batches strictly Play to 10th for Al-Hikmah
+  const activeTeacherBatches = (teacher.batches || []).filter((b: any) => {
+    if (!b.classLevel) return true;
+    const lower = String(b.classLevel).toLowerCase();
+    return !["hsc_1st", "hsc_2nd", "alim_1st", "alim_2nd", "admission", "hsc", "alim"].includes(lower);
+  });
 
   return (
     <div className="min-h-screen flex flex-col bg-slate-50 font-sans text-slate-800 antialiased">
@@ -234,12 +247,12 @@ export default async function TeacherDetailPage({ params }: PageProps) {
                       </p>
                     </div>
                     <Badge variant="outline" className="font-mono">
-                      {toBanglaNumber(teacher.batches?.length || 0)} টি ব্যাচ
+                      {toBanglaNumber(activeTeacherBatches.length)} টি ব্যাচ
                     </Badge>
                   </div>
                 </CardHeader>
                 <CardContent>
-                  {!teacher.batches || teacher.batches.length === 0 ? (
+                  {activeTeacherBatches.length === 0 ? (
                     <div className="text-center py-8 bg-slate-50 rounded-xl border border-dashed border-slate-200">
                       <Clock className="h-10 w-10 text-slate-400 mx-auto mb-2" />
                       <p className="text-slate-600 font-medium">
@@ -251,7 +264,7 @@ export default async function TeacherDetailPage({ params }: PageProps) {
                     </div>
                   ) : (
                     <div className="space-y-4">
-                      {teacher.batches.map((batch: any) => (
+                      {activeTeacherBatches.map((batch: any) => (
                         <div
                           key={batch._id}
                           className="p-4 rounded-xl border border-slate-200 hover:border-primary-300 transition-colors bg-white hover:bg-slate-50/50"

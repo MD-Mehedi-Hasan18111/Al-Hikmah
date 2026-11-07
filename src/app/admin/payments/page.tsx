@@ -63,16 +63,20 @@ const banglaMonths = [
 
 const classLevelOptions = [
   { value: "", label: "সকল শ্রেণি" },
+  { value: "play", label: "প্লে শ্রেণি" },
+  { value: "nursery", label: "নার্সারি শ্রেণি" },
+  { value: "kg", label: "কেজি শ্রেণি" },
+  { value: "class_1", label: "১ম শ্রেণি" },
+  { value: "class_2", label: "২য় শ্রেণি" },
+  { value: "class_3", label: "৩য় শ্রেণি" },
+  { value: "class_4", label: "৪র্থ শ্রেণি" },
+  { value: "class_5", label: "৫ম শ্রেণি" },
   { value: "class_6", label: "৬ষ্ঠ শ্রেণি" },
   { value: "class_7", label: "৭ম শ্রেণি" },
   { value: "class_8", label: "৮ম শ্রেণি" },
   { value: "class_9", label: "৯ম শ্রেণি" },
   { value: "class_10", label: "১০ম শ্রেণি (এসএসসি)" },
-  { value: "hsc_1st", label: "একাদশ শ্রেণি (এইচএসসি ১ম)" },
-  { value: "hsc_2nd", label: "দ্বাদশ শ্রেণি (এইচএসসি ২য়)" },
-  { value: "alim_1st", label: "আলিম ১ম বর্ষ" },
-  { value: "alim_2nd", label: "আলিম ২য় বর্ষ" },
-  { value: "admission", label: "বিশ্ববিদ্যালয় ও মেডিকেল ভর্তি" },
+  { value: "dakhil", label: "দাখিল স্পেশাল" },
 ];
 
 const statusOptions = [
@@ -1628,7 +1632,7 @@ export default function AdminPaymentsPage() {
                     </div>
                     <div className="text-[9px] font-bold tracking-wider uppercase opacity-80">
                       {isPaid
-                        ? `${siteSettings.shortName || "SHIKKHON"} • OFFICIAL SEAL`
+                        ? `${siteSettings.shortName || "AL-HIKMAH"} • OFFICIAL SEAL`
                         : `অবশিষ্ট বকেয়া: ৳${toBanglaNumber(payment.dueAmount)}`}
                     </div>
                   </div>

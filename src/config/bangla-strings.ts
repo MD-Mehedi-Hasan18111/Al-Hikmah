@@ -14,6 +14,8 @@ export const bn = {
     address: "বি-ব্লক, হালিশহর, চট্টগ্রাম",
     phones: ["০১৬৪২-৭৩৩১০৬", "০১৮২৪-০৬৬৫৫৫", "০১৮৭৬-৮৫০৪০৮"],
     phonesRaw: ["01642733106", "01824066555", "01876850408"],
+    whatsApp: "০১৮৫৯-৭৮৭৩৯৯",
+    whatsAppRaw: "01859787399",
     email: "info@alhikmah.edu.bd",
     sessionYear: "২০২৬ শিক্ষাবর্ষ",
   },
