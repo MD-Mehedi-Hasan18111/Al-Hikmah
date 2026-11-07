@@ -318,7 +318,7 @@ export default function TeacherExamsPage() {
                       onClick={() => loadExamMarks(ex)}
                       className={`p-3.5 rounded-xl border transition cursor-pointer ${
                         selectedExam?._id === ex._id
-                          ? "border-[#00636b] bg-[#00636b]/5 ring-1 ring-[#00636b]"
+                          ? "border-[#0274b3] bg-[#0274b3]/5 ring-1 ring-[#0274b3]"
                           : "border-slate-200 bg-white hover:border-slate-300 hover:bg-slate-50"
                       }`}
                     >
@@ -369,7 +369,7 @@ export default function TeacherExamsPage() {
                 <CardHeader className="flex flex-col sm:flex-row sm:items-center justify-between gap-3 border-b border-slate-100 pb-4">
                   <div>
                     <CardTitle className="text-base font-bold text-slate-900 flex items-center gap-2">
-                      <Award className="h-5 w-5 text-[#00636b]" />
+                      <Award className="h-5 w-5 text-[#0274b3]" />
                       <span>{selectedExam.title} - নম্বর এন্ট্রি</span>
                     </CardTitle>
                     <p className="text-xs text-slate-500 mt-0.5">
@@ -425,7 +425,7 @@ export default function TeacherExamsPage() {
                               className="hover:bg-slate-50/60 transition"
                             >
                               <td className="py-3 px-4">
-                                <span className="font-mono font-semibold text-[#00636b] block">
+                                <span className="font-mono font-semibold text-[#0274b3] block">
                                   {row.studentCode}
                                 </span>
                                 <span className="text-[10px] text-slate-400 font-mono">
@@ -454,7 +454,7 @@ export default function TeacherExamsPage() {
                                       )
                                     );
                                   }}
-                                  className="w-24 px-2.5 py-1 text-xs bg-white border border-slate-300 rounded font-mono font-bold focus:outline-none focus:ring-1 focus:ring-[#00636b]"
+                                  className="w-24 px-2.5 py-1 text-xs bg-white border border-slate-300 rounded font-mono font-bold focus:outline-none focus:ring-1 focus:ring-[#0274b3]"
                                 />
                               </td>
                               <td className="py-3 px-4">
@@ -495,7 +495,7 @@ export default function TeacherExamsPage() {
                                       )
                                     );
                                   }}
-                                  className="w-full px-2.5 py-1 text-xs bg-white border border-slate-200 rounded focus:outline-none focus:ring-1 focus:ring-[#00636b]"
+                                  className="w-full px-2.5 py-1 text-xs bg-white border border-slate-200 rounded focus:outline-none focus:ring-1 focus:ring-[#0274b3]"
                                 />
                               </td>
                             </tr>
@@ -551,7 +551,7 @@ export default function TeacherExamsPage() {
                   onChange={(e) =>
                     setNewExamForm({ ...newExamForm, batch: e.target.value })
                   }
-                  className="w-full px-3 py-2 text-xs bg-slate-50 border border-slate-300 rounded-lg focus:outline-none focus:ring-1 focus:ring-[#00636b]"
+                  className="w-full px-3 py-2 text-xs bg-slate-50 border border-slate-300 rounded-lg focus:outline-none focus:ring-1 focus:ring-[#0274b3]"
                 >
                   {batches.map((b) => (
                     <option key={b._id} value={b._id}>
@@ -573,7 +573,7 @@ export default function TeacherExamsPage() {
                   onChange={(e) =>
                     setNewExamForm({ ...newExamForm, title: e.target.value })
                   }
-                  className="w-full px-3 py-2 text-xs bg-slate-50 border border-slate-300 rounded-lg focus:outline-none focus:ring-1 focus:ring-[#00636b]"
+                  className="w-full px-3 py-2 text-xs bg-slate-50 border border-slate-300 rounded-lg focus:outline-none focus:ring-1 focus:ring-[#0274b3]"
                 />
               </div>
 
@@ -590,7 +590,7 @@ export default function TeacherExamsPage() {
                     onChange={(e) =>
                       setNewExamForm({ ...newExamForm, subject: e.target.value })
                     }
-                    className="w-full px-3 py-2 text-xs bg-slate-50 border border-slate-300 rounded-lg focus:outline-none focus:ring-1 focus:ring-[#00636b]"
+                    className="w-full px-3 py-2 text-xs bg-slate-50 border border-slate-300 rounded-lg focus:outline-none focus:ring-1 focus:ring-[#0274b3]"
                   />
                 </div>
 
@@ -603,7 +603,7 @@ export default function TeacherExamsPage() {
                     onChange={(e) =>
                       setNewExamForm({ ...newExamForm, examType: e.target.value })
                     }
-                    className="w-full px-3 py-2 text-xs bg-slate-50 border border-slate-300 rounded-lg focus:outline-none focus:ring-1 focus:ring-[#00636b]"
+                    className="w-full px-3 py-2 text-xs bg-slate-50 border border-slate-300 rounded-lg focus:outline-none focus:ring-1 focus:ring-[#0274b3]"
                   >
                     <option value="weekly">সাপ্তাহিক মূল্যায়ন</option>
                     <option value="monthly">মাসিক পরীক্ষা</option>
@@ -625,7 +625,7 @@ export default function TeacherExamsPage() {
                     onChange={(e) =>
                       setNewExamForm({ ...newExamForm, examDate: e.target.value })
                     }
-                    className="w-full px-2 py-2 text-xs bg-slate-50 border border-slate-300 rounded-lg focus:outline-none focus:ring-1 focus:ring-[#00636b]"
+                    className="w-full px-2 py-2 text-xs bg-slate-50 border border-slate-300 rounded-lg focus:outline-none focus:ring-1 focus:ring-[#0274b3]"
                   />
                 </div>
 
@@ -644,7 +644,7 @@ export default function TeacherExamsPage() {
                         maximumMarks: Number(e.target.value),
                       })
                     }
-                    className="w-full px-2 py-2 text-xs bg-slate-50 border border-slate-300 rounded-lg focus:outline-none focus:ring-1 focus:ring-[#00636b]"
+                    className="w-full px-2 py-2 text-xs bg-slate-50 border border-slate-300 rounded-lg focus:outline-none focus:ring-1 focus:ring-[#0274b3]"
                   />
                 </div>
 
@@ -662,7 +662,7 @@ export default function TeacherExamsPage() {
                         passMarks: Number(e.target.value),
                       })
                     }
-                    className="w-full px-2 py-2 text-xs bg-slate-50 border border-slate-300 rounded-lg focus:outline-none focus:ring-1 focus:ring-[#00636b]"
+                    className="w-full px-2 py-2 text-xs bg-slate-50 border border-slate-300 rounded-lg focus:outline-none focus:ring-1 focus:ring-[#0274b3]"
                   />
                 </div>
               </div>

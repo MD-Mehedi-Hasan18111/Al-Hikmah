@@ -30,16 +30,16 @@ export const dynamic = "force-dynamic";
 export const revalidate = 0;
 
 export const metadata = {
-  title: "সরাসরি ভর্তি নির্দেশিকা ও তথ্য | শিক্ষণ একাডেমিক কেয়ার",
+  title: "সরাসরি ভর্তি নির্দেশিকা ও তথ্য | আল-হিকমাহ্ কোচিং সেন্টার",
   description:
-    "শিক্ষণ একাডেমিক কেয়ারে সরাসরি ক্যাম্পাসে উপস্থিত হয়ে ভর্তির নিয়মাবলী, প্রয়োজনীয় কাগজপত্র, অফিস সময়সূচী ও ব্যাচ তথ্য।",
+    "আল-হিকমাহ্ কোচিং সেন্টারে সরাসরি ক্যাম্পাসে উপস্থিত হয়ে ভর্তির নিয়মাবলী, প্রয়োজনীয় কাগজপত্র, অফিস সময়সূচী ও ব্যাচ তথ্য।",
 };
 
 export default async function AdmissionsPage() {
   const settings = await getSiteSettings();
 
   const whatsAppPhone =
-    settings.whatsAppNumber || settings.whatsappNumber || "+8801859787399";
+    settings.whatsAppNumber || settings.whatsappNumber || "+8801642733106";
   const whatsAppAdmissionLink = generateWhatsAppLink({
     phone: whatsAppPhone,
     message: settings.whatsAppPrefillMessage || DEFAULT_WHATSAPP_ADMISSION_MESSAGE,
@@ -88,7 +88,7 @@ export default async function AdmissionsPage() {
 
       <main className="flex-1">
         {/* Banner Section */}
-        <section className="bg-brand-banner bg-[#002e33] bg-gradient-to-b from-[#001e22] via-[#002e33] to-[#003e44] text-white py-14 lg:py-16">
+        <section className="bg-brand-banner bg-[#0b2545] bg-gradient-to-b from-[#071a33] via-[#0b2545] to-[#103259] text-white py-14 lg:py-16">
           <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
             <div className="flex items-center gap-2 text-sm text-teal-200 mb-4">
               <Link href="/" className="hover:underline">
@@ -166,10 +166,10 @@ export default async function AdmissionsPage() {
                       key={st.num}
                       className="bg-white border-slate-200 shadow-xs hover:shadow-md transition-shadow relative overflow-hidden"
                     >
-                      <div className="h-1.5 bg-[#00636b] w-full absolute top-0 left-0" />
+                      <div className="h-1.5 bg-[#0274b3] w-full absolute top-0 left-0" />
                       <CardContent className="p-6 space-y-3 pt-7">
                         <div className="flex items-center justify-between">
-                          <span className="h-9 w-9 rounded-full bg-[#eff8f9] text-[#00636b] font-extrabold text-sm flex items-center justify-center border border-[#d7eef1]">
+                          <span className="h-9 w-9 rounded-full bg-[#f0f7ff] text-[#0274b3] font-extrabold text-sm flex items-center justify-center border border-[#e0f0fe]">
                             {st.num}
                           </span>
                           <div className="p-2 rounded-lg bg-slate-100 text-slate-600">
@@ -197,7 +197,7 @@ export default async function AdmissionsPage() {
                 <Card className="bg-white border-slate-200 shadow-sm">
                   <CardHeader className="border-b border-slate-100 pb-4">
                     <CardTitle className="text-lg font-bold text-slate-900 flex items-center gap-2">
-                      <FileCheck className="h-5 w-5 text-[#00636b]" />
+                      <FileCheck className="h-5 w-5 text-[#0274b3]" />
                       <span>ভর্তির জন্য প্রয়োজনীয় কাগজপত্র</span>
                     </CardTitle>
                     <p className="text-xs text-slate-500 mt-0.5">
@@ -230,7 +230,7 @@ export default async function AdmissionsPage() {
                 </Card>
 
                 {/* Scholarship / Discount Info */}
-                <Card className="bg-brand-card-dark bg-[#002e33] bg-gradient-to-br from-[#002e33] to-[#001e22] text-white border-teal-800 shadow-md">
+                <Card className="bg-brand-card-dark bg-[#0b2545] bg-gradient-to-br from-[#0b2545] to-[#071a33] text-white border-teal-800 shadow-md">
                   <CardContent className="p-6">
                     <div className="flex items-center gap-2 text-teal-300 font-semibold text-sm mb-2">
                       <Award className="h-5 w-5 text-amber-400" />
@@ -258,7 +258,7 @@ export default async function AdmissionsPage() {
                 <Card className="bg-white border-slate-200 shadow-sm">
                   <CardHeader className="pb-3 border-b border-slate-100">
                     <CardTitle className="text-lg font-bold text-slate-900 flex items-center gap-2">
-                      <Clock className="h-5 w-5 text-[#00636b]" />
+                      <Clock className="h-5 w-5 text-[#0274b3]" />
                       <span>অফিস ও ভিজিটিং সময়সূচী</span>
                     </CardTitle>
                   </CardHeader>
@@ -267,7 +267,7 @@ export default async function AdmissionsPage() {
                       <span className="font-semibold text-slate-800">
                         শনিবার – বৃহস্পতিবার:
                       </span>
-                      <span className="text-[#00636b] font-bold font-mono">
+                      <span className="text-[#0274b3] font-bold font-mono">
                         সকাল ৯:০০ – রাত ৮:৩০
                       </span>
                     </div>
@@ -290,25 +290,25 @@ export default async function AdmissionsPage() {
                 <Card className="bg-white border-slate-200 shadow-sm">
                   <CardHeader className="pb-3 border-b border-slate-100">
                     <CardTitle className="text-lg font-bold text-slate-900 flex items-center gap-2">
-                      <MapPin className="h-5 w-5 text-[#00636b]" />
+                      <MapPin className="h-5 w-5 text-[#0274b3]" />
                       <span>ক্যাম্পাসের ঠিকানা ও দিকনির্দেশনা</span>
                     </CardTitle>
                   </CardHeader>
                   <CardContent className="space-y-4 pt-4 text-xs sm:text-sm">
                     <div>
                       <strong className="text-slate-900 block text-sm">
-                        {settings.institutionName || "শিক্ষণ একাডেমিক কেয়ার"}
+                        {settings.institutionName || "আল-হিকমাহ্ কোচিং সেন্টার"}
                       </strong>
                       <p className="text-slate-600 mt-1 leading-relaxed">
                         {settings.address ||
-                          "এস ক্লাব মোড় (এর পশ্চিম পার্শ্বে), রোড-০১, বি-ব্লক, হালিশহর, চট্টগ্রাম"}
+                          "বি-ব্লক, হালিশহর, চট্টগ্রাম"}
                       </p>
                     </div>
 
                     <div className="pt-2">
                       <Link href="/contact" className="block w-full">
                         <span className="w-full inline-flex items-center justify-center gap-2 py-2.5 px-4 rounded-xl bg-slate-100 hover:bg-slate-200 text-slate-800 font-semibold text-xs transition">
-                          <MapPin className="h-4 w-4 text-[#00636b]" />
+                          <MapPin className="h-4 w-4 text-[#0274b3]" />
                           <span>গুগল ম্যাপে লোকেশন দেখুন</span>
                           <ArrowRight className="h-3.5 w-3.5" />
                         </span>
@@ -320,7 +320,7 @@ export default async function AdmissionsPage() {
                 {/* Direct Helpline / WhatsApp */}
                 <Card className="bg-white border-slate-200 shadow-sm">
                   <CardContent className="p-6 text-center space-y-3">
-                    <div className="w-12 h-12 bg-[#eff8f9] text-[#00636b] rounded-full flex items-center justify-center mx-auto border border-[#d7eef1]">
+                    <div className="w-12 h-12 bg-[#f0f7ff] text-[#0274b3] rounded-full flex items-center justify-center mx-auto border border-[#e0f0fe]">
                       <Phone className="h-6 w-6" />
                     </div>
                     <h4 className="font-bold text-slate-900 text-base">
@@ -330,7 +330,7 @@ export default async function AdmissionsPage() {
                       সরাসরি আমাদের ভর্তি হেল্পডেস্কে কথা বলতে কল করুন
                     </p>
                     {settings.contactPhone && (
-                      <p className="text-xl font-bold font-mono text-[#00636b]">
+                      <p className="text-xl font-bold font-mono text-[#0274b3]">
                         {settings.contactPhone}
                       </p>
                     )}

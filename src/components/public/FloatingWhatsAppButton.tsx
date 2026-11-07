@@ -66,7 +66,7 @@ export function FloatingWhatsAppButton({ settings }: FloatingWhatsAppButtonProps
   const phone =
     currentSettings?.whatsAppNumber ||
     currentSettings?.whatsappNumber ||
-    "+8801859787399";
+    "+8801642733106";
 
   if (!isValidWhatsAppNumber(phone)) {
     return null;
@@ -75,7 +75,7 @@ export function FloatingWhatsAppButton({ settings }: FloatingWhatsAppButtonProps
   const prefillMessage =
     currentSettings?.whatsAppPrefillMessage || DEFAULT_WHATSAPP_GENERAL_MESSAGE;
   const link = generateWhatsAppLink({ phone, message: prefillMessage });
-  const institutionName = currentSettings?.institutionName || "শিক্ষণ একাডেমি";
+  const institutionName = currentSettings?.institutionName || "আল-হিকমাহ্ কোচিং সেন্টার";
 
   return (
     <aside aria-label="হোয়াটসঅ্যাপ সহায়তা" className="fixed bottom-6 right-6 z-50 flex flex-col items-end">

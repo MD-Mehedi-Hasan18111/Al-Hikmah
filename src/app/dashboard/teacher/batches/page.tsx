@@ -134,7 +134,7 @@ export default function TeacherBatchesPage() {
                 onClick={() => setSelectedBatchId(b._id)}
                 className={`px-4 py-2 rounded-lg text-xs font-bold transition flex items-center gap-2 ${
                   selectedBatchId === b._id
-                    ? "bg-[#00636b] text-white shadow-2xs"
+                    ? "bg-[#0274b3] text-white shadow-2xs"
                     : "text-slate-600 hover:text-slate-900 hover:bg-white"
                 }`}
               >
@@ -212,7 +212,7 @@ export default function TeacherBatchesPage() {
             <CardHeader className="flex flex-col sm:flex-row sm:items-center justify-between gap-4 border-b border-slate-100 pb-4">
               <div>
                 <CardTitle className="text-base font-bold text-slate-900 flex items-center gap-2">
-                  <GraduationCap className="h-5 w-5 text-[#00636b]" />
+                  <GraduationCap className="h-5 w-5 text-[#0274b3]" />
                   <span>
                     অন্তর্ভুক্ত শিক্ষার্থীদের তালিকা (
                     {toBanglaNumber(filteredStudents.length)} জন)
@@ -231,7 +231,7 @@ export default function TeacherBatchesPage() {
                   placeholder="নাম বা আইডি দিয়ে খুঁজুন..."
                   value={search}
                   onChange={(e) => setSearch(e.target.value)}
-                  className="w-full pl-9 pr-3 py-1.5 text-xs bg-slate-50 border border-slate-200 rounded-lg focus:outline-none focus:ring-1 focus:ring-[#00636b]"
+                  className="w-full pl-9 pr-3 py-1.5 text-xs bg-slate-50 border border-slate-200 rounded-lg focus:outline-none focus:ring-1 focus:ring-[#0274b3]"
                 />
               </div>
             </CardHeader>
@@ -267,7 +267,7 @@ export default function TeacherBatchesPage() {
                     <tbody className="divide-y divide-slate-100">
                       {filteredStudents.map((enroll) => (
                         <tr key={enroll._id} className="hover:bg-slate-50/60 transition">
-                          <td className="py-3 px-4 font-mono font-medium text-[#00636b]">
+                          <td className="py-3 px-4 font-mono font-medium text-[#0274b3]">
                             {enroll.student?.studentId || "N/A"}
                           </td>
                           <td className="py-3 px-4 font-bold text-slate-900">

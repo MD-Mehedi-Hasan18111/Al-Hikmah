@@ -4,12 +4,12 @@ import { cn } from "@/lib/utils";
 import { Loader2 } from "lucide-react";
 
 const buttonVariants = cva(
-  "inline-flex items-center justify-center gap-2 whitespace-nowrap rounded-lg text-sm font-medium transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-[#00636b] focus-visible:ring-offset-2 disabled:pointer-events-none disabled:opacity-50 select-none cursor-pointer border border-transparent shadow-xs active:scale-[0.99]",
+  "inline-flex items-center justify-center gap-2 whitespace-nowrap rounded-lg text-sm font-medium transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-[#0274b3] focus-visible:ring-offset-2 disabled:pointer-events-none disabled:opacity-50 select-none cursor-pointer border border-transparent shadow-xs active:scale-[0.99]",
   {
     variants: {
       variant: {
         primary:
-          "bg-[#00636b] text-white hover:bg-[#004f56] active:bg-[#003e44] shadow-sm",
+          "bg-[#0274b3] text-white hover:bg-[#015b93] active:bg-[#103259] shadow-sm",
         secondary: "bg-slate-100 text-slate-800 hover:bg-slate-200 border-slate-200",
         gold: "bg-[#c27a29] text-white hover:bg-[#aa651d] shadow-sm",
         outline:
@@ -17,7 +17,7 @@ const buttonVariants = cva(
         danger: "bg-[#c22126] text-white hover:bg-[#a9171b] shadow-sm",
         ghost:
           "bg-transparent text-slate-700 hover:bg-slate-100 hover:text-slate-900 shadow-none",
-        link: "text-[#00636b] underline-offset-4 hover:underline p-0 h-auto shadow-none font-normal",
+        link: "text-[#0274b3] underline-offset-4 hover:underline p-0 h-auto shadow-none font-normal",
       },
       size: {
         default: "h-10 px-4 py-2",

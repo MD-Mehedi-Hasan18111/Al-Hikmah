@@ -585,7 +585,7 @@ export default function ExamManagementPage() {
                     <TableRow key={exam._id} className="hover:bg-slate-50/80 transition">
                       <TableCell>
                         <div className="flex items-center gap-2.5">
-                          <div className="h-8 w-8 rounded-lg bg-teal-50 text-[#00636b] flex items-center justify-center shrink-0">
+                          <div className="h-8 w-8 rounded-lg bg-teal-50 text-[#0274b3] flex items-center justify-center shrink-0">
                             <BookOpen className="h-4 w-4" />
                           </div>
                           <div>
@@ -1044,7 +1044,7 @@ export default function ExamManagementPage() {
             <div className="grid grid-cols-3 gap-3">
               <Card className="p-2.5 bg-teal-50 border-teal-100 text-center">
                 <span className="text-[11px] text-teal-800">মোট পরীক্ষার্থী</span>
-                <p className="text-base font-bold text-[#00636b]">
+                <p className="text-base font-bold text-[#0274b3]">
                   {toBanglaNumber(totalSubmissions)} জন
                 </p>
               </Card>
@@ -1102,7 +1102,7 @@ export default function ExamManagementPage() {
 
                     <div className="flex items-center gap-3">
                       <div className="text-right">
-                        <span className="font-bold text-[#00636b] text-sm">
+                        <span className="font-bold text-[#0274b3] text-sm">
                           {toBanglaNumber(res.obtainedMarks)}
                         </span>
                         <span className="text-[10px] text-slate-400">
@@ -1150,8 +1150,8 @@ export default function ExamManagementPage() {
           <div className="p-4 bg-white border border-slate-200 rounded-lg space-y-6 printable-sheet">
             {/* Institution Letterhead Header */}
             <div className="text-center border-b pb-4 border-slate-300">
-              <h2 className="text-xl font-extrabold text-[#00636b] tracking-tight">
-                শিক্ষণ একাডেমিক কেয়ার (Shikkhon Academic Care)
+              <h2 className="text-xl font-extrabold text-[#0274b3] tracking-tight">
+                আল-হিকমাহ্ কোচিং সেন্টার (Al-Hikmah Coaching Center)
               </h2>
               <p className="text-xs text-slate-500 mt-0.5">
                 মানসম্মত শিক্ষা ও আধুনিক পাঠদানের নির্ভরযোগ্য প্রতিষ্ঠান
@@ -1235,7 +1235,7 @@ export default function ExamManagementPage() {
                           আইডি: {item.student?.studentId}
                         </span>
                       </td>
-                      <td className="p-2 text-center border-r border-slate-200 font-bold text-[#00636b]">
+                      <td className="p-2 text-center border-r border-slate-200 font-bold text-[#0274b3]">
                         {toBanglaNumber(item.obtainedMarks)}
                       </td>
                       <td className="p-2 text-center border-r border-slate-200 font-bold">
@@ -1270,7 +1270,7 @@ export default function ExamManagementPage() {
                     <span className="block text-slate-500">
                       {toBanglaNumber(tier.minPercentage)}%+
                     </span>
-                    <span className="block font-semibold text-[#00636b]">
+                    <span className="block font-semibold text-[#0274b3]">
                       {toBanglaNumber(tier.gpa.toFixed(1))}
                     </span>
                   </div>

@@ -25,9 +25,9 @@ interface PageProps {
 export const revalidate = 60;
 
 export const metadata = {
-  title: "নোটিশ বোর্ড | অফিসিয়াল বিজ্ঞপ্তি | শিক্ষণ একাডেমিক কেয়ার",
+  title: "নোটিশ বোর্ড | অফিসিয়াল বিজ্ঞপ্তি | আল-হিকমাহ্ কোচিং সেন্টার",
   description:
-    "শিক্ষণ একাডেমিক কেয়ারের ক্লাস রুটিন, পরীক্ষার সময়সূচী, ফলাফল প্রকাশ ও সাধারণ নোটিশ বোর্ড।",
+    "আল-হিকমাহ্ কোচিং সেন্টারের ক্লাস রুটিন, পরীক্ষার সময়সূচী, ফলাফল প্রকাশ ও সাধারণ নোটিশ বোর্ড।",
 };
 
 export default async function NoticesPage({ searchParams }: PageProps) {
@@ -58,7 +58,7 @@ export default async function NoticesPage({ searchParams }: PageProps) {
 
       <main className="flex-1">
         {/* Banner */}
-        <section className="bg-brand-banner bg-[#002e33] bg-gradient-to-b from-[#001e22] via-[#002e33] to-[#003e44] text-white py-14 lg:py-16">
+        <section className="bg-brand-banner bg-[#0b2545] bg-gradient-to-b from-[#071a33] via-[#0b2545] to-[#103259] text-white py-14 lg:py-16">
           <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
             <div className="flex items-center gap-2 text-sm text-teal-200 mb-4">
               <Link href="/" className="hover:underline">

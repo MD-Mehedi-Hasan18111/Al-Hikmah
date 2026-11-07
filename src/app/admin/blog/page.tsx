@@ -268,7 +268,7 @@ export default function BlogManagementPage() {
         actions={
           <Button
             onClick={openCreateDialog}
-            className="flex items-center gap-1.5 bg-[#00636b] hover:bg-[#004f55] text-white"
+            className="flex items-center gap-1.5 bg-[#0274b3] hover:bg-[#015b93] text-white"
           >
             <Plus className="h-4 w-4" />
             <span>নতুন ব্লগ লিখুন</span>
@@ -290,7 +290,7 @@ export default function BlogManagementPage() {
                   setPage(1);
                 }}
                 placeholder="ব্লগের শিরোনাম বা বিষয়বস্তু দিয়ে খুঁজুন..."
-                className="w-full h-10 pl-9 pr-4 rounded-lg bg-slate-50 border border-slate-200 text-sm focus:bg-white focus:border-[#00636b] focus:outline-none focus:ring-1 focus:ring-[#00636b] transition"
+                className="w-full h-10 pl-9 pr-4 rounded-lg bg-slate-50 border border-slate-200 text-sm focus:bg-white focus:border-[#0274b3] focus:outline-none focus:ring-1 focus:ring-[#0274b3] transition"
               />
             </div>
 
@@ -509,7 +509,7 @@ export default function BlogManagementPage() {
             <Button
               onClick={() => handleSavePost(editDialogOpen)}
               disabled={submitting}
-              className="bg-[#00636b] hover:bg-[#004f55] text-white"
+              className="bg-[#0274b3] hover:bg-[#015b93] text-white"
             >
               {submitting
                 ? "সংরক্ষণ হচ্ছে..."

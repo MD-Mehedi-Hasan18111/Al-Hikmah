@@ -154,19 +154,19 @@ export function MultiImageUpload({
             className={cn(
               "aspect-video sm:aspect-square rounded-xl border-2 border-dashed flex flex-col items-center justify-center p-3 text-center cursor-pointer transition-all",
               isDragOver
-                ? "border-[#00636b] bg-teal-50/60 text-[#00636b]"
-                : "border-slate-200 hover:border-[#00636b] bg-slate-50/70 hover:bg-teal-50/30 text-slate-500",
+                ? "border-[#0274b3] bg-teal-50/60 text-[#0274b3]"
+                : "border-slate-200 hover:border-[#0274b3] bg-slate-50/70 hover:bg-teal-50/30 text-slate-500",
               uploading && "pointer-events-none opacity-60"
             )}
           >
             {uploading ? (
               <div className="flex flex-col items-center gap-1">
-                <Loader2 className="h-5 w-5 animate-spin text-[#00636b]" />
+                <Loader2 className="h-5 w-5 animate-spin text-[#0274b3]" />
                 <span className="text-[10px] text-slate-600 font-medium">আপলোড হচ্ছে...</span>
               </div>
             ) : (
               <div className="flex flex-col items-center gap-1">
-                <div className="p-1.5 rounded-full bg-white shadow-2xs border border-slate-200 text-[#00636b]">
+                <div className="p-1.5 rounded-full bg-white shadow-2xs border border-slate-200 text-[#0274b3]">
                   <Plus className="h-4 w-4" />
                 </div>
                 <span className="text-xs font-semibold text-slate-700 mt-1">

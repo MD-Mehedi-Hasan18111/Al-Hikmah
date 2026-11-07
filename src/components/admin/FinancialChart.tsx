@@ -42,7 +42,7 @@ export function FinancialChart({
       <div className="flex flex-wrap items-center justify-between gap-3 pb-3 border-b border-slate-100">
         <div className="flex items-center gap-4">
           <div className="flex items-center gap-2">
-            <span className="w-3 h-3 rounded-sm bg-[#00636b]" />
+            <span className="w-3 h-3 rounded-sm bg-[#0274b3]" />
             <span className="text-xs font-medium text-slate-700">
               মোট আদায়:{" "}
               <strong className="text-teal-900 font-bold">
@@ -62,7 +62,7 @@ export function FinancialChart({
           </div>
         </div>
 
-        <div className="flex items-center gap-1.5 bg-teal-50 px-2.5 py-1 rounded-full text-xs font-bold text-[#00636b]">
+        <div className="flex items-center gap-1.5 bg-teal-50 px-2.5 py-1 rounded-full text-xs font-bold text-[#0274b3]">
           <TrendingUp className="h-3.5 w-3.5" />
           <span>আদায় হার: {toBanglaNumber(collectionRate)}%</span>
         </div>
@@ -125,7 +125,7 @@ export function FinancialChart({
                       item.collection > 0
                         ? isHovered
                           ? "bg-teal-700 shadow-md scale-y-105"
-                          : "bg-[#00636b] hover:bg-teal-700"
+                          : "bg-[#0274b3] hover:bg-teal-700"
                         : "bg-slate-200/60"
                     }`}
                   />
@@ -145,7 +145,7 @@ export function FinancialChart({
                 {/* Month Name Below Bar */}
                 <div
                   className={`mt-2 text-[10px] text-center font-medium transition-colors truncate w-full ${
-                    isHovered ? "text-[#00636b] font-bold" : "text-slate-500"
+                    isHovered ? "text-[#0274b3] font-bold" : "text-slate-500"
                   }`}
                   title={item.monthName}
                 >

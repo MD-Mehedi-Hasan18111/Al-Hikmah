@@ -470,7 +470,7 @@ export default function BatchManagementPage() {
               });
               setCreateDialogOpen(true);
             }}
-            className="flex items-center gap-1.5 bg-[#00636b] hover:bg-[#004f55] text-white"
+            className="flex items-center gap-1.5 bg-[#0274b3] hover:bg-[#015b93] text-white"
           >
             <Plus className="h-4 w-4" />
             <span>নতুন ব্যাচ খুলুন</span>
@@ -492,7 +492,7 @@ export default function BatchManagementPage() {
                   setPage(1);
                 }}
                 placeholder="ব্যাচের নাম, কোড বা বিষয় দিয়ে খুঁজুন..."
-                className="w-full h-10 pl-9 pr-4 rounded-lg bg-slate-50 border border-slate-200 text-sm focus:bg-white focus:border-[#00636b] focus:outline-none focus:ring-1 focus:ring-[#00636b] transition"
+                className="w-full h-10 pl-9 pr-4 rounded-lg bg-slate-50 border border-slate-200 text-sm focus:bg-white focus:border-[#0274b3] focus:outline-none focus:ring-1 focus:ring-[#0274b3] transition"
               />
             </div>
 
@@ -573,7 +573,7 @@ export default function BatchManagementPage() {
                 <TableBody>
                   {batches.map((batch) => (
                     <TableRow key={batch._id} className="hover:bg-slate-50">
-                      <TableCell className="font-mono text-xs font-bold text-[#00636b]">
+                      <TableCell className="font-mono text-xs font-bold text-[#0274b3]">
                         {batch.code}
                       </TableCell>
                       <TableCell>
@@ -636,7 +636,7 @@ export default function BatchManagementPage() {
                   <div className="flex items-start justify-between gap-2">
                     <div className="space-y-0.5">
                       <div className="flex items-center gap-2">
-                        <span className="font-mono text-xs font-bold text-[#00636b] bg-teal-50 px-2 py-0.5 rounded">
+                        <span className="font-mono text-xs font-bold text-[#0274b3] bg-teal-50 px-2 py-0.5 rounded">
                           {batch.code}
                         </span>
                         <Badge
@@ -726,7 +726,7 @@ export default function BatchManagementPage() {
             <Button
               onClick={() => handleSaveBatch(editDialogOpen)}
               disabled={formSubmitting}
-              className="bg-[#00636b] hover:bg-[#004f55] text-white shadow-xs"
+              className="bg-[#0274b3] hover:bg-[#015b93] text-white shadow-xs"
             >
               {formSubmitting
                 ? "সংরক্ষণ হচ্ছে..."
@@ -858,7 +858,7 @@ export default function BatchManagementPage() {
                           });
                         }
                       }}
-                      className="rounded border-slate-300 text-[#00636b] focus:ring-[#00636b]"
+                      className="rounded border-slate-300 text-[#0274b3] focus:ring-[#0274b3]"
                     />
                     <span>
                       {teacher.fullName} ({teacher.teacherCode})
@@ -947,7 +947,7 @@ export default function BatchManagementPage() {
           batchDetail && (
             <div className="space-y-4 py-2">
               <div className="p-4 rounded-xl bg-slate-50 border border-slate-200">
-                <span className="font-mono text-xs font-bold text-[#00636b] bg-teal-50 px-2 py-0.5 rounded border border-teal-200">
+                <span className="font-mono text-xs font-bold text-[#0274b3] bg-teal-50 px-2 py-0.5 rounded border border-teal-200">
                   {batchDetail.batch.code}
                 </span>
                 <h3 className="text-lg font-bold text-slate-900 mt-1">
@@ -964,7 +964,7 @@ export default function BatchManagementPage() {
               <div className="p-3.5 rounded-lg border border-slate-200 bg-white">
                 <div className="flex items-center justify-between text-xs mb-1.5">
                   <span className="font-semibold text-slate-800">আসন পূরণ পরিস্থিতি</span>
-                  <span className="font-mono font-bold text-[#00636b]">
+                  <span className="font-mono font-bold text-[#0274b3]">
                     {toBanglaNumber(batchDetail.enrolledCount)} /{" "}
                     {toBanglaNumber(batchDetail.batch.capacity)}
                   </span>
@@ -972,7 +972,7 @@ export default function BatchManagementPage() {
                 <div className="w-full h-2 rounded-full bg-slate-100 overflow-hidden">
                   <div
                     className={`h-full ${
-                      batchDetail.isFull ? "bg-rose-500" : "bg-[#00636b]"
+                      batchDetail.isFull ? "bg-rose-500" : "bg-[#0274b3]"
                     }`}
                     style={{
                       width: `${Math.min(

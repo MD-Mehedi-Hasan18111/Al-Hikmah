@@ -19,55 +19,55 @@ import { Enrollment } from "@/models/Enrollment";
 
 const defaultSiteSettings = {
   key: "main",
-  institutionName: "শিক্ষণ একাডেমিক কেয়ার",
-  shortName: "শিক্ষণ",
-  tagline: "চলো সেরা হই...",
-  motto: "চলো সেরা হই...",
+  institutionName: "আল-হিকমাহ্ কোচিং সেন্টার",
+  shortName: "আল-হিকমাহ্",
+  tagline: "আলোর পথে সফলতা প্রাপ্তির প্রচেষ্টায়...",
+  motto: "আলোর পথে সফলতা প্রাপ্তির প্রচেষ্টায়...",
   logoUrl: "/images/logo.png",
   bannerUrl: "/images/banner.png",
-  heroTitle: "সেরা প্রস্তুতিতে গড়ে তুলুন নিশ্চিত ভবিষ্যৎ",
+  heroTitle: "আলোর পথে সফলতা প্রাপ্তির প্রচেষ্টায়...",
   heroSubtitle:
-    "৬ষ্ঠ থেকে দ্বাদশ শ্রেণি ও আলিয়া মাদ্রাসা স্পেশাল কেয়ার। অভিজ্ঞ শিক্ষক ও নিয়মিত মূল্যায়নের মাধ্যমে শিক্ষার্থীর সামগ্রিক মেধা বিকাশ।",
-  aboutTitle: "অভিজ্ঞতা ও আধুনিক পাঠদানের অনন্য সমন্বয়",
+    "বিশেষায়িত কওমী ও আলিয়া মাদ্রাসার আরবী ও সাধারণ সকল বিষয়ের স্বয়ংসম্পূর্ণ কোচিং সেন্টার। প্লে থেকে ৫ম শ্রেণি (প্রাথমিক বিভাগ) ও ষষ্ঠ থেকে ১০ম শ্রেণি (মাধ্যমিক বিভাগ)।",
+  aboutTitle: "কওমী ও আলিয়া মাদ্রাসার শিক্ষার্থীদের নির্ভরযোগ্য পাঠদান কেন্দ্র",
   aboutText:
-    "শিক্ষণ একাডেমিক কেয়ার চট্টগ্রাম হালিশহরে প্রতিষ্ঠিত একটি প্রথম সারির পাঠদান কেন্দ্র। অভিজ্ঞ শিক্ষকমণ্ডলী, নিয়মিত ওএমআর মডেল টেস্ট এবং দুর্বল শিক্ষার্থীদের জন্য বিশেষ তদারকির মাধ্যমে আমরা প্রতিটি শিক্ষার্থীর কাঙ্ক্ষিত ফলাফল নিশ্চিত করি।",
+    "আল-হিকমাহ্ কোচিং সেন্টার চট্টগ্রাম হালিশহরে প্রতিষ্ঠিত একটি বিশেষায়িত পাঠদান কেন্দ্র। কওমী ও আলিয়া মাদ্রাসার আরবী ও সাধারণ সকল বিষয়ে অভিজ্ঞ শিক্ষকমণ্ডলী, নিয়মিত মূল্যায়ন পরীক্ষা এবং দুর্বল শিক্ষার্থীদের জন্য বিশেষ তদারকির মাধ্যমে আমরা প্রতিটি শিক্ষার্থীর কাঙ্ক্ষিত ফলাফল নিশ্চিত করি।",
   aboutStoryParagraph2:
-    "আমরা বিশ্বাস করি প্রতিটি শিক্ষার্থীর মধ্যেই বিশেষ মেধা রয়েছে। সঠিক দিকনির্দেশনা, বন্ধুত্বপূর্ণ পাঠদান পরিবেশ এবং নিয়মিত অধ্যাবসায়ের চর্চা নিশ্চিত করার মাধ্যমে আমরা গত এক দশকে হাজারো শিক্ষার্থীকে এসএসসি ও এইচএসসি পরীক্ষায় জিপিএ-৫ ও সর্বোচ্চ সাফল্য এনে দিয়েছি।",
+    "আমরা বিশ্বাস করি সঠিক দীনি শিক্ষা ও আধুনিক জ্ঞানচর্চার মেলবন্ধনে প্রতিটি শিক্ষার্থী আলোকিত ভবিষ্যতের দিকে এগিয়ে যায়। বন্ধুভাবাপন্ন পাঠদান পরিবেশ এবং নিয়মিত অধ্যাবসায়ের চর্চা নিশ্চিত করার মাধ্যমে আমরা শিক্ষার্থীদের মেধা বিকাশ ও শ্রেষ্ঠত্ব অর্জনে সার্বক্ষণিক পাশে আছি।",
   aboutMission:
-    "প্রতিটি শিক্ষার্থীর সুপ্ত মেধার সর্বোত্তম বিকাশ ঘটিয়ে সাধারণ ও আলিয়া মাদ্রাসা কারিকুলামে বোর্ড পরীক্ষায় শ্রেষ্ঠত্ব অর্জন করানো। দুর্বলদের বিশেষ যত্ন ও মেধার যথোপযুক্ত মূল্যায়ন আমাদের অগ্রাধিকার।",
+    "প্রতিটি শিক্ষার্থীর সুপ্ত মেধার সর্বোত্তম বিকাশ ঘটিয়ে কওমী ও আলিয়া মাদ্রাসা কারিকুলামে আরবি ও সাধারণ সকল বিষয়ে শ্রেষ্ঠত্ব অর্জন করানো। দুর্বলদের বিশেষ যত্ন ও মেধার যথোপযুক্ত মূল্যায়ন আমাদের অগ্রাধিকার।",
   aboutVision:
-    "মুখস্থবিদ্যার বদলে ধারণাগত স্পষ্টতা (Conceptual Clarity), নিয়মিত মূল্যায়ন এবং শৃঙ্খলাবদ্ধ জীবন গঠনের মাধ্যমে শিক্ষার্থীদের ভবিষ্যতের জন্য আত্মবিশ্বাসী ও নীতিবান নাগরিক হিসেবে গড়ে তোলা।",
+    "মুখস্থবিদ্যার বদলে ধারণাগত স্পষ্টতা, নিয়মিত মূল্যায়ন এবং শৃঙ্খলাবদ্ধ জীবন গঠনের মাধ্যমে শিক্ষার্থীদের ভবিষ্যতের জন্য আত্মবিশ্বাসী ও নীতিবান আদর্শ নাগরিক হিসেবে গড়ে তোলা।",
   aboutValues:
-    "সততা, সময়ানুবর্তিতা, শিক্ষক-শিক্ষার্থী-অভিভাবকের যৌথ সমন্বয় এবং প্রযুক্তিভিত্তিক ডিজিটাল তদারকি। কোনো অবহেলা বা আপস ছাড়াই শিক্ষার মান অক্ষুণ্ণ রাখা।",
+    "সততা, সময়ানুবর্তিতা, নৈতিকতা, শিক্ষক-শিক্ষার্থী-অভিভাবকের যৌথ সমন্বয় এবং আন্তরিক তদারকি। কোনো অবহেলা বা আপস ছাড়াই শিক্ষার মান অক্ষুণ্ণ রাখা।",
   aboutHighlights: [
-    "চট্টগ্রামের শীর্ষস্থানীয় কলেজ ও বিশ্ববিদ্যালয়ের অভিজ্ঞ বিষয়ভিত্তিক শিক্ষক",
-    "৬ষ্ঠ থেকে দ্বাদশ শ্রেণি ও আলিয়া মাদ্রাসা স্পেশাল কেয়ার ব্যাচ",
+    "কওমী ও আলিয়া মাদ্রাসার অভিজ্ঞ ও নিবেদিতপ্রাণ বিষয়ভিত্তিক শিক্ষক",
+    "প্লে থেকে ৫ম (প্রাথমিক) ও ৬ষ্ঠ থেকে ১০ম শ্রেণি (মাধ্যমিক) বিশেষ কেয়ার ব্যাচ",
     "প্রতিটি অধ্যায় শেষে মানসম্মত ওএমআর শিটভিত্তিক মূল্যায়ন পরীক্ষা",
     "ডিজিটাল উপস্থিতি খাতা ও অনুপস্থিতিতে অভিভাবকদের সরাসরি নোটিফিকেশন",
-    "আধুনিক শীতাতপ নিয়ন্ত্রিত (AC) ও সিসিটিভি ক্যামেরা সমৃদ্ধ ক্লাসরুম",
+    "পর্যাপ্ত আলো-বাতাস সমৃদ্ধ ও সিসিটিভি ক্যামেরা নিয়ন্ত্রিত ক্লাসরুম",
     "দুর্বল শিক্ষার্থীদের চিহ্নিত করে আলাদা রিমেডিয়াল / এক্সট্রা ক্লাস",
     "নিজস্ব সমৃদ্ধ লেকচার শিট, হ্যান্ডনোট ও বিগত ১০ বছরের প্রশ্নব্যাংক সল্যুশন",
     "নিয়মিত অভিভাবক সমাবেশ (Parents Meeting) ও প্রগ্রেস কার্ড প্রদান",
   ],
   officeHours: "সকাল ৮:০০ - রাত ৮:০০ (প্রতিদিন)",
-  contactPhone: "০১৯৮-২৭০৫৬৪৬",
-  contactEmail: "info@shikkhon.edu.bd",
-  phones: ["০১৯৮-২৭০৫৬৪৬", "০১৮৫৯-৭৮৭৩৯৯"],
-  email: "info@shikkhon.edu.bd",
-  address: "এস ক্লাব মোড় (এর পশ্চিম পার্শ্বে), রোড-০২, বি-ব্লক, হালিশহর, চট্টগ্রাম",
-  whatsappNumber: "+8801859787399",
-  whatsAppNumber: "+8801859787399",
+  contactPhone: "০১৬৪২-৭৩৩১০৬",
+  contactEmail: "info@alhikmah.edu.bd",
+  phones: ["০১৬৪২-৭৩৩১০৬", "০১৮২৪-০৬৬৫৫৫", "০১৮৭৬-৮৫০৪০৮"],
+  email: "info@alhikmah.edu.bd",
+  address: "বি-ব্লক, হালিশহর, চট্টগ্রাম",
+  whatsappNumber: "+8801642733106",
+  whatsAppNumber: "+8801642733106",
   whatsAppPrefillMessage:
-    "আসসালামু আলাইকুম, আমি কোচিং এ ভর্তির ব্যাপারে তথ্য জানতে চাচ্ছি।",
+    "আসসালামু আলাইকুম, আমি আল-হিকমাহ্ কোচিং সেন্টারে ভর্তির ব্যাপারে তথ্য জানতে চাচ্ছি।",
   isWhatsAppEnabled: true,
   allowTeacherStudentMessaging: true,
   admissionNotice:
-    "২০২৬ শিক্ষাবর্ষে ৬ষ্ঠ থেকে দ্বাদশ শ্রেণি এবং আলিয়া মাদ্রাসা স্পেশাল কেয়ারে ভর্তি চলছে।",
+    "২০২৬ শিক্ষাবর্ষে প্লে থেকে ৫ম এবং ৬ষ্ঠ থেকে ১০ম শ্রেণি বিশেষায়িত ব্যাচে ভর্তি চলছে।",
   isAdmissionOpen: true,
   metaDescription:
-    "জেনারেল ও আলিয়া মাদ্রাসার একটি পূর্ণাঙ্গ একাডেমিক কেয়ার - হালিশহর, চট্টগ্রাম।",
+    "বিশেষায়িত কওমী ও আলিয়া মাদ্রাসার আরবী ও সাধারণ সকল বিষয়ের স্বয়ংসম্পূর্ণ কোচিং সেন্টার - বি-ব্লক, হালিশহর, চট্টগ্রাম।",
   socialLinks: {
-    facebook: "https://facebook.com/shikkhonacademiccare",
+    facebook: "https://facebook.com/alhikmahcoaching",
     youtube: "",
     instagram: "",
     linkedin: "",
@@ -77,38 +77,38 @@ const defaultSiteSettings = {
     { label: "সফল শিক্ষার্থী", value: "৩৫০০+" },
     { label: "অভিজ্ঞ শিক্ষক", value: "২৫+" },
     { label: "সক্রিয় ব্যাচ", value: "১৬+" },
-    { label: "বোর্ড জিপিএ-৫ হার", value: "৯৮%" },
+    { label: "সাফল্যের হার", value: "৯৮%" },
   ],
   homeClasses: [
     {
-      title: "৬ষ্ঠ থেকে ৮ম শ্রেণি",
+      title: "প্লে থেকে ৫ম শ্রেণি (প্রাথমিক বিভাগ)",
       description:
-        "বেসিক ফাউন্ডেশন, গণিত ও বিজ্ঞানের নিবিড় যত্ন, ধর্মীয় শিক্ষা ও মাদ্রাসা সিলেবাস সমন্বয়।",
-      badge: "জেনারেল ও মাদ্রাসা",
+        "কওমী ও আলিয়া মাদ্রাসার বুনিয়াদি আরবী, কায়দা, তাজবিদ ও সাধারণ বিষয়ের নিবিড় যত্ন।",
+      badge: "প্রাথমিক বিভাগ",
       timing: "সকাল ও বিকাল ব্যাচ",
+      href: "/classes#primary",
+    },
+    {
+      title: "৬ষ্ঠ থেকে ৮ম শ্রেণি (জুনিয়র কেয়ার)",
+      description:
+        "আরবি ১ম ও ২য় পত্র, নাহু-সরফ, সাধারণ গণিত, ইংরেজি ও বিজ্ঞানের পূর্ণাঙ্গ প্রস্তুতি।",
+      badge: "জুনিয়র মাদ্রাসা",
+      timing: "নিয়মিত পাঠদান",
       href: "/classes#class-6-8",
     },
     {
-      title: "৯ম ও ১০ম শ্রেণি (এসএসসি)",
+      title: "৯ম ও ১০ম শ্রেণি (দাখিল ও এসএসসি)",
       description:
-        "বিজ্ঞান, মানবিক ও ব্যবসায় শিক্ষা শাখার শতভাগ প্রস্তুতি, অধ্যায়ভিত্তিক পরীক্ষা ও সৃজনশীল প্র্যাকটিস।",
-      badge: "এসএসসি স্পেশাল",
+        "দাখিল ও এসএসসি পরীক্ষার্থীদের শতভাগ এ+ প্রস্তুতি, আরবি সাহিত্য, হাদিস ও বিজ্ঞান বিষয়ের স্পেশাল ব্যাচ।",
+      badge: "দাখিল স্পেশাল",
       timing: "প্রতিদিন নিয়মিত ক্লাস",
       href: "/classes#class-9-10",
     },
     {
-      title: "একাদশ ও দ্বাদশ শ্রেণি (এইচএসসি)",
+      title: "বিশেষায়িত কওমী ও আলিয়া কেয়ার",
       description:
-        "পদার্থবিজ্ঞান, রসায়ন, উচ্চতর গণিত, জীববিজ্ঞান, আইসিটি ও সাধারণ বিষয়ের বিষয়ভিত্তিক পূর্ণাঙ্গ কেয়ার।",
-      badge: "এইচএসসি ব্যাচ",
-      timing: "কলেজ সময়ের সাথে সমন্বয়",
-      href: "/classes#hsc",
-    },
-    {
-      title: "আলিয়া মাদ্রাসা স্পেশাল কেয়ার",
-      description:
-        "দাখিল ও আলিম পরীক্ষার্থীদের জন্য বিশেষ পাঠদান, আরবি সাহিত্য, হাদিস ও সাধারণ বিষয়ের সমন্বিত গাইডেন্স।",
-      badge: "আলিয়া মাদ্রাসা",
+        "কওমী ও আলিয়া মাদ্রাসার শিক্ষার্থীদের আরবি ব্যাকরণ, অনুবাদ ও সাধারণ বিষয়ের সমন্বিত গাইডেন্স।",
+      badge: "মাদ্রাসা কেয়ার",
       timing: "বিশেষায়িত শিক্ষক",
       href: "/classes#madrasah",
     },
@@ -293,18 +293,55 @@ export async function getSiteSettings() {
       settings = await SiteSettings.create({ key: "main" });
     }
     const clean = JSON.parse(JSON.stringify(settings));
+
+    const isOldShikkhon =
+      !clean.institutionName ||
+      clean.institutionName.includes("আল-হিকমাহ্") ||
+      clean.institutionName.includes("Shikkhon");
+
     return {
       ...defaultSiteSettings,
       ...clean,
+      ...(isOldShikkhon
+        ? {
+            institutionName: defaultSiteSettings.institutionName,
+            shortName: defaultSiteSettings.shortName,
+            motto: defaultSiteSettings.motto,
+            tagline: defaultSiteSettings.tagline,
+            address: defaultSiteSettings.address,
+            phones: defaultSiteSettings.phones,
+            contactPhone: defaultSiteSettings.contactPhone,
+            email: defaultSiteSettings.email,
+            contactEmail: defaultSiteSettings.contactEmail,
+            logoUrl: defaultSiteSettings.logoUrl,
+            bannerUrl: defaultSiteSettings.bannerUrl,
+            heroTitle: defaultSiteSettings.heroTitle,
+            heroSubtitle: defaultSiteSettings.heroSubtitle,
+            aboutTitle: defaultSiteSettings.aboutTitle,
+            aboutText: defaultSiteSettings.aboutText,
+            aboutStoryParagraph2: defaultSiteSettings.aboutStoryParagraph2,
+            aboutMission: defaultSiteSettings.aboutMission,
+            aboutVision: defaultSiteSettings.aboutVision,
+            aboutValues: defaultSiteSettings.aboutValues,
+            aboutHighlights: defaultSiteSettings.aboutHighlights,
+            homeClasses: defaultSiteSettings.homeClasses,
+          }
+        : {}),
       socialLinks: { ...defaultSiteSettings.socialLinks, ...(clean.socialLinks || {}) },
       homeStats: clean.homeStats?.length ? clean.homeStats : defaultSiteSettings.homeStats,
-      homeClasses: clean.homeClasses?.length ? clean.homeClasses : defaultSiteSettings.homeClasses,
+      homeClasses:
+        !isOldShikkhon && clean.homeClasses?.length
+          ? clean.homeClasses
+          : defaultSiteSettings.homeClasses,
       homeFeatures: clean.homeFeatures?.length ? clean.homeFeatures : defaultSiteSettings.homeFeatures,
       classroomGallery: clean.classroomGallery?.length ? clean.classroomGallery : defaultSiteSettings.classroomGallery,
       classPrograms: clean.classPrograms?.length ? clean.classPrograms : defaultSiteSettings.classPrograms,
       admissionSteps: clean.admissionSteps?.length ? clean.admissionSteps : defaultSiteSettings.admissionSteps,
       admissionRequirements: clean.admissionRequirements?.length ? clean.admissionRequirements : defaultSiteSettings.admissionRequirements,
-      aboutHighlights: clean.aboutHighlights?.length ? clean.aboutHighlights : defaultSiteSettings.aboutHighlights,
+      aboutHighlights:
+        !isOldShikkhon && clean.aboutHighlights?.length
+          ? clean.aboutHighlights
+          : defaultSiteSettings.aboutHighlights,
     };
   } catch (error) {
     return defaultSiteSettings;

@@ -71,7 +71,7 @@ export default function EventManagementPage() {
   const [formData, setFormData] = useState({
     title: "",
     description: "",
-    venue: "অডিটোরিয়াম, শিক্ষণ একাডেমিক কেয়ার, হালিশহর",
+    venue: "অডিটোরিয়াম, আল-হিকমাহ্ কোচিং সেন্টার, হালিশহর",
     startDate: new Date().toISOString().split("T")[0],
     endDate: "",
     coverImage: "",
@@ -112,7 +112,7 @@ export default function EventManagementPage() {
     setFormData({
       title: "",
       description: "",
-      venue: "অডিটোরিয়াম, শিক্ষণ একাডেমিক কেয়ার, হালিশহর",
+      venue: "অডিটোরিয়াম, আল-হিকমাহ্ কোচিং সেন্টার, হালিশহর",
       startDate: new Date().toISOString().split("T")[0],
       endDate: "",
       coverImage: "",
@@ -259,7 +259,7 @@ export default function EventManagementPage() {
         actions={
           <Button
             onClick={openCreateDialog}
-            className="flex items-center gap-1.5 bg-[#00636b] hover:bg-[#004f55] text-white"
+            className="flex items-center gap-1.5 bg-[#0274b3] hover:bg-[#015b93] text-white"
           >
             <Plus className="h-4 w-4" />
             <span>নতুন ইভেন্ট যোগ করুন</span>
@@ -470,7 +470,7 @@ export default function EventManagementPage() {
             <Button
               onClick={() => handleSaveEvent(editDialogOpen)}
               disabled={submitting}
-              className="bg-[#00636b] hover:bg-[#004f55] text-white"
+              className="bg-[#0274b3] hover:bg-[#015b93] text-white"
             >
               {submitting ? "সংরক্ষণ হচ্ছে..." : editDialogOpen ? "আপডেট করুন" : "যোগ করুন"}
             </Button>
@@ -510,7 +510,7 @@ export default function EventManagementPage() {
             <Input
               value={formData.venue}
               onChange={(e) => setFormData({ ...formData, venue: e.target.value })}
-              placeholder="অডিটোরিয়াম, শিক্ষণ একাডেমিক কেয়ার, হালিশহর"
+              placeholder="অডিটোরিয়াম, আল-হিকমাহ্ কোচিং সেন্টার, হালিশহর"
             />
           </div>
 
@@ -563,7 +563,7 @@ export default function EventManagementPage() {
                 onChange={(e) =>
                   setFormData({ ...formData, isFeatured: e.target.checked })
                 }
-                className="rounded border-slate-300 text-[#00636b] focus:ring-[#00636b]"
+                className="rounded border-slate-300 text-[#0274b3] focus:ring-[#0274b3]"
               />
               <span>হোমপেজে ফিচার্ড ইভেন্ট হিসেবে প্রদর্শন করুন</span>
             </label>

@@ -99,7 +99,7 @@ export function PublicHeader({ settings }: PublicHeaderProps = {}) {
 
   const activeSettings = liveSettings || settings;
   const institutionName = activeSettings?.institutionName || bn.institution.name;
-  const institutionShortName = activeSettings?.shortName || activeSettings?.institutionName || "শিক্ষণ";
+  const institutionShortName = activeSettings?.shortName || activeSettings?.institutionName || "আল-হিকমাহ্";
   const institutionLogoUrl = activeSettings?.logoUrl || "/images/logo.png";
   const institutionMotto = activeSettings?.motto || bn.institution.motto;
   const institutionAddress = activeSettings?.address || bn.institution.address;
@@ -161,7 +161,7 @@ export function PublicHeader({ settings }: PublicHeaderProps = {}) {
   return (
     <header className="sticky top-0 z-40 w-full bg-white border-b border-slate-200 shadow-2xs">
       {/* Top Banner Contact Bar */}
-      <div className="bg-[#00383f] text-slate-200 text-xs py-2 px-3 sm:px-5 border-b border-[#002a2f]">
+      <div className="bg-[#0c2340] text-slate-200 text-xs py-2 px-3 sm:px-5 border-b border-[#07182c]">
         <div className="max-w-[1440px] mx-auto flex flex-wrap justify-between items-center gap-2">
           {/* Slogan & Address */}
           <div className="flex items-center gap-3 text-[11px] sm:text-xs">
@@ -171,7 +171,7 @@ export function PublicHeader({ settings }: PublicHeaderProps = {}) {
             </span>
             <span className="hidden md:inline text-slate-400">•</span>
             <span className="hidden md:flex items-center gap-1 text-slate-300">
-              <MapPin className="h-3 w-3 text-[#d7eef1]" />
+              <MapPin className="h-3 w-3 text-[#e0f0fe]" />
               {institutionAddress}
             </span>
           </div>
@@ -206,7 +206,7 @@ export function PublicHeader({ settings }: PublicHeaderProps = {}) {
               }}
             />
           </div>
-          <span className="font-extrabold text-xl sm:text-2xl text-[#00636b] tracking-tight group-hover:text-[#004f56] transition leading-tight truncate max-w-[200px] sm:max-w-[280px]">
+          <span className="font-extrabold text-xl sm:text-2xl text-[#0274b3] tracking-tight group-hover:text-[#015b93] transition leading-tight truncate max-w-[200px] sm:max-w-[280px]">
             {institutionShortName}
           </span>
         </Link>
@@ -220,9 +220,9 @@ export function PublicHeader({ settings }: PublicHeaderProps = {}) {
                 key={link.href}
                 href={link.href}
                 className={cn(
-                  "px-1.5 py-1.5 transition-colors hover:text-[#00636b] relative select-none whitespace-nowrap",
+                  "px-1.5 py-1.5 transition-colors hover:text-[#0274b3] relative select-none whitespace-nowrap",
                   isActive
-                    ? "text-[#00636b] font-bold after:absolute after:bottom-0 after:left-1 after:right-1 after:h-0.5 after:bg-[#00636b] after:rounded-full"
+                    ? "text-[#0274b3] font-bold after:absolute after:bottom-0 after:left-1 after:right-1 after:h-0.5 after:bg-[#0274b3] after:rounded-full"
                     : "text-slate-600"
                 )}
               >
@@ -239,7 +239,7 @@ export function PublicHeader({ settings }: PublicHeaderProps = {}) {
               <Link href={dashboardHref}>
                 <Button
                   size="sm"
-                  className="gap-2 bg-[#00636b] hover:bg-[#004f56] text-white font-semibold shadow-xs"
+                  className="gap-2 bg-[#0274b3] hover:bg-[#015b93] text-white font-semibold shadow-xs"
                 >
                   <LayoutDashboard className="h-4 w-4" />
                   <span>{dashboardLabel}</span>
@@ -272,9 +272,9 @@ export function PublicHeader({ settings }: PublicHeaderProps = {}) {
               <Button
                 variant="outline"
                 size="sm"
-                className="gap-1.5 border-slate-300 font-semibold hover:border-[#00636b] hover:text-[#00636b]"
+                className="gap-1.5 border-slate-300 font-semibold hover:border-[#0274b3] hover:text-[#0274b3]"
               >
-                <LogIn className="h-4 w-4 text-[#00636b]" />
+                <LogIn className="h-4 w-4 text-[#0274b3]" />
                 <span>{bn.publicNav.login}</span>
               </Button>
             </Link>
@@ -287,7 +287,7 @@ export function PublicHeader({ settings }: PublicHeaderProps = {}) {
             <Link href={dashboardHref} className="sm:hidden">
               <Button
                 size="sm"
-                className="h-8 px-2.5 text-xs bg-[#00636b] text-white gap-1"
+                className="h-8 px-2.5 text-xs bg-[#0274b3] text-white gap-1"
               >
                 <LayoutDashboard className="h-3.5 w-3.5" />
                 <span>ড্যাশবোর্ড</span>
@@ -352,7 +352,7 @@ export function PublicHeader({ settings }: PublicHeaderProps = {}) {
                 className={cn(
                   "px-3 py-2.5 rounded-lg text-sm font-semibold transition",
                   pathname === link.href
-                    ? "bg-[#eff8f9] text-[#00636b] font-bold"
+                    ? "bg-[#f0f7ff] text-[#0274b3] font-bold"
                     : "text-slate-700 hover:bg-slate-50"
                 )}
               >
@@ -364,7 +364,7 @@ export function PublicHeader({ settings }: PublicHeaderProps = {}) {
           <div className="pt-3 border-t border-slate-100 flex flex-col gap-2">
             {isLoggedIn ? (
               <Link href={dashboardHref} onClick={() => setMobileMenuOpen(false)}>
-                <Button className="w-full justify-center bg-[#00636b] hover:bg-[#004f56] text-white">
+                <Button className="w-full justify-center bg-[#0274b3] hover:bg-[#015b93] text-white">
                   <LayoutDashboard className="h-4 w-4 mr-2" />
                   <span>{dashboardLabel}</span>
                 </Button>
@@ -372,7 +372,7 @@ export function PublicHeader({ settings }: PublicHeaderProps = {}) {
             ) : (
               <Link href="/login" onClick={() => setMobileMenuOpen(false)}>
                 <Button variant="outline" className="w-full justify-center">
-                  <LogIn className="h-4 w-4 mr-2 text-[#00636b]" />
+                  <LogIn className="h-4 w-4 mr-2 text-[#0274b3]" />
                   {bn.publicNav.login}
                 </Button>
               </Link>

@@ -196,7 +196,7 @@ export default function LoginPage() {
       <div className="max-w-7xl w-full mx-auto">
         <Link
           href="/"
-          className="inline-flex items-center gap-1.5 text-xs font-semibold text-slate-600 hover:text-[#00636b] transition px-3 py-1.5 rounded-lg hover:bg-slate-100"
+          className="inline-flex items-center gap-1.5 text-xs font-semibold text-slate-600 hover:text-[#0274b3] transition px-3 py-1.5 rounded-lg hover:bg-slate-100"
         >
           <ArrowLeft className="h-4 w-4" />
           <span>{bn.publicNav.home}-এ ফিরে যান</span>
@@ -219,7 +219,7 @@ export default function LoginPage() {
           </div>
 
           <div>
-            <h1 className="text-xl sm:text-2xl font-extrabold text-[#00636b] tracking-tight">
+            <h1 className="text-xl sm:text-2xl font-extrabold text-[#0274b3] tracking-tight">
               {siteSettings.institutionName}
             </h1>
             <p className="text-xs text-slate-500 mt-0.5">{siteSettings.subTitle}</p>
@@ -233,7 +233,7 @@ export default function LoginPage() {
 
         {/* Login Form Card */}
         <Card className="border border-slate-200 shadow-sm bg-white overflow-hidden">
-          <div className="h-1 bg-[#00636b]" />
+          <div className="h-1 bg-[#0274b3]" />
 
           <CardHeader className="pb-3 border-b-0">
             <h2 className="text-base font-bold text-slate-900">{bn.auth.loginTitle}</h2>
@@ -293,14 +293,14 @@ export default function LoginPage() {
                 <label className="flex items-center gap-2 cursor-pointer text-slate-600 select-none">
                   <input
                     type="checkbox"
-                    className="rounded border-slate-300 text-[#00636b] focus:ring-[#00636b] cursor-pointer"
+                    className="rounded border-slate-300 text-[#0274b3] focus:ring-[#0274b3] cursor-pointer"
                   />
                   <span>{bn.auth.rememberMe}</span>
                 </label>
 
                 <a
                   href="#"
-                  className="text-[#00636b] hover:text-[#004f56] font-medium hover:underline"
+                  className="text-[#0274b3] hover:text-[#015b93] font-medium hover:underline"
                 >
                   {bn.auth.forgotPassword}
                 </a>
@@ -308,7 +308,7 @@ export default function LoginPage() {
 
               <Button
                 type="submit"
-                className="w-full mt-2 bg-[#00636b] hover:bg-[#004f56] text-white"
+                className="w-full mt-2 bg-[#0274b3] hover:bg-[#015b93] text-white"
                 size="lg"
                 isLoading={isSubmitting || isRedirecting}
               >
@@ -327,7 +327,7 @@ export default function LoginPage() {
               <span>সহায়তার জন্য:</span>
               <a
                 href={`tel:${siteSettings.phone.replace(/[^0-9]/g, "")}`}
-                className="font-bold text-[#00636b] hover:underline"
+                className="font-bold text-[#0274b3] hover:underline"
               >
                 {siteSettings.phone}
               </a>
@@ -339,7 +339,7 @@ export default function LoginPage() {
       {/* Footer Info */}
       <div className="max-w-md mx-auto text-center space-y-2 text-xs text-slate-500 pb-2">
         <div className="flex items-center justify-center gap-1.5 text-slate-400">
-          <MapPin className="h-3.5 w-3.5 text-[#00636b]" />
+          <MapPin className="h-3.5 w-3.5 text-[#0274b3]" />
           <span>{siteSettings.address}</span>
         </div>
         <p className="text-[11px] text-slate-400">

@@ -35,9 +35,9 @@ function ToastItem({ toast }: { toast: ToastNotification }) {
       borderAccent: "border-l-4 border-l-amber-500",
     },
     info: {
-      icon: <Info className="h-5 w-5 text-[#00636b] shrink-0" />,
-      iconBg: "bg-teal-50 text-[#00636b] border border-teal-200",
-      borderAccent: "border-l-4 border-l-[#00636b]",
+      icon: <Info className="h-5 w-5 text-[#0274b3] shrink-0" />,
+      iconBg: "bg-teal-50 text-[#0274b3] border border-teal-200",
+      borderAccent: "border-l-4 border-l-[#0274b3]",
     },
   };
 

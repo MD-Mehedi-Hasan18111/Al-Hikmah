@@ -261,7 +261,7 @@ export default function NoticeManagementPage() {
         actions={
           <Button
             onClick={openCreateDialog}
-            className="flex items-center gap-1.5 bg-[#00636b] hover:bg-[#004f55] text-white"
+            className="flex items-center gap-1.5 bg-[#0274b3] hover:bg-[#015b93] text-white"
           >
             <Plus className="h-4 w-4" />
             <span>নতুন নোটিশ জারি করুন</span>
@@ -283,7 +283,7 @@ export default function NoticeManagementPage() {
                   setPage(1);
                 }}
                 placeholder="শিরোনাম বা বিষয়বস্তু লিখে অনুসন্ধান করুন..."
-                className="w-full h-10 pl-9 pr-4 rounded-lg bg-slate-50 border border-slate-200 text-sm focus:bg-white focus:border-[#00636b] focus:outline-none focus:ring-1 focus:ring-[#00636b] transition"
+                className="w-full h-10 pl-9 pr-4 rounded-lg bg-slate-50 border border-slate-200 text-sm focus:bg-white focus:border-[#0274b3] focus:outline-none focus:ring-1 focus:ring-[#0274b3] transition"
               />
             </div>
 
@@ -536,7 +536,7 @@ export default function NoticeManagementPage() {
             <Button
               onClick={() => handleSaveNotice(editDialogOpen)}
               disabled={submitting}
-              className="bg-[#00636b] hover:bg-[#004f55] text-white"
+              className="bg-[#0274b3] hover:bg-[#015b93] text-white"
             >
               {submitting
                 ? "সংরক্ষণ হচ্ছে..."
@@ -642,7 +642,7 @@ export default function NoticeManagementPage() {
                 type="checkbox"
                 checked={formData.isPinned}
                 onChange={(e) => setFormData({ ...formData, isPinned: e.target.checked })}
-                className="rounded border-slate-300 text-[#00636b] focus:ring-[#00636b]"
+                className="rounded border-slate-300 text-[#0274b3] focus:ring-[#0274b3]"
               />
               <span>নোটিশটি শীর্ষে পিন (Pin to Top) করে রাখুন</span>
             </label>

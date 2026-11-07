@@ -79,7 +79,7 @@ export default function TeacherNoticesPage() {
           <Card className="border-slate-200 shadow-2xs">
             <CardHeader className="flex flex-col sm:flex-row sm:items-center justify-between gap-3 border-b border-slate-100 pb-4">
               <div className="flex items-center gap-2">
-                <Bell className="h-5 w-5 text-[#00636b]" />
+                <Bell className="h-5 w-5 text-[#0274b3]" />
                 <CardTitle className="text-base font-bold text-slate-900">
                   বিজ্ঞপ্তিসমূহ ({toBanglaNumber(filteredNotices.length)} টি)
                 </CardTitle>
@@ -90,7 +90,7 @@ export default function TeacherNoticesPage() {
                 <select
                   value={priorityFilter}
                   onChange={(e) => setPriorityFilter(e.target.value)}
-                  className="px-2.5 py-1 text-xs bg-slate-50 border border-slate-200 rounded-lg focus:outline-none focus:ring-1 focus:ring-[#00636b]"
+                  className="px-2.5 py-1 text-xs bg-slate-50 border border-slate-200 rounded-lg focus:outline-none focus:ring-1 focus:ring-[#0274b3]"
                 >
                   <option value="">সকল গুরুত্ব</option>
                   <option value="urgent">জরুরি</option>
@@ -105,7 +105,7 @@ export default function TeacherNoticesPage() {
                     placeholder="খুঁজুন..."
                     value={search}
                     onChange={(e) => setSearch(e.target.value)}
-                    className="w-full pl-8 pr-2.5 py-1 text-xs bg-slate-50 border border-slate-200 rounded-lg focus:outline-none focus:ring-1 focus:ring-[#00636b]"
+                    className="w-full pl-8 pr-2.5 py-1 text-xs bg-slate-50 border border-slate-200 rounded-lg focus:outline-none focus:ring-1 focus:ring-[#0274b3]"
                   />
                 </div>
               </div>
@@ -127,14 +127,14 @@ export default function TeacherNoticesPage() {
                     key={n._id}
                     className={`p-4 rounded-xl border transition ${
                       n.isPinned
-                        ? "border-[#00636b]/40 bg-[#00636b]/5"
+                        ? "border-[#0274b3]/40 bg-[#0274b3]/5"
                         : "border-slate-200 hover:border-slate-300 bg-white"
                     }`}
                   >
                     <div className="flex flex-wrap items-center justify-between gap-2 mb-2">
                       <div className="flex items-center gap-2">
                         {n.isPinned && (
-                          <Badge className="bg-[#00636b] text-white text-[10px] flex items-center gap-1">
+                          <Badge className="bg-[#0274b3] text-white text-[10px] flex items-center gap-1">
                             <Pin className="h-3 w-3" />
                             <span>পিন করা</span>
                           </Badge>
@@ -196,7 +196,7 @@ export default function TeacherNoticesPage() {
                     key={evt._id}
                     className="p-3 rounded-xl border border-slate-200 bg-slate-50 space-y-1.5"
                   >
-                    <span className="text-[10px] font-semibold text-[#00636b] block">
+                    <span className="text-[10px] font-semibold text-[#0274b3] block">
                       {formatBanglaDate(evt.startDate)}
                     </span>
                     <h5 className="font-bold text-xs text-slate-900">{evt.title}</h5>

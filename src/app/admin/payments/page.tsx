@@ -181,13 +181,13 @@ export default function AdminPaymentsPage() {
 
   // Site Settings for Receipts
   const [siteSettings, setSiteSettings] = useState<SiteSettingsInfo>({
-    institutionName: "শিক্ষণ একাডেমিক কেয়ার",
-    shortName: "শিক্ষণ",
-    motto: "চলো সেরা হই...",
+    institutionName: "আল-হিকমাহ্ কোচিং সেন্টার",
+    shortName: "আল-হিকমাহ্",
+    motto: "আলোর পথে সফলতা প্রাপ্তির প্রচেষ্টায়...",
     logoUrl: "/images/logo.png",
-    address: "এস ক্লাব মোড় (এর পশ্চিম পার্শ্বে), রোড-০২, বি-ব্লক, হালিশহর, চট্টগ্রাম",
-    phones: ["০১৯৮-২৭০৫৬৪৬", "০১৮৫৯-৭৮৭৩৯৯"],
-    email: "info@shikkhon.edu.bd",
+    address: "বি-ব্লক, হালিশহর, চট্টগ্রাম",
+    phones: ["০১৬৪২-৭৩৩১০৬", "০১৮২৪-০৬৬৫৫৫"],
+    email: "info@alhikmah.edu.bd",
   });
 
   // Batches for filter & modal dropdown
@@ -250,13 +250,13 @@ export default function AdminPaymentsPage() {
       .then((json) => {
         if (json.success && json.data) {
           setSiteSettings({
-            institutionName: json.data.institutionName || "শিক্ষণ একাডেমিক কেয়ার",
-            shortName: json.data.shortName || "শিক্ষণ",
-            motto: json.data.motto || "চলো সেরা হই...",
+            institutionName: json.data.institutionName || "আল-হিকমাহ্ কোচিং সেন্টার",
+            shortName: json.data.shortName || "আল-হিকমাহ্",
+            motto: json.data.motto || "আলোর পথে সফলতা প্রাপ্তির প্রচেষ্টায়...",
             logoUrl: json.data.logoUrl || "/images/logo.png",
-            address: json.data.address || "এস ক্লাব মোড় (এর পশ্চিম পার্শ্বে), রোড-০২, বি-ব্লক, হালিশহর, চট্টগ্রাম",
-            phones: json.data.phones?.length ? json.data.phones : ["০১৯৮-২৭০৫৬৪৬", "০১৮৫৯-৭৮৭৩৯৯"],
-            email: json.data.email || "info@shikkhon.edu.bd",
+            address: json.data.address || "বি-ব্লক, হালিশহর, চট্টগ্রাম",
+            phones: json.data.phones?.length ? json.data.phones : ["০১৬৪২-৭৩৩১০৬", "০১৮২৪-০৬৬৫৫৫"],
+            email: json.data.email || "info@alhikmah.edu.bd",
           });
         }
       })
@@ -687,7 +687,7 @@ export default function AdminPaymentsPage() {
               variant="outline"
               size="sm"
               onClick={() => setGenerateModalOpen(true)}
-              className="border-teal-300 text-[#00636b] hover:bg-teal-50 gap-1.5"
+              className="border-teal-300 text-[#0274b3] hover:bg-teal-50 gap-1.5"
             >
               <Zap className="h-4 w-4" />
               <span>ব্যাচ ডিউ জেনারেট</span>
@@ -695,7 +695,7 @@ export default function AdminPaymentsPage() {
             <Button
               size="sm"
               onClick={openCreateModal}
-              className="bg-[#00636b] hover:bg-[#004e54] text-white gap-1.5 shadow-xs"
+              className="bg-[#0274b3] hover:bg-[#004e54] text-white gap-1.5 shadow-xs"
             >
               <Plus className="h-4 w-4" />
               <span>নতুন পেমেন্ট এন্ট্রি</span>
@@ -707,7 +707,7 @@ export default function AdminPaymentsPage() {
       {/* Top 4 Summary Cards */}
       <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-4 sm:gap-5">
         {/* Total Collected */}
-        <Card className="border-l-4 border-l-[#00636b] shadow-xs bg-white">
+        <Card className="border-l-4 border-l-[#0274b3] shadow-xs bg-white">
           <CardContent className="p-4 sm:p-5">
             <div className="flex items-center justify-between">
               <div>
@@ -721,7 +721,7 @@ export default function AdminPaymentsPage() {
                   পরিশোধিত: {toBanglaNumber(summary.paidCount)} জন
                 </p>
               </div>
-              <div className="h-11 w-11 rounded-xl bg-teal-50 flex items-center justify-center text-[#00636b]">
+              <div className="h-11 w-11 rounded-xl bg-teal-50 flex items-center justify-center text-[#0274b3]">
                 <TrendingUp className="h-6 w-6" />
               </div>
             </div>
@@ -815,7 +815,7 @@ export default function AdminPaymentsPage() {
                   setSearch(e.target.value);
                   setPage(1);
                 }}
-                className="w-full h-9 pl-9 pr-3 text-xs border border-slate-200 rounded-lg focus:outline-none focus:border-[#00636b] focus:ring-1 focus:ring-[#00636b]"
+                className="w-full h-9 pl-9 pr-3 text-xs border border-slate-200 rounded-lg focus:outline-none focus:border-[#0274b3] focus:ring-1 focus:ring-[#0274b3]"
               />
             </div>
 
@@ -827,7 +827,7 @@ export default function AdminPaymentsPage() {
                   setSelectedBatch(e.target.value);
                   setPage(1);
                 }}
-                className="w-full h-9 px-2 text-xs border border-slate-200 rounded-lg bg-white focus:outline-none focus:border-[#00636b]"
+                className="w-full h-9 px-2 text-xs border border-slate-200 rounded-lg bg-white focus:outline-none focus:border-[#0274b3]"
               >
                 <option value="">সকল ব্যাচ</option>
                 {batchesList.map((b) => (
@@ -846,7 +846,7 @@ export default function AdminPaymentsPage() {
                   setSelectedClass(e.target.value);
                   setPage(1);
                 }}
-                className="w-full h-9 px-2 text-xs border border-slate-200 rounded-lg bg-white focus:outline-none focus:border-[#00636b]"
+                className="w-full h-9 px-2 text-xs border border-slate-200 rounded-lg bg-white focus:outline-none focus:border-[#0274b3]"
               >
                 {classLevelOptions.map((c) => (
                   <option key={c.value} value={c.value}>
@@ -864,7 +864,7 @@ export default function AdminPaymentsPage() {
                   setSelectedMonth(e.target.value);
                   setPage(1);
                 }}
-                className="w-full h-9 px-2 text-xs border border-slate-200 rounded-lg bg-white focus:outline-none focus:border-[#00636b]"
+                className="w-full h-9 px-2 text-xs border border-slate-200 rounded-lg bg-white focus:outline-none focus:border-[#0274b3]"
               >
                 <option value="">সকল মাস</option>
                 {banglaMonths.map((m) => (
@@ -883,7 +883,7 @@ export default function AdminPaymentsPage() {
                   setSelectedYear(e.target.value);
                   setPage(1);
                 }}
-                className="w-full h-9 px-2 text-xs border border-slate-200 rounded-lg bg-white focus:outline-none focus:border-[#00636b]"
+                className="w-full h-9 px-2 text-xs border border-slate-200 rounded-lg bg-white focus:outline-none focus:border-[#0274b3]"
               >
                 <option value="">সকল বছর</option>
                 {[2024, 2025, 2026, 2027].map((y) => (
@@ -917,7 +917,7 @@ export default function AdminPaymentsPage() {
                   }}
                   className={`px-2.5 py-1 text-xs rounded-full transition font-medium ${
                     selectedStatus === pill.value
-                      ? "bg-[#00636b] text-white shadow-xs"
+                      ? "bg-[#0274b3] text-white shadow-xs"
                       : "bg-slate-100 text-slate-600 hover:bg-slate-200"
                   }`}
                 >
@@ -1001,7 +1001,7 @@ export default function AdminPaymentsPage() {
                             {p.student?.phone && (
                               <a
                                 href={`tel:${p.student.phone}`}
-                                className="text-[#00636b] hover:underline flex items-center gap-0.5"
+                                className="text-[#0274b3] hover:underline flex items-center gap-0.5"
                               >
                                 <Phone className="h-2.5 w-2.5" />
                                 <span>{p.student.phone}</span>
@@ -1150,7 +1150,7 @@ export default function AdminPaymentsPage() {
                         {p.student?.phone && (
                           <a
                             href={`tel:${p.student.phone}`}
-                            className="text-[#00636b] hover:underline flex items-center gap-1 text-xs"
+                            className="text-[#0274b3] hover:underline flex items-center gap-1 text-xs"
                           >
                             <Phone className="h-3 w-3" />
                             <span className="font-mono">{p.student.phone}</span>
@@ -1261,7 +1261,7 @@ export default function AdminPaymentsPage() {
             <Button
               onClick={handleSavePayment}
               disabled={formSubmitting}
-              className="bg-[#00636b] hover:bg-[#004e54] text-white"
+              className="bg-[#0274b3] hover:bg-[#004e54] text-white"
             >
               {formSubmitting
                 ? "সংরক্ষণ হচ্ছে..."
@@ -1283,7 +1283,7 @@ export default function AdminPaymentsPage() {
                 disabled={Boolean(editingPayment)}
                 value={paymentForm.batchId}
                 onChange={(e) => handleModalBatchChange(e.target.value)}
-                className="w-full h-9 px-2 text-xs border border-slate-300 rounded-lg bg-white focus:outline-none focus:border-[#00636b] disabled:bg-slate-100"
+                className="w-full h-9 px-2 text-xs border border-slate-300 rounded-lg bg-white focus:outline-none focus:border-[#0274b3] disabled:bg-slate-100"
               >
                 <option value="">ব্যাচ বেছে নিন...</option>
                 {batchesList.map((b) => (
@@ -1321,7 +1321,7 @@ export default function AdminPaymentsPage() {
                       paidAmount: Math.max(0, fee - disc),
                     }));
                   }}
-                  className="w-full h-9 px-2 text-xs border border-slate-300 rounded-lg bg-white focus:outline-none focus:border-[#00636b] disabled:bg-slate-100"
+                  className="w-full h-9 px-2 text-xs border border-slate-300 rounded-lg bg-white focus:outline-none focus:border-[#0274b3] disabled:bg-slate-100"
                 >
                   <option value="">
                     {loadingEnrolledStudents ? "শিক্ষার্থী লোড হচ্ছে..." : "শিক্ষার্থী নির্বাচন করুন..."}
@@ -1349,7 +1349,7 @@ export default function AdminPaymentsPage() {
               <select
                 value={paymentForm.month}
                 onChange={(e) => setPaymentForm({ ...paymentForm, month: Number(e.target.value) })}
-                className="w-full h-9 px-2 text-xs border border-slate-300 rounded-lg bg-white focus:outline-none focus:border-[#00636b]"
+                className="w-full h-9 px-2 text-xs border border-slate-300 rounded-lg bg-white focus:outline-none focus:border-[#0274b3]"
               >
                 {banglaMonths.map((m) => (
                   <option key={m.value} value={m.value}>
@@ -1366,7 +1366,7 @@ export default function AdminPaymentsPage() {
               <select
                 value={paymentForm.year}
                 onChange={(e) => setPaymentForm({ ...paymentForm, year: Number(e.target.value) })}
-                className="w-full h-9 px-2 text-xs border border-slate-300 rounded-lg bg-white focus:outline-none focus:border-[#00636b]"
+                className="w-full h-9 px-2 text-xs border border-slate-300 rounded-lg bg-white focus:outline-none focus:border-[#0274b3]"
               >
                 {[2024, 2025, 2026, 2027].map((y) => (
                   <option key={y} value={y}>
@@ -1461,7 +1461,7 @@ export default function AdminPaymentsPage() {
               <select
                 value={paymentForm.paymentMethod}
                 onChange={(e) => setPaymentForm({ ...paymentForm, paymentMethod: e.target.value })}
-                className="w-full h-9 px-2 text-xs border border-slate-300 rounded-lg bg-white focus:outline-none focus:border-[#00636b]"
+                className="w-full h-9 px-2 text-xs border border-slate-300 rounded-lg bg-white focus:outline-none focus:border-[#0274b3]"
               >
                 {paymentMethodOptions.map((m) => (
                   <option key={m.value} value={m.value}>
@@ -1477,7 +1477,7 @@ export default function AdminPaymentsPage() {
                 type="date"
                 value={paymentForm.paidAt}
                 onChange={(e) => setPaymentForm({ ...paymentForm, paidAt: e.target.value })}
-                className="w-full h-9 px-2 text-xs border border-slate-300 rounded-lg bg-white focus:outline-none focus:border-[#00636b]"
+                className="w-full h-9 px-2 text-xs border border-slate-300 rounded-lg bg-white focus:outline-none focus:border-[#0274b3]"
               />
             </div>
 
@@ -1488,7 +1488,7 @@ export default function AdminPaymentsPage() {
                 placeholder="বিকাশ / নগদ TrxID"
                 value={paymentForm.transactionId}
                 onChange={(e) => setPaymentForm({ ...paymentForm, transactionId: e.target.value })}
-                className="w-full h-9 px-2 text-xs border border-slate-300 rounded-lg bg-white focus:outline-none focus:border-[#00636b]"
+                className="w-full h-9 px-2 text-xs border border-slate-300 rounded-lg bg-white focus:outline-none focus:border-[#0274b3]"
               />
             </div>
           </div>
@@ -1501,7 +1501,7 @@ export default function AdminPaymentsPage() {
               placeholder="পেমেন্ট সম্পর্কিত কোনো তথ্য থাকলে লিখুন..."
               value={paymentForm.notes}
               onChange={(e) => setPaymentForm({ ...paymentForm, notes: e.target.value })}
-              className="w-full h-9 px-3 text-xs border border-slate-300 rounded-lg bg-white focus:outline-none focus:border-[#00636b]"
+              className="w-full h-9 px-3 text-xs border border-slate-300 rounded-lg bg-white focus:outline-none focus:border-[#0274b3]"
             />
           </div>
         </div>
@@ -1524,7 +1524,7 @@ export default function AdminPaymentsPage() {
             <Button
               onClick={handleGenerateBatchDues}
               disabled={generating || !generateBatchId}
-              className="bg-[#00636b] hover:bg-[#004e54] text-white gap-1.5"
+              className="bg-[#0274b3] hover:bg-[#004e54] text-white gap-1.5"
             >
               {generating ? "ডিউ তৈরি হচ্ছে..." : "ডিউ জেনারেট করুন"}
             </Button>
@@ -1544,7 +1544,7 @@ export default function AdminPaymentsPage() {
             <select
               value={generateBatchId}
               onChange={(e) => setGenerateBatchId(e.target.value)}
-              className="w-full h-9 px-2 text-xs border border-slate-300 rounded-lg bg-white focus:outline-none focus:border-[#00636b]"
+              className="w-full h-9 px-2 text-xs border border-slate-300 rounded-lg bg-white focus:outline-none focus:border-[#0274b3]"
             >
               <option value="">ব্যাচ নির্বাচন করুন...</option>
               {batchesList.map((b) => (
@@ -1561,7 +1561,7 @@ export default function AdminPaymentsPage() {
               <select
                 value={generateMonth}
                 onChange={(e) => setGenerateMonth(e.target.value)}
-                className="w-full h-9 px-2 text-xs border border-slate-300 rounded-lg bg-white focus:outline-none focus:border-[#00636b]"
+                className="w-full h-9 px-2 text-xs border border-slate-300 rounded-lg bg-white focus:outline-none focus:border-[#0274b3]"
               >
                 {banglaMonths.map((m) => (
                   <option key={m.value} value={m.value}>
@@ -1576,7 +1576,7 @@ export default function AdminPaymentsPage() {
               <select
                 value={generateYear}
                 onChange={(e) => setGenerateYear(e.target.value)}
-                className="w-full h-9 px-2 text-xs border border-slate-300 rounded-lg bg-white focus:outline-none focus:border-[#00636b]"
+                className="w-full h-9 px-2 text-xs border border-slate-300 rounded-lg bg-white focus:outline-none focus:border-[#0274b3]"
               >
                 {[2024, 2025, 2026, 2027].map((y) => (
                   <option key={y} value={String(y)}>
@@ -1657,7 +1657,7 @@ export default function AdminPaymentsPage() {
                         {siteSettings.institutionName}
                       </h3>
                       {siteSettings.motto && (
-                        <p className="text-[10px] font-semibold text-[#00636b] leading-tight mt-0.5">
+                        <p className="text-[10px] font-semibold text-[#0274b3] leading-tight mt-0.5">
                           {siteSettings.motto}
                         </p>
                       )}
@@ -1673,7 +1673,7 @@ export default function AdminPaymentsPage() {
                       className={`inline-block px-2.5 py-0.5 rounded text-[10px] font-bold tracking-wide uppercase ${
                         isOffice
                           ? "bg-slate-800 text-white"
-                          : "bg-[#00636b] text-white"
+                          : "bg-[#0274b3] text-white"
                       }`}
                     >
                       {isOffice ? "কোচিং / অফিস কপি" : "শিক্ষার্থী কপি"}
@@ -1784,7 +1784,7 @@ export default function AdminPaymentsPage() {
                     </div>
                     <div className="text-right">
                       <span className="text-slate-600 mr-2 text-[11px]">পরিশোধিত টাকা:</span>
-                      <strong className="text-sm font-extrabold text-[#00636b]">
+                      <strong className="text-sm font-extrabold text-[#0274b3]">
                         ৳{toBanglaNumber(payment.paidAmount)}
                       </strong>
                     </div>
@@ -1844,14 +1844,14 @@ export default function AdminPaymentsPage() {
                         setSelectedDownloadPayment(selectedReceiptPayment);
                         setDownloadModalOpen(true);
                       }}
-                      className="border-teal-200 text-[#00636b] hover:bg-teal-50 gap-1.5 shadow-2xs"
+                      className="border-teal-200 text-[#0274b3] hover:bg-teal-50 gap-1.5 shadow-2xs"
                     >
                       <Download className="h-4 w-4" />
                       <span>রসিদ ডাউনলোড (Download)</span>
                     </Button> */}
                     <Button
                       onClick={handlePrint}
-                      className="bg-[#00636b] hover:bg-[#004e54] text-white gap-1.5 shadow-xs"
+                      className="bg-[#0274b3] hover:bg-[#004e54] text-white gap-1.5 shadow-xs"
                     >
                       <Printer className="h-4 w-4" />
                       <span>প্রিন্ট করুন (Print Receipts)</span>
@@ -2081,10 +2081,10 @@ export default function AdminPaymentsPage() {
                       type="button"
                       disabled={!!downloadingCopy}
                       onClick={() => handleDownloadReceiptImage("student")}
-                      className="w-full text-left p-3.5 rounded-xl border-2 border-teal-100 hover:border-[#00636b] hover:bg-teal-50/40 transition flex items-center justify-between group disabled:opacity-50 cursor-pointer"
+                      className="w-full text-left p-3.5 rounded-xl border-2 border-teal-100 hover:border-[#0274b3] hover:bg-teal-50/40 transition flex items-center justify-between group disabled:opacity-50 cursor-pointer"
                     >
                       <div className="flex items-center gap-3">
-                        <div className="h-10 w-10 rounded-lg bg-[#00636b] text-white flex items-center justify-center shrink-0 shadow-xs">
+                        <div className="h-10 w-10 rounded-lg bg-[#0274b3] text-white flex items-center justify-center shrink-0 shadow-xs">
                           <GraduationCap className="h-5 w-5" />
                         </div>
                         <div>
@@ -2092,7 +2092,7 @@ export default function AdminPaymentsPage() {
                             <span className="font-bold text-slate-900 text-sm">
                               শিক্ষার্থী কপি (Student Copy)
                             </span>
-                            <span className="text-[10px] bg-teal-100 text-[#00636b] font-semibold px-2 py-0.5 rounded">
+                            <span className="text-[10px] bg-teal-100 text-[#0274b3] font-semibold px-2 py-0.5 rounded">
                               ডিজিটাল রসিদ
                             </span>
                           </div>
@@ -2103,9 +2103,9 @@ export default function AdminPaymentsPage() {
                       </div>
                       <div className="shrink-0 ml-2">
                         {downloadingCopy === "student" ? (
-                          <Loader2 className="h-5 w-5 animate-spin text-[#00636b]" />
+                          <Loader2 className="h-5 w-5 animate-spin text-[#0274b3]" />
                         ) : (
-                          <Download className="h-5 w-5 text-teal-500 group-hover:text-[#00636b] group-hover:translate-y-0.5 transition" />
+                          <Download className="h-5 w-5 text-teal-500 group-hover:text-[#0274b3] group-hover:translate-y-0.5 transition" />
                         )}
                       </div>
                     </button>

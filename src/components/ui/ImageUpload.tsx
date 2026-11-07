@@ -157,7 +157,7 @@ export function ImageUpload({
               size="sm"
               onClick={() => fileInputRef.current?.click()}
               disabled={uploading}
-              className="text-[11px] h-7 px-2.5 gap-1 border-slate-300 text-slate-700 hover:text-[#00636b]"
+              className="text-[11px] h-7 px-2.5 gap-1 border-slate-300 text-slate-700 hover:text-[#0274b3]"
             >
               <Upload className="h-3 w-3" />
               <span>ছবি পরিবর্তন</span>
@@ -182,8 +182,8 @@ export function ImageUpload({
           onDragLeave={handleDragLeave}
           onClick={() => fileInputRef.current?.click()}
           className={cn(
-            "border-2 border-dashed cursor-pointer transition-all flex flex-col items-center justify-center text-center bg-white hover:bg-teal-50/40 border-slate-300 hover:border-[#00636b]",
-            isDragOver && "border-[#00636b] bg-[#eff8f9]",
+            "border-2 border-dashed cursor-pointer transition-all flex flex-col items-center justify-center text-center bg-white hover:bg-teal-50/40 border-slate-300 hover:border-[#0274b3]",
+            isDragOver && "border-[#0274b3] bg-[#f0f7ff]",
             isSquare
               ? rounded
                 ? "w-24 h-24 sm:w-26 sm:h-26 rounded-full p-2 shrink-0"
@@ -194,13 +194,13 @@ export function ImageUpload({
         >
           {uploading ? (
             <div className="flex flex-col items-center gap-1 text-slate-600 text-xs">
-              <Loader2 className="h-5 w-5 animate-spin text-[#00636b]" />
+              <Loader2 className="h-5 w-5 animate-spin text-[#0274b3]" />
               <span className="text-[11px]">আপলোড হচ্ছে...</span>
             </div>
           ) : (
             <div className={cn("text-slate-600 flex flex-col items-center justify-center", rounded ? "space-y-1" : "space-y-1.5")}>
               <div className={cn(
-                "rounded-full bg-slate-50 border border-slate-200 flex items-center justify-center text-[#00636b]",
+                "rounded-full bg-slate-50 border border-slate-200 flex items-center justify-center text-[#0274b3]",
                 rounded ? "w-7 h-7" : "w-9 h-9 mx-auto shadow-xs"
               )}>
                 <ImageIcon className={cn(rounded ? "h-3.5 w-3.5" : "h-4 w-4")} />

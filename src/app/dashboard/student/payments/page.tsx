@@ -117,13 +117,13 @@ export default function StudentPaymentsPage() {
 
   // Site Settings for Receipt Rendering
   const [siteSettings, setSiteSettings] = useState<ReceiptSiteSettings>({
-    institutionName: "শিক্ষণ একাডেমিক কেয়ার",
-    shortName: "শিক্ষণ",
-    motto: "চলো সেরা হই...",
+    institutionName: "আল-হিকমাহ্ কোচিং সেন্টার",
+    shortName: "আল-হিকমাহ্",
+    motto: "আলোর পথে সফলতা প্রাপ্তির প্রচেষ্টায়...",
     logoUrl: "/images/logo.png",
-    address: "এস ক্লাব মোড় (এর পশ্চিম পার্শ্বে), রোড-০২, বি-ব্লক, হালিশহর, চট্টগ্রাম",
+    address: "বি-ব্লক, হালিশহর, চট্টগ্রাম",
     phones: ["০১৬৪৫-২৭০৫৬৭", "০১৮৭২-৭৮০৯৪৫"],
-    email: "contact@shikkhon.edu.bd",
+    email: "contact@alhikmah.edu.bd",
   });
 
   // Modal & Download states
@@ -141,15 +141,15 @@ export default function StudentPaymentsPage() {
       .then((json) => {
         if (json.success && json.data) {
           setSiteSettings({
-            institutionName: json.data.institutionName || "শিক্ষণ একাডেমিক কেয়ার",
-            shortName: json.data.shortName || "শিক্ষণ",
-            motto: json.data.motto || "চলো সেরা হই...",
+            institutionName: json.data.institutionName || "আল-হিকমাহ্ কোচিং সেন্টার",
+            shortName: json.data.shortName || "আল-হিকমাহ্",
+            motto: json.data.motto || "আলোর পথে সফলতা প্রাপ্তির প্রচেষ্টায়...",
             logoUrl: json.data.logoUrl || "/images/logo.png",
             address:
               json.data.address ||
-              "এস ক্লাব মোড় (এর পশ্চিম পার্শ্বে), রোড-০২, বি-ব্লক, হালিশহর, চট্টগ্রাম",
+              "বি-ব্লক, হালিশহর, চট্টগ্রাম",
             phones: json.data.phones || ["০১৬৪৫-২৭০৫৬৭"],
-            email: json.data.email || "contact@shikkhon.edu.bd",
+            email: json.data.email || "contact@alhikmah.edu.bd",
           });
         }
       })
@@ -721,7 +721,7 @@ export default function StudentPaymentsPage() {
                         <Button
                           variant="secondary"
                           size="sm"
-                          className="w-full text-xs flex items-center justify-center gap-1.5 bg-[#00636b] hover:bg-[#005157] text-white"
+                          className="w-full text-xs flex items-center justify-center gap-1.5 bg-[#0274b3] hover:bg-[#005157] text-white"
                           onClick={() => handleDownloadReceipt(p)}
                           disabled={isDownloading}
                         >
@@ -803,7 +803,7 @@ export default function StudentPaymentsPage() {
                 <Button
                   variant="secondary"
                   size="sm"
-                  className="flex items-center gap-1.5 bg-[#00636b] hover:bg-[#005157] text-white"
+                  className="flex items-center gap-1.5 bg-[#0274b3] hover:bg-[#005157] text-white"
                   onClick={() => handleDownloadReceipt(selectedPayment)}
                   disabled={isDownloading}
                 >

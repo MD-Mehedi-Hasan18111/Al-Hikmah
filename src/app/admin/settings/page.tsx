@@ -129,16 +129,16 @@ export default function SiteSettingsManagementPage() {
   const [error, setError] = useState<string | null>(null);
 
   const [formData, setFormData] = useState<SiteSettingsData>({
-    institutionName: "শিক্ষণ একাডেমিক কেয়ার",
-    shortName: "শিক্ষণ",
-    motto: "চলো সেরা হই...",
+    institutionName: "আল-হিকমাহ্ কোচিং সেন্টার",
+    shortName: "আল-হিকমাহ্",
+    motto: "আলোর পথে সফলতা প্রাপ্তির প্রচেষ্টায়...",
     logoUrl: "/images/logo.png",
     bannerUrl: "/images/banner.png",
-    phones: ["০১৯৮-২৭০৫৬৪৬", "০১৮৫৯-৭৮৭৩৯৯"],
-    email: "info@shikkhon.edu.bd",
-    address: "এস ক্লাব মোড় (এর পশ্চিম পার্শ্বে), রোড-০২, বি-ব্লক, হালিশহর, চট্টগ্রাম",
+    phones: ["০১৬৪২-৭৩৩১০৬", "০১৮২৪-০৬৬৫৫৫"],
+    email: "info@alhikmah.edu.bd",
+    address: "বি-ব্লক, হালিশহর, চট্টগ্রাম",
     officeHours: "সকাল ৮:০০ - রাত ৮:০০ (প্রতিদিন)",
-    whatsAppNumber: "+8801859787399",
+    whatsAppNumber: "+8801642733106",
     whatsAppPrefillMessage:
       "আসসালামু আলাইকুম, আমি কোচিং এ ভর্তির ব্যাপারে তথ্য জানতে চাচ্ছি।",
     isWhatsAppEnabled: true,
@@ -149,7 +149,7 @@ export default function SiteSettingsManagementPage() {
     metaDescription:
       "জেনারেল ও আলিয়া মাদ্রাসার একটি পূর্ণাঙ্গ একাডেমিক কেয়ার - হালিশহর, চট্টগ্রাম।",
     socialLinks: {
-      facebook: "https://facebook.com/shikkhonacademiccare",
+      facebook: "https://facebook.com/alhikmahcoaching",
       youtube: "",
       instagram: "",
       linkedin: "",
@@ -275,7 +275,7 @@ export default function SiteSettingsManagementPage() {
     // About
     aboutTitle: "অভিজ্ঞতা ও আধুনিক পাঠদানের অনন্য সমন্বয়",
     aboutText:
-      "শিক্ষণ একাডেমিক কেয়ার চট্টগ্রাম হালিশহরে প্রতিষ্ঠিত একটি প্রথম সারির পাঠদান কেন্দ্র। অভিজ্ঞ শিক্ষকমণ্ডলী, নিয়মিত ওএমআর মডেল টেস্ট এবং দুর্বল শিক্ষার্থীদের জন্য বিশেষ তদারকির মাধ্যমে আমরা প্রতিটি শিক্ষার্থীর কাঙ্ক্ষিত ফলাফল নিশ্চিত করি।",
+      "আল-হিকমাহ্ কোচিং সেন্টার চট্টগ্রাম হালিশহরে প্রতিষ্ঠিত একটি প্রথম সারির পাঠদান কেন্দ্র। অভিজ্ঞ শিক্ষকমণ্ডলী, নিয়মিত ওএমআর মডেল টেস্ট এবং দুর্বল শিক্ষার্থীদের জন্য বিশেষ তদারকির মাধ্যমে আমরা প্রতিটি শিক্ষার্থীর কাঙ্ক্ষিত ফলাফল নিশ্চিত করি।",
     aboutStoryParagraph2:
       "আমরা বিশ্বাস করি প্রতিটি শিক্ষার্থীর মধ্যেই বিশেষ মেধা রয়েছে। সঠিক দিকনির্দেশনা, বন্ধুত্বপূর্ণ পাঠদান পরিবেশ এবং নিয়মিত অধ্যাবসায়ের চর্চা নিশ্চিত করার মাধ্যমে আমরা গত এক দশকে হাজারো শিক্ষার্থীকে এসএসসি ও এইচএসসি পরীক্ষায় জিপিএ-৫ ও সর্বোচ্চ সাফল্য এনে দিয়েছি।",
     aboutMission:
@@ -547,7 +547,7 @@ export default function SiteSettingsManagementPage() {
           <Button
             onClick={handleSaveSettings}
             disabled={saving || loading}
-            className="flex items-center gap-1.5 bg-[#00636b] hover:bg-[#004f55] text-white shadow-xs"
+            className="flex items-center gap-1.5 bg-[#0274b3] hover:bg-[#015b93] text-white shadow-xs"
           >
             <Save className="h-4 w-4" />
             <span>{saving ? "সংরক্ষণ হচ্ছে..." : "পরিবর্তন সংরক্ষণ করুন"}</span>
@@ -572,11 +572,11 @@ export default function SiteSettingsManagementPage() {
               onClick={() => setActiveTab(tab.id)}
               className={`flex items-center gap-2 px-3.5 py-2.5 rounded-t-xl text-xs sm:text-sm font-semibold transition border-b-2 whitespace-nowrap ${
                 isActive
-                  ? "border-[#00636b] text-[#00636b] bg-white shadow-2xs"
+                  ? "border-[#0274b3] text-[#0274b3] bg-white shadow-2xs"
                   : "border-transparent text-slate-600 hover:text-slate-900 hover:bg-slate-100"
               }`}
             >
-              <Icon className={`h-4 w-4 ${isActive ? "text-[#00636b]" : "text-slate-400"}`} />
+              <Icon className={`h-4 w-4 ${isActive ? "text-[#0274b3]" : "text-slate-400"}`} />
               <span>{tab.label}</span>
             </button>
           );
@@ -596,7 +596,7 @@ export default function SiteSettingsManagementPage() {
               <Card className="shadow-xs">
                 <CardHeader className="pb-3 border-b border-slate-100">
                   <CardTitle className="text-sm font-semibold text-slate-800 flex items-center gap-2">
-                    <Building className="h-4 w-4 text-[#00636b]" />
+                    <Building className="h-4 w-4 text-[#0274b3]" />
                     <span>প্রাতিষ্ঠানিক পরিচয় ও সাধারণ তথ্য</span>
                   </CardTitle>
                 </CardHeader>
@@ -611,7 +611,7 @@ export default function SiteSettingsManagementPage() {
                         onChange={(e) =>
                           setFormData({ ...formData, institutionName: e.target.value })
                         }
-                        placeholder="যেমন: শিক্ষণ একাডেমিক কেয়ার"
+                        placeholder="যেমন: আল-হিকমাহ্ কোচিং সেন্টার"
                       />
                     </div>
 
@@ -624,7 +624,7 @@ export default function SiteSettingsManagementPage() {
                         onChange={(e) =>
                           setFormData({ ...formData, shortName: e.target.value })
                         }
-                        placeholder="যেমন: শিক্ষণ"
+                        placeholder="যেমন: আল-হিকমাহ্"
                       />
                     </div>
 
@@ -635,7 +635,7 @@ export default function SiteSettingsManagementPage() {
                       <Input
                         value={formData.motto}
                         onChange={(e) => setFormData({ ...formData, motto: e.target.value })}
-                        placeholder="যেমন: চলো সেরা হই..."
+                        placeholder="যেমন: আলোর পথে সফলতা প্রাপ্তির প্রচেষ্টায়..."
                       />
                     </div>
 
@@ -661,7 +661,7 @@ export default function SiteSettingsManagementPage() {
                         onChange={(e) =>
                           setFormData({ ...formData, address: e.target.value })
                         }
-                        placeholder="এস ক্লাব মোড় (এর পশ্চিম পার্শ্বে), রোড-০২, বি-ব্লক, হালিশহর, চট্টগ্রাম"
+                        placeholder="বি-ব্লক, হালিশহর, চট্টগ্রাম"
                       />
                     </div>
 
@@ -686,7 +686,7 @@ export default function SiteSettingsManagementPage() {
                 <CardHeader className="pb-3 border-b border-slate-100">
                   <div className="flex items-center justify-between">
                     <CardTitle className="text-sm font-semibold text-slate-800 flex items-center gap-2">
-                      <Building className="h-4 w-4 text-[#00636b]" />
+                      <Building className="h-4 w-4 text-[#0274b3]" />
                       <span>প্রতিষ্ঠানের অফিসিয়াল লোগো (Logo Changer)</span>
                     </CardTitle>
                     {formData.logoUrl && formData.logoUrl !== "/images/logo.png" && (
@@ -724,7 +724,7 @@ export default function SiteSettingsManagementPage() {
                 <CardHeader className="pb-3 border-b border-slate-100">
                   <div className="flex items-center justify-between">
                     <CardTitle className="text-sm font-semibold text-slate-800 flex items-center gap-2">
-                      <Globe className="h-4 w-4 text-[#00636b]" />
+                      <Globe className="h-4 w-4 text-[#0274b3]" />
                       <span>হোমপেজ ব্যানার ইমেজ (Full Width Hero Banner)</span>
                     </CardTitle>
                     {formData.bannerUrl !== "/images/banner.png" && (
@@ -777,7 +777,7 @@ export default function SiteSettingsManagementPage() {
                       <Input
                         value={phoneInput}
                         onChange={(e) => setPhoneInput(e.target.value)}
-                        placeholder="০১৯৮-২৭০৫৬৪৬, ০১৮৫৯-৭৮৭৩৯৯"
+                        placeholder="০১৬৪২-৭৩৩১০৬, ০১৮২৪-০৬৬৫৫৫"
                       />
                     </div>
 
@@ -790,7 +790,7 @@ export default function SiteSettingsManagementPage() {
                         onChange={(e) =>
                           setFormData({ ...formData, whatsAppNumber: e.target.value })
                         }
-                        placeholder="+8801859787399"
+                        placeholder="+8801642733106"
                       />
                     </div>
 
@@ -802,7 +802,7 @@ export default function SiteSettingsManagementPage() {
                         type="email"
                         value={formData.email}
                         onChange={(e) => setFormData({ ...formData, email: e.target.value })}
-                        placeholder="info@shikkhon.edu.bd"
+                        placeholder="info@alhikmah.edu.bd"
                       />
                     </div>
                   </div>
@@ -995,7 +995,7 @@ export default function SiteSettingsManagementPage() {
               <Card className="shadow-xs">
                 <CardHeader className="pb-3 border-b border-slate-100">
                   <CardTitle className="text-sm font-semibold text-slate-800 flex items-center gap-2">
-                    <Home className="h-4 w-4 text-[#00636b]" />
+                    <Home className="h-4 w-4 text-[#0274b3]" />
                     <span>হোমপেজ প্রধান ব্যানার বার্তা (Hero Section Text)</span>
                   </CardTitle>
                 </CardHeader>
@@ -1019,7 +1019,7 @@ export default function SiteSettingsManagementPage() {
                       rows={2}
                       value={formData.heroSubtitle || ""}
                       onChange={(e) => setFormData({ ...formData, heroSubtitle: e.target.value })}
-                      className="w-full p-2.5 rounded-lg border border-slate-200 text-xs focus:outline-none focus:border-[#00636b]"
+                      className="w-full p-2.5 rounded-lg border border-slate-200 text-xs focus:outline-none focus:border-[#0274b3]"
                       placeholder="৬ষ্ঠ থেকে দ্বাদশ শ্রেণি ও আলিয়া মাদ্রাসা স্পেশাল কেয়ার..."
                     />
                   </div>
@@ -1105,7 +1105,7 @@ export default function SiteSettingsManagementPage() {
                               updated[fIdx].description = e.target.value;
                               setFormData({ ...formData, homeFeatures: updated });
                             }}
-                            className="w-full p-2 rounded-lg border border-slate-200 text-xs focus:outline-none focus:border-[#00636b]"
+                            className="w-full p-2 rounded-lg border border-slate-200 text-xs focus:outline-none focus:border-[#0274b3]"
                           />
                         </div>
                       </div>
@@ -1127,7 +1127,7 @@ export default function SiteSettingsManagementPage() {
                     {formData.classroomGallery.map((room, rIdx) => (
                       <div key={rIdx} className="p-4 bg-slate-50 rounded-xl border border-slate-200 space-y-3">
                         <div className="flex items-center justify-between">
-                          <span className="text-xs font-bold text-[#00636b]">
+                          <span className="text-xs font-bold text-[#0274b3]">
                             শ্রেণিকক্ষ #{rIdx + 1}
                           </span>
                         </div>
@@ -1184,7 +1184,7 @@ export default function SiteSettingsManagementPage() {
                               updated[rIdx].description = e.target.value;
                               setFormData({ ...formData, classroomGallery: updated });
                             }}
-                            className="w-full p-2 rounded-lg border border-slate-200 text-xs focus:outline-none focus:border-[#00636b]"
+                            className="w-full p-2 rounded-lg border border-slate-200 text-xs focus:outline-none focus:border-[#0274b3]"
                           />
                         </div>
                       </div>
@@ -1197,7 +1197,7 @@ export default function SiteSettingsManagementPage() {
               <Card className="shadow-xs">
                 <CardHeader className="pb-3 border-b border-slate-100">
                   <CardTitle className="text-sm font-semibold text-slate-800 flex items-center gap-2">
-                    <Globe className="h-4 w-4 text-[#00636b]" />
+                    <Globe className="h-4 w-4 text-[#0274b3]" />
                     <span>হোমপেজ নিচের ভর্তি আহ্বান ব্যানার (Admission CTA Banner)</span>
                   </CardTitle>
                 </CardHeader>
@@ -1220,7 +1220,7 @@ export default function SiteSettingsManagementPage() {
                       rows={2}
                       value={formData.homeCtaText || ""}
                       onChange={(e) => setFormData({ ...formData, homeCtaText: e.target.value })}
-                      className="w-full p-2.5 rounded-lg border border-slate-200 text-xs focus:outline-none focus:border-[#00636b]"
+                      className="w-full p-2.5 rounded-lg border border-slate-200 text-xs focus:outline-none focus:border-[#0274b3]"
                       placeholder="শিক্ষার্থীকে সরাসরি কোচিং অফিসে এসে প্রয়োজনীয় কাগজপত্রসহ ভর্তি সম্পন্ন করতে হবে..."
                     />
                   </div>
@@ -1235,7 +1235,7 @@ export default function SiteSettingsManagementPage() {
               <Card className="shadow-xs">
                 <CardHeader className="pb-3 border-b border-slate-100">
                   <CardTitle className="text-sm font-semibold text-slate-800 flex items-center gap-2">
-                    <BookOpen className="h-4 w-4 text-[#00636b]" />
+                    <BookOpen className="h-4 w-4 text-[#0274b3]" />
                     <span>আমাদের সম্পর্কে পেজের মূল বৃত্তান্ত (Story & Introduction)</span>
                   </CardTitle>
                 </CardHeader>
@@ -1259,8 +1259,8 @@ export default function SiteSettingsManagementPage() {
                       rows={3}
                       value={formData.aboutText || ""}
                       onChange={(e) => setFormData({ ...formData, aboutText: e.target.value })}
-                      className="w-full p-2.5 rounded-lg border border-slate-200 text-xs focus:outline-none focus:border-[#00636b]"
-                      placeholder="শিক্ষণ একাডেমিক কেয়ার চট্টগ্রাম হালিশহরে প্রতিষ্ঠিত একটি প্রথম সারির পাঠদান কেন্দ্র..."
+                      className="w-full p-2.5 rounded-lg border border-slate-200 text-xs focus:outline-none focus:border-[#0274b3]"
+                      placeholder="আল-হিকমাহ্ কোচিং সেন্টার চট্টগ্রাম হালিশহরে প্রতিষ্ঠিত একটি প্রথম সারির পাঠদান কেন্দ্র..."
                     />
                   </div>
 
@@ -1274,7 +1274,7 @@ export default function SiteSettingsManagementPage() {
                       onChange={(e) =>
                         setFormData({ ...formData, aboutStoryParagraph2: e.target.value })
                       }
-                      className="w-full p-2.5 rounded-lg border border-slate-200 text-xs focus:outline-none focus:border-[#00636b]"
+                      className="w-full p-2.5 rounded-lg border border-slate-200 text-xs focus:outline-none focus:border-[#0274b3]"
                       placeholder="আমরা বিশ্বাস করি প্রতিটি শিক্ষার্থীর মধ্যেই বিশেষ মেধা রয়েছে..."
                     />
                   </div>
@@ -1298,7 +1298,7 @@ export default function SiteSettingsManagementPage() {
                       rows={2}
                       value={formData.aboutMission || ""}
                       onChange={(e) => setFormData({ ...formData, aboutMission: e.target.value })}
-                      className="w-full p-2.5 rounded-lg border border-slate-200 text-xs focus:outline-none focus:border-[#00636b]"
+                      className="w-full p-2.5 rounded-lg border border-slate-200 text-xs focus:outline-none focus:border-[#0274b3]"
                     />
                   </div>
 
@@ -1310,7 +1310,7 @@ export default function SiteSettingsManagementPage() {
                       rows={2}
                       value={formData.aboutVision || ""}
                       onChange={(e) => setFormData({ ...formData, aboutVision: e.target.value })}
-                      className="w-full p-2.5 rounded-lg border border-slate-200 text-xs focus:outline-none focus:border-[#00636b]"
+                      className="w-full p-2.5 rounded-lg border border-slate-200 text-xs focus:outline-none focus:border-[#0274b3]"
                     />
                   </div>
 
@@ -1322,7 +1322,7 @@ export default function SiteSettingsManagementPage() {
                       rows={2}
                       value={formData.aboutValues || ""}
                       onChange={(e) => setFormData({ ...formData, aboutValues: e.target.value })}
-                      className="w-full p-2.5 rounded-lg border border-slate-200 text-xs focus:outline-none focus:border-[#00636b]"
+                      className="w-full p-2.5 rounded-lg border border-slate-200 text-xs focus:outline-none focus:border-[#0274b3]"
                     />
                   </div>
                 </CardContent>
@@ -1405,7 +1405,7 @@ export default function SiteSettingsManagementPage() {
               <Card className="shadow-xs">
                 <CardHeader className="pb-3 border-b border-slate-100">
                   <CardTitle className="text-sm font-semibold text-slate-800 flex items-center gap-2">
-                    <GraduationCap className="h-4 w-4 text-[#00636b]" />
+                    <GraduationCap className="h-4 w-4 text-[#0274b3]" />
                     <span>পাঠদান পেজ হেডার শিরোনাম ও বিবরণ (Header CMS)</span>
                   </CardTitle>
                 </CardHeader>
@@ -1451,7 +1451,7 @@ export default function SiteSettingsManagementPage() {
                     {formData.classPrograms.map((prog, pIdx) => (
                       <div key={pIdx} className="p-4 bg-slate-50 rounded-xl border border-slate-200 space-y-3">
                         <div className="flex items-center justify-between">
-                          <span className="text-xs font-bold text-[#00636b]">
+                          <span className="text-xs font-bold text-[#0274b3]">
                             বিভাগ #{pIdx + 1}
                           </span>
                         </div>
@@ -1491,7 +1491,7 @@ export default function SiteSettingsManagementPage() {
                               updated[pIdx].description = e.target.value;
                               setFormData({ ...formData, classPrograms: updated });
                             }}
-                            className="w-full p-2 rounded-lg border border-slate-200 text-xs focus:outline-none focus:border-[#00636b]"
+                            className="w-full p-2 rounded-lg border border-slate-200 text-xs focus:outline-none focus:border-[#0274b3]"
                           />
                         </div>
 
@@ -1539,7 +1539,7 @@ export default function SiteSettingsManagementPage() {
                       onChange={(e) =>
                         setFormData({ ...formData, isAdmissionOpen: e.target.checked })
                       }
-                      className="h-4 w-4 rounded border-slate-300 text-[#00636b] focus:ring-[#00636b]"
+                      className="h-4 w-4 rounded border-slate-300 text-[#0274b3] focus:ring-[#0274b3]"
                     />
                     <label
                       htmlFor="admissionStatusCheck"
@@ -1559,7 +1559,7 @@ export default function SiteSettingsManagementPage() {
                       onChange={(e) =>
                         setFormData({ ...formData, admissionNotice: e.target.value })
                       }
-                      className="w-full p-2.5 rounded-lg border border-slate-200 text-xs focus:outline-none focus:border-[#00636b]"
+                      className="w-full p-2.5 rounded-lg border border-slate-200 text-xs focus:outline-none focus:border-[#0274b3]"
                     />
                   </div>
 
@@ -1621,7 +1621,7 @@ export default function SiteSettingsManagementPage() {
                       onChange={(e) =>
                         setFormData({ ...formData, admissionsNoticeText: e.target.value })
                       }
-                      className="w-full p-2.5 rounded-lg border border-slate-200 text-xs focus:outline-none focus:border-[#00636b]"
+                      className="w-full p-2.5 rounded-lg border border-slate-200 text-xs focus:outline-none focus:border-[#0274b3]"
                     />
                   </div>
                 </CardContent>
@@ -1631,7 +1631,7 @@ export default function SiteSettingsManagementPage() {
               <Card className="shadow-xs">
                 <CardHeader className="pb-3 border-b border-slate-100">
                   <CardTitle className="text-sm font-semibold text-slate-800 flex items-center gap-2">
-                    <CheckCircle2 className="h-4 w-4 text-[#00636b]" />
+                    <CheckCircle2 className="h-4 w-4 text-[#0274b3]" />
                     <span>ভর্তি সম্পন্ন করার ৪টি ধাপ (4 Steps)</span>
                   </CardTitle>
                 </CardHeader>
@@ -1663,7 +1663,7 @@ export default function SiteSettingsManagementPage() {
                               updated[sIdx].desc = e.target.value;
                               setFormData({ ...formData, admissionSteps: updated });
                             }}
-                            className="w-full p-2 rounded-lg border border-slate-200 text-xs focus:outline-none focus:border-[#00636b]"
+                            className="w-full p-2 rounded-lg border border-slate-200 text-xs focus:outline-none focus:border-[#0274b3]"
                           />
                         </div>
                       </div>
@@ -1676,7 +1676,7 @@ export default function SiteSettingsManagementPage() {
               <Card className="shadow-xs">
                 <CardHeader className="pb-3 border-b border-slate-100">
                   <CardTitle className="text-sm font-semibold text-slate-800 flex items-center gap-2">
-                    <FileCheck className="h-4 w-4 text-[#00636b]" />
+                    <FileCheck className="h-4 w-4 text-[#0274b3]" />
                     <span>ভর্তির জন্য প্রয়োজনীয় কাগজপত্র তালিকা (Required Documents)</span>
                   </CardTitle>
                 </CardHeader>

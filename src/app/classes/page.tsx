@@ -30,7 +30,7 @@ export const dynamic = "force-dynamic";
 export const revalidate = 0;
 
 export const metadata = {
-  title: "পাঠদান বিভাগ ও সক্রিয় ব্যাচসমূহ | শিক্ষণ একাডেমিক কেয়ার",
+  title: "পাঠদান বিভাগ ও সক্রিয় ব্যাচসমূহ | আল-হিকমাহ্ কোচিং সেন্টার",
   description:
     "৬ষ্ঠ থেকে দ্বাদশ শ্রেণি ও আলিয়া মাদ্রাসা স্পেশাল কেয়ারের সময়সূচী, আসন সংখ্যা ও বিষয়ভিত্তিক ব্যাচ তালিকা।",
 };
@@ -147,7 +147,7 @@ export default async function ClassesPage() {
                 <div
                   key={prog.id}
                   id={prog.id}
-                  className="p-6 rounded-2xl border border-slate-200 bg-slate-50/50 hover:border-[#00636b] transition-all space-y-4"
+                  className="p-6 rounded-2xl border border-slate-200 bg-slate-50/50 hover:border-[#0274b3] transition-all space-y-4"
                 >
                   <div className="flex items-center justify-between">
                     <Badge variant="gold" size="sm">
@@ -195,7 +195,7 @@ export default async function ClassesPage() {
                 </p>
               </div>
               <Link href="/admissions">
-                <Button size="sm" className="bg-[#00636b] hover:bg-[#004f56] gap-1.5">
+                <Button size="sm" className="bg-[#0274b3] hover:bg-[#015b93] gap-1.5">
                   <School className="h-4 w-4" />
                   <span>ভর্তি নির্দেশিকা ও তথ্য</span>
                 </Button>
@@ -246,7 +246,7 @@ export default async function ClassesPage() {
                     return (
                       <Card
                         key={b._id}
-                        className="relative overflow-hidden border border-slate-200 hover:border-[#00636b] transition flex flex-col justify-between bg-white shadow-2xs hover:shadow-md pt-2"
+                        className="relative overflow-hidden border border-slate-200 hover:border-[#0274b3] transition flex flex-col justify-between bg-white shadow-2xs hover:shadow-md pt-2"
                       >
                         {/* Corner Admission Tip Ribbon */}
                         {isBatchFull ? (
@@ -265,7 +265,7 @@ export default async function ClassesPage() {
                           </div>
                         ) : (
                           <div className="absolute top-0 right-0 z-10">
-                            <div className="bg-gradient-to-r from-[#00636b] to-teal-600 text-white text-[10px] font-bold px-3 py-1 rounded-bl-xl shadow-2xs flex items-center gap-1">
+                            <div className="bg-gradient-to-r from-[#0274b3] to-teal-600 text-white text-[10px] font-bold px-3 py-1 rounded-bl-xl shadow-2xs flex items-center gap-1">
                               <Sparkles className="h-3 w-3" />
                               <span>ভর্তি চলছে (Admission On)</span>
                             </div>
@@ -341,7 +341,7 @@ export default async function ClassesPage() {
                                 </span>
                               </div>
                               {b.monthlyFee !== undefined && b.monthlyFee > 0 && (
-                                <span className="font-bold text-[#00636b]">
+                                <span className="font-bold text-[#0274b3]">
                                   ফি: ৳{toBanglaNumber(b.monthlyFee)}
                                 </span>
                               )}
@@ -392,7 +392,7 @@ export default async function ClassesPage() {
                               <Button
                                 variant="outline"
                                 size="sm"
-                                className="w-full text-xs hover:border-[#00636b] hover:text-[#00636b] font-semibold text-slate-700"
+                                className="w-full text-xs hover:border-[#0274b3] hover:text-[#0274b3] font-semibold text-slate-700"
                               >
                                 ভর্তি তথ্য ও নিয়মাবলী
                               </Button>
@@ -416,13 +416,13 @@ export default async function ClassesPage() {
         />
 
         {/* Admission Inquiry CTA */}
-        <section className="py-12 bg-[#004f56] text-white text-center">
+        <section className="py-12 bg-[#015b93] text-white text-center">
           <div className="max-w-3xl mx-auto px-4 space-y-4">
             <h2 className="text-2xl font-bold">
               আপনার পছন্দসই ব্যাচ সম্পর্কে আরও জানতে চান?
             </h2>
             <p className="text-xs sm:text-sm text-slate-200">
-              আমাদের শিক্ষণ পরামর্শকদের সাথে কথা বলুন অথবা সরাসরি ক্যাম্পাসে এসে ভর্তি
+              আমাদের শিক্ষা পরামর্শকদের সাথে কথা বলুন অথবা সরাসরি ক্যাম্পাসে এসে ভর্তি
               সম্পন্ন করুন।
             </p>
             <div className="flex justify-center gap-3 pt-2">
@@ -439,7 +439,7 @@ export default async function ClassesPage() {
                   href={`tel:${settings.phones[0].replace(/[^0-9]/g, "")}`}
                   className="inline-flex items-center gap-2 bg-white text-slate-900 hover:bg-slate-100 px-5 py-2.5 rounded-lg text-sm font-bold shadow-sm transition"
                 >
-                  <Clock className="h-4 w-4 text-[#00636b]" />
+                  <Clock className="h-4 w-4 text-[#0274b3]" />
                   <span>কল করুন: {settings.phones[0]}</span>
                 </a>
               )}

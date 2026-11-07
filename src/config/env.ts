@@ -28,7 +28,7 @@ const serverEnvSchema = z.object({
  */
 const clientEnvSchema = z.object({
   NEXT_PUBLIC_APP_URL: z.string().url().default("http://localhost:3000"),
-  NEXT_PUBLIC_APP_NAME: z.string().default("শিক্ষণ"),
+  NEXT_PUBLIC_APP_NAME: z.string().default("আল-হিকমাহ্"),
   NEXT_PUBLIC_SOCKET_URL: z.string().optional().default("http://localhost:3000"),
 });
 

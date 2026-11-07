@@ -90,10 +90,10 @@ export default async function HomePage() {
       ];
 
   const featureIcons = [
-    <Users key={0} className="h-5 w-5 text-[#00636b]" />,
+    <Users key={0} className="h-5 w-5 text-[#0274b3]" />,
     <CalendarCheck key={1} className="h-5 w-5 text-[#c27a29]" />,
     <Award key={2} className="h-5 w-5 text-emerald-700" />,
-    <Wallet key={3} className="h-5 w-5 text-[#00636b]" />,
+    <Wallet key={3} className="h-5 w-5 text-[#0274b3]" />,
     <ShieldCheck key={4} className="h-5 w-5 text-[#c27a29]" />,
     <BookOpen key={5} className="h-5 w-5 text-emerald-700" />,
   ];
@@ -106,7 +106,7 @@ export default async function HomePage() {
       }))
     : [
         {
-          icon: <Users className="h-5 w-5 text-[#00636b]" />,
+          icon: <Users className="h-5 w-5 text-[#0274b3]" />,
           title: "অভিজ্ঞ শিক্ষকমণ্ডলী",
           description:
             "চট্টগ্রামের স্বনামধন্য কলেজ ও বিশ্ববিদ্যালয়ের অভিজ্ঞ শিক্ষকদের প্রত্যক্ষ তত্ত্বাবধানে মানসম্মত ক্লাস।",
@@ -124,7 +124,7 @@ export default async function HomePage() {
             "নিয়মিত মূল্যায়ন পরীক্ষা, ওএমআর শিট মূল্যায়ন এবং মেধা তালিকা প্রকাশের মাধ্যমে শিক্ষার্থীর উন্নতি যাচাই।",
         },
         {
-          icon: <Wallet className="h-5 w-5 text-[#00636b]" />,
+          icon: <Wallet className="h-5 w-5 text-[#0274b3]" />,
           title: "স্বচ্ছ ফি ও ডিজিটাল রসিদ",
           description:
             "মাসিক টিউশন ফি ও পরীক্ষা ফির হিসাব সংরক্ষণ, মোবাইল ব্যাংকিং এবং ডিজিটাল মানি রিসিট প্রদান।",
@@ -190,7 +190,7 @@ export default async function HomePage() {
           <div className="relative w-full overflow-hidden bg-slate-900 group">
             <Image
               src={settings.bannerUrl || "/images/banner.png"}
-              alt={settings.institutionName || "শিক্ষণ একাডেমিক কেয়ার"}
+              alt={settings.institutionName || "আল-হিকমাহ্ কোচিং সেন্টার"}
               width={1920}
               height={600}
               className="w-full h-auto min-h-[260px] max-h-[460px] md:max-h-[560px] object-cover transition-transform duration-1000 group-hover:scale-[1.01]"
@@ -209,12 +209,12 @@ export default async function HomePage() {
               <div className="space-y-2 max-w-2xl drop-shadow-md">
                 <div className="inline-flex items-center gap-1.5 px-3 py-1 rounded-full bg-white/20 backdrop-blur-md text-xs font-semibold text-white border border-white/30 animate-pulse-subtle">
                   <Sparkles className="h-3.5 w-3.5 text-amber-300 animate-spin" style={{ animationDuration: "8s" }} />
-                  <span>{settings.motto || "চলো সেরা হই..."}</span>
+                  <span>{settings.motto || "আলোর পথে সফলতা প্রাপ্তির প্রচেষ্টায়..."}</span>
                   <span className="text-white/60">•</span>
                   <span>২০২৬ শিক্ষাবর্ষ</span>
                 </div>
                 <h2 className="text-xl sm:text-3xl md:text-4xl font-extrabold text-white tracking-tight">
-                  {settings.institutionName || "শিক্ষণ একাডেমিক কেয়ার"}
+                  {settings.institutionName || "আল-হিকমাহ্ কোচিং সেন্টার"}
                 </h2>
                 <p className="text-xs sm:text-sm text-slate-200 hidden sm:block leading-relaxed">
                   {settings.heroSubtitle ||
@@ -249,15 +249,15 @@ export default async function HomePage() {
           <div className="w-full bg-slate-50 border-t border-slate-200 py-3.5 px-4 sm:px-8">
             <div className="max-w-7xl mx-auto flex flex-wrap items-center justify-between gap-4 text-xs text-slate-700">
               <div className="flex items-center gap-2 font-medium">
-                <MapPin className="h-4 w-4 text-[#00636b] shrink-0" />
+                <MapPin className="h-4 w-4 text-[#0274b3] shrink-0" />
                 <span>
                   {settings.address ||
-                    "এস ক্লাব মোড় (এর পশ্চিম পার্শ্বে), রোড-০২, বি-ব্লক, হালিশহর, চট্টগ্রাম"}
+                    "বি-ব্লক, হালিশহর, চট্টগ্রাম"}
                 </span>
               </div>
               <div className="flex items-center gap-4 flex-wrap">
                 <div className="flex items-center gap-1.5 font-semibold text-slate-800">
-                  <CheckCircle className="h-4 w-4 text-[#00636b]" />
+                  <CheckCircle className="h-4 w-4 text-[#0274b3]" />
                   <span>ডিজিটাল মনিটরিং</span>
                 </div>
                 <div className="flex items-center gap-1.5 font-semibold text-slate-800">
@@ -283,7 +283,7 @@ export default async function HomePage() {
                 {settings.phones?.[0] && (
                   <a
                     href={`tel:${settings.phones[0].replace(/[^0-9]/g, "")}`}
-                    className="inline-flex items-center gap-1 font-bold text-[#00636b] hover:underline"
+                    className="inline-flex items-center gap-1 font-bold text-[#0274b3] hover:underline"
                   >
                     <PhoneCall className="h-3.5 w-3.5" />
                     <span>হটলাইন: {settings.phones[0]}</span>
@@ -303,7 +303,7 @@ export default async function HomePage() {
                   key={i}
                   className="p-4 rounded-xl bg-white border border-slate-200/80 shadow-2xs space-y-1"
                 >
-                  <p className="text-2xl sm:text-3xl font-extrabold text-[#00636b]">
+                  <p className="text-2xl sm:text-3xl font-extrabold text-[#0274b3]">
                     {stat.value}
                   </p>
                   <p className="text-xs font-semibold text-slate-600">{stat.label}</p>
@@ -333,7 +333,7 @@ export default async function HomePage() {
               {classesList.map((cls, idx) => (
                 <Card
                   key={idx}
-                  className="border border-slate-200 hover:border-[#00636b] transition-all flex flex-col justify-between"
+                  className="border border-slate-200 hover:border-[#0274b3] transition-all flex flex-col justify-between"
                 >
                   <CardHeader className="space-y-3 pb-3">
                     <div className="flex items-center justify-between">
@@ -357,7 +357,7 @@ export default async function HomePage() {
                       <Button
                         variant="outline"
                         size="sm"
-                        className="w-full text-xs hover:border-[#00636b] hover:text-[#00636b]"
+                        className="w-full text-xs hover:border-[#0274b3] hover:text-[#0274b3]"
                       >
                         ব্যাচ বিস্তারিত দেখুন
                       </Button>
@@ -380,7 +380,7 @@ export default async function HomePage() {
                 আমাদের বিশেষত্ব
               </Badge>
               <h2 className="text-2xl sm:text-3xl font-bold text-slate-900">
-                {settings.institutionName || "শিক্ষণ একাডেমি"} কেন ব্যতিক্রম?
+                {settings.institutionName || "আল-হিকমাহ্ কোচিং সেন্টার"} কেন ব্যতিক্রম?
               </h2>
               <p className="text-xs sm:text-sm text-slate-500">
                 প্রতিটি শিক্ষার্থীর মেধা বিকাশ ও নিয়মিত ফলাফলের জন্য প্রয়োজনীয় সকল
@@ -392,7 +392,7 @@ export default async function HomePage() {
               {features.map((item, idx) => (
                 <Card key={idx} className="border border-slate-200 bg-white">
                   <CardHeader className="space-y-3">
-                    <div className="h-10 w-10 rounded-lg bg-[#eff8f9] border border-[#d7eef1] flex items-center justify-center">
+                    <div className="h-10 w-10 rounded-lg bg-[#f0f7ff] border border-[#e0f0fe] flex items-center justify-center">
                       {item.icon}
                     </div>
                     <CardTitle className="text-sm font-bold text-slate-900">
@@ -423,7 +423,7 @@ export default async function HomePage() {
                 </div>
                 <Link
                   href="/events"
-                  className="text-xs font-bold text-[#00636b] hover:underline flex items-center gap-1"
+                  className="text-xs font-bold text-[#0274b3] hover:underline flex items-center gap-1"
                 >
                   <span>সকল ইভেন্ট দেখুন</span>
                   <ChevronRight className="h-3.5 w-3.5" />
@@ -453,7 +453,7 @@ export default async function HomePage() {
 
                     return (
                       <Link key={ev._id} href={`/events/${ev._id}`} className="group">
-                        <Card className="border border-slate-200 overflow-hidden hover:border-[#00636b] hover:shadow-xs transition h-full flex flex-col justify-between">
+                        <Card className="border border-slate-200 overflow-hidden hover:border-[#0274b3] hover:shadow-xs transition h-full flex flex-col justify-between">
                           {coverPhoto && (
                             <div className="relative h-44 w-full bg-slate-100 overflow-hidden">
                               <img
@@ -481,7 +481,7 @@ export default async function HomePage() {
                                 </Badge>
                               )}
                             </div>
-                            <CardTitle className="text-base text-slate-900 group-hover:text-[#00636b] transition line-clamp-2">
+                            <CardTitle className="text-base text-slate-900 group-hover:text-[#0274b3] transition line-clamp-2">
                               {ev.title}
                             </CardTitle>
                             <p className="text-xs text-slate-500 line-clamp-2 leading-relaxed">
@@ -490,7 +490,7 @@ export default async function HomePage() {
                           </CardHeader>
                           <CardContent className="pt-0">
                             <div className="flex items-center gap-1.5 text-xs text-slate-600 font-medium">
-                              <MapPin className="h-3.5 w-3.5 text-[#00636b]" />
+                              <MapPin className="h-3.5 w-3.5 text-[#0274b3]" />
                               <span>{ev.venue}</span>
                             </div>
                           </CardContent>
@@ -507,7 +507,7 @@ export default async function HomePage() {
 
 
         {/* Admission CTA Banner */}
-        <section className="py-14 bg-[#004f56] text-white">
+        <section className="py-14 bg-[#015b93] text-white">
           <div className="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8 text-center space-y-5">
             <Badge variant="gold" size="md">
               ভর্তি তথ্য ও সহায়তা
@@ -536,7 +536,7 @@ export default async function HomePage() {
                   href={`tel:${settings.phones[0].replace(/[^0-9]/g, "")}`}
                   className="inline-flex items-center gap-2 bg-white text-slate-900 hover:bg-slate-100 px-5 py-2.5 rounded-lg text-sm font-bold shadow-sm transition"
                 >
-                  <PhoneCall className="h-4 w-4 text-[#00636b]" />
+                  <PhoneCall className="h-4 w-4 text-[#0274b3]" />
                   <span>হটলাইন: {settings.phones[0]}</span>
                 </a>
               )}

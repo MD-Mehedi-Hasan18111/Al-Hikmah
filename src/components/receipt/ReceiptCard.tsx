@@ -147,7 +147,7 @@ export function SingleReceiptCard({
                 {siteSettings.institutionName}
               </h3>
               {siteSettings.motto && (
-                <p className="text-[10px] font-semibold text-[#00636b] leading-tight mt-0.5">
+                <p className="text-[10px] font-semibold text-[#0274b3] leading-tight mt-0.5">
                   {siteSettings.motto}
                 </p>
               )}
@@ -165,7 +165,7 @@ export function SingleReceiptCard({
               className={`inline-block px-2.5 py-0.5 rounded text-[10px] font-bold tracking-wide uppercase ${
                 isOffice
                   ? "bg-slate-800 text-white"
-                  : "bg-[#00636b] text-white"
+                  : "bg-[#0274b3] text-white"
               }`}
             >
               {isOffice ? "কোচিং / অফিস কপি" : "শিক্ষার্থী কপি"}
@@ -276,7 +276,7 @@ export function SingleReceiptCard({
             </div>
             <div className="text-right">
               <span className="text-slate-600 mr-2 text-[11px]">পরিশোধিত টাকা:</span>
-              <strong className="text-sm font-extrabold text-[#00636b]">
+              <strong className="text-sm font-extrabold text-[#0274b3]">
                 ৳{toBanglaNumber(payment.paidAmount)}
               </strong>
             </div>

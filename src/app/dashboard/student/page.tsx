@@ -161,7 +161,7 @@ export default function StudentOverviewDashboard() {
   return (
     <div className="space-y-6">
       {/* Welcome Banner */}
-      <div className="relative overflow-hidden rounded-2xl bg-brand-banner bg-[#002e33] bg-gradient-to-r from-[#001e22] via-[#002e33] to-[#003e44] p-6 sm:p-8 text-white shadow-md border border-teal-800">
+      <div className="relative overflow-hidden rounded-2xl bg-brand-banner bg-[#0b2545] bg-gradient-to-r from-[#071a33] via-[#0b2545] to-[#103259] p-6 sm:p-8 text-white shadow-md border border-teal-800">
         <div className="relative z-10 flex flex-col md:flex-row justify-between items-start md:items-center gap-4">
           <div className="space-y-1">
             <div className="inline-flex items-center gap-1.5 px-2.5 py-1 rounded-full bg-white/10 text-xs text-teal-200 font-medium backdrop-blur-xs mb-2">

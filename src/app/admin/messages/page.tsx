@@ -619,8 +619,8 @@ export default function AdminMessagesPage() {
               />
           ) : (
             <div className="flex-1 flex flex-col items-center justify-center p-8 text-center text-slate-400 space-y-3">
-              <div className="h-14 w-14 rounded-2xl bg-teal-50 border border-teal-100 flex items-center justify-center text-[#00636b] shadow-2xs">
-                <MessageSquare className="h-7 w-7 text-[#00636b]" />
+              <div className="h-14 w-14 rounded-2xl bg-teal-50 border border-teal-100 flex items-center justify-center text-[#0274b3] shadow-2xs">
+                <MessageSquare className="h-7 w-7 text-[#0274b3]" />
               </div>
               <div>
                 <h4 className="font-bold text-slate-800 text-sm">

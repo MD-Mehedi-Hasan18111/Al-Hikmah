@@ -35,7 +35,7 @@ export default function ForbiddenPage() {
 
           <div className="flex flex-col sm:flex-row items-center justify-center gap-3 pt-2">
             <Link href="/dashboard" className="w-full sm:w-auto">
-              <Button className="w-full bg-[#00636b] hover:bg-[#004f56] gap-2">
+              <Button className="w-full bg-[#0274b3] hover:bg-[#015b93] gap-2">
                 <Home className="h-4 w-4" />
                 <span>ড্যাশবোর্ডে ফিরুন</span>
               </Button>

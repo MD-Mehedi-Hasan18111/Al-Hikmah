@@ -14,17 +14,17 @@ const SiteSettingsSchema = new Schema<ISiteSettingsDocument>(
     },
     institutionName: {
       type: String,
-      default: "শিক্ষণ একাডেমিক কেয়ার",
+      default: "আল-হিকমাহ্ কোচিং সেন্টার",
       trim: true,
     },
     shortName: {
       type: String,
-      default: "শিক্ষণ",
+      default: "আল-হিকমাহ্",
       trim: true,
     },
     motto: {
       type: String,
-      default: "চলো সেরা হই...",
+      default: "আলোর পথে সফলতা প্রাপ্তির প্রচেষ্টায়...",
       trim: true,
     },
     logoUrl: {
@@ -37,16 +37,16 @@ const SiteSettingsSchema = new Schema<ISiteSettingsDocument>(
     },
     phones: {
       type: [String],
-      default: ["০১৯৮-২৭০৫৬৪৬", "০১৮৫৯-৭৮৭৩৯৯"],
+      default: ["০১৬৪২-৭৩৩১০৬", "০১৮২৪-০৬৬৫৫৫", "০১৮৭৬-৮৫০৪০৮"],
     },
     email: {
       type: String,
-      default: "info@shikkhon.edu.bd",
+      default: "info@alhikmah.edu.bd",
       trim: true,
     },
     address: {
       type: String,
-      default: "এস ক্লাব মোড় (এর পশ্চিম পার্শ্বে), রোড-০২, বি-ব্লক, হালিশহর, চট্টগ্রাম",
+      default: "বি-ব্লক, হালিশহর, চট্টগ্রাম",
       trim: true,
     },
     socialLinks: {
@@ -58,11 +58,11 @@ const SiteSettingsSchema = new Schema<ISiteSettingsDocument>(
     },
     whatsAppNumber: {
       type: String,
-      default: "+8801859787399",
+      default: "+8801642733106",
     },
     whatsAppPrefillMessage: {
       type: String,
-      default: "আসসালামু আলাইকুম, আমি কোচিং এ ভর্তির ব্যাপারে তথ্য জানতে চাচ্ছি।",
+      default: "আসসালামু আলাইকুম, আমি আল-হিকমাহ্ কোচিং সেন্টারে ভর্তির ব্যাপারে তথ্য জানতে চাচ্ছি।",
     },
     isWhatsAppEnabled: {
       type: Boolean,
@@ -75,7 +75,7 @@ const SiteSettingsSchema = new Schema<ISiteSettingsDocument>(
     admissionNotice: {
       type: String,
       default:
-        "২০২৬ শিক্ষাবর্ষে ৬ষ্ঠ থেকে দ্বাদশ শ্রেণি এবং আলিয়া মাদ্রাসা স্পেশাল কেয়ারে ভর্তি চলছে।",
+        "২০২৬ শিক্ষাবর্ষে প্লে থেকে ৫ম শ্রেণি (প্রাথমিক বিভাগ) ও ষষ্ঠ থেকে ১০ম শ্রেণি (মাধ্যমিক বিভাগ) ভর্তি চলছে।",
     },
     isAdmissionOpen: {
       type: Boolean,
@@ -83,11 +83,11 @@ const SiteSettingsSchema = new Schema<ISiteSettingsDocument>(
     },
     heroTitle: {
       type: String,
-      default: "শিক্ষণ একাডেমিক কেয়ার",
+      default: "আল-হিকমাহ্ কোচিং সেন্টার",
     },
     heroSubtitle: {
       type: String,
-      default: "মানসম্মত শিক্ষা ও আধুনিক পাঠদানের নির্ভরযোগ্য প্রতিষ্ঠান",
+      default: "বিশেষায়িত কওমী ও আলিয়া মাদ্রাসার আরবী ও সাধারণ সকল বিষয়ের স্বয়ংসম্পূর্ণ কোচিং সেন্টার",
     },
     aboutTitle: {
       type: String,
@@ -97,12 +97,12 @@ const SiteSettingsSchema = new Schema<ISiteSettingsDocument>(
     aboutText: {
       type: String,
       default:
-        "শিক্ষণ একাডেমিক কেয়ার চট্টগ্রাম হালিশহরে প্রতিষ্ঠিত একটি প্রথম সারির পাঠদান কেন্দ্র। অভিজ্ঞ শিক্ষকমণ্ডলী, নিয়মিত ওএমআর মডেল টেস্ট এবং দুর্বল শিক্ষার্থীদের জন্য বিশেষ তদারকির মাধ্যমে আমরা প্রতিটি শিক্ষার্থীর কাঙ্ক্ষিত ফলাফল নিশ্চিত করি।",
+        "আল-হিকমাহ্ কোচিং সেন্টার চট্টগ্রাম হালিশহরে প্রতিষ্ঠিত একটি বিশেষায়িত পাঠদান কেন্দ্র। কওমী ও আলিয়া মাদ্রাসার আরবী ও সাধারণ সকল বিষয়ে অভিজ্ঞ শিক্ষকমণ্ডলী, নিয়মিত মূল্যায়ন পরীক্ষা এবং দুর্বল শিক্ষার্থীদের জন্য বিশেষ তদারকির মাধ্যমে আমরা প্রতিটি শিক্ষার্থীর কাঙ্ক্ষিত ফলাফল নিশ্চিত করি।",
     },
     metaDescription: {
       type: String,
       default:
-        "জেনারেল ও আলিয়া মাদ্রাসার একটি পূর্ণাঙ্গ একাডেমিক কেয়ার - হালিশহর, চট্টগ্রাম।",
+        "বিশেষায়িত কওমী ও আলিয়া মাদ্রাসার আরবী ও সাধারণ সকল বিষয়ের স্বয়ংসম্পূর্ণ কোচিং সেন্টার - বি-ব্লক, হালিশহর, চট্টগ্রাম।",
     },
 
     // Home Page CMS

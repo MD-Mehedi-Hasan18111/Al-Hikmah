@@ -28,7 +28,7 @@ export default function SessionExpiredPage() {
 
           <div className="flex flex-col sm:flex-row items-center justify-center gap-3 pt-2">
             <Link href="/login" className="w-full sm:w-auto">
-              <Button className="w-full bg-[#00636b] hover:bg-[#004f56] gap-2">
+              <Button className="w-full bg-[#0274b3] hover:bg-[#015b93] gap-2">
                 <LogIn className="h-4 w-4" />
                 <span>পুনরায় লগইন করুন</span>
               </Button>

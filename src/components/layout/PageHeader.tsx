@@ -47,7 +47,7 @@ export function PageHeader({
           >
             <Link
               href="/dashboard"
-              className="hover:text-[#00636b] transition flex items-center gap-1"
+              className="hover:text-[#0274b3] transition flex items-center gap-1"
             >
               <Home className="h-3 w-3" />
               <span>ড্যাশবোর্ড</span>
@@ -56,7 +56,7 @@ export function PageHeader({
               <React.Fragment key={idx}>
                 <ChevronRight className="h-3 w-3 text-slate-400" />
                 {crumb.href ? (
-                  <Link href={crumb.href} className="hover:text-[#00636b] transition">
+                  <Link href={crumb.href} className="hover:text-[#0274b3] transition">
                     {crumb.label}
                   </Link>
                 ) : (

@@ -18,7 +18,7 @@ import { getActiveTeachers, getSiteSettings } from "@/lib/public-data";
 import { toBanglaNumber } from "@/lib/utils";
 
 export const metadata = {
-  title: "সম্মানিত শিক্ষকবৃন্দ | শিক্ষণ একাডেমিক কেয়ার",
+  title: "সম্মানিত শিক্ষকবৃন্দ | আল-হিকমাহ্ কোচিং সেন্টার",
   description:
     "ঢাকা বিশ্ববিদ্যালয়, বুয়েট ও মেডিকেল কলেজের অভিজ্ঞ ও নিবেদিতপ্রাণ শিক্ষক মণ্ডলীর পরিচিতি ও বিষয়ভিত্তিক তালিকা।",
 };
@@ -49,7 +49,7 @@ export default async function TeachersPage() {
 
       <main className="flex-1">
         {/* Banner Section */}
-        <section className="bg-brand-banner bg-[#002e33] bg-gradient-to-b from-[#001e22] via-[#002e33] to-[#003e44] text-white py-14 lg:py-16">
+        <section className="bg-brand-banner bg-[#0b2545] bg-gradient-to-b from-[#071a33] via-[#0b2545] to-[#103259] text-white py-14 lg:py-16">
           <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
             <div className="flex items-center gap-2 text-sm text-teal-200 mb-4">
               <Link href="/" className="hover:underline">
@@ -70,7 +70,7 @@ export default async function TeachersPage() {
                 আমাদের নিবেদিতপ্রাণ শিক্ষক ও মেন্টরবৃন্দ
               </h1>
               <p className="text-base sm:text-lg text-teal-100 leading-relaxed">
-                {settings.institutionName || "শিক্ষণ একাডেমিক কেয়ার"}-এ পাঠদান করেন দেশের
+                {settings.institutionName || "আল-হিকমাহ্ কোচিং সেন্টার"}-এ পাঠদান করেন দেশের
                 শীর্ষস্থানীয় বিশ্ববিদ্যালয় (ঢাকা বিশ্ববিদ্যালয়, বুয়েট, মেডিকেল ও কুয়েট)
                 থেকে পাসকৃত একঝাঁক অভিজ্ঞ ও তরুণ শিক্ষক।
               </p>
@@ -193,7 +193,7 @@ export default async function TeachersPage() {
               আপনি কি শিক্ষক হিসেবে আমাদের সাথে যুক্ত হতে চান?
             </h3>
             <p className="text-slate-600 mb-6 leading-relaxed">
-              মেধাবী ও আন্তরিক শিক্ষকদের শিক্ষণ একাডেমিক কেয়ার পরিবারে সর্বদা স্বাগত
+              মেধাবী ও আন্তরিক শিক্ষকদের আল-হিকমাহ্ কোচিং সেন্টার পরিবারে সর্বদা স্বাগত
               জানাই। আপনার সিভি পাঠিয়ে আমাদের সাথে সরাসরি যোগাযোগ করুন।
             </p>
             <div className="flex flex-wrap justify-center gap-4">

@@ -132,7 +132,7 @@ export default function StudentSecurityPage() {
           </Card>
 
           {/* Safety Notice */}
-          <div className="rounded-2xl bg-brand-card-dark bg-[#002e33] bg-gradient-to-br from-[#002e33] to-[#001e22] text-white p-6 border border-teal-800 shadow-md space-y-2">
+          <div className="rounded-2xl bg-brand-card-dark bg-[#0b2545] bg-gradient-to-br from-[#0b2545] to-[#071a33] text-white p-6 border border-teal-800 shadow-md space-y-2">
             <h4 className="font-bold text-sm text-teal-200">নিরাপত্তা পরামর্শ</h4>
             <p className="text-xs text-teal-100 leading-relaxed">
               পাসওয়ার্ড অন্য কারো সাথে শেয়ার করবেন না। পাবলিক কম্পিউটার বা সাইবার ক্যাফে

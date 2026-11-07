@@ -207,7 +207,7 @@ export function ChatConversationView({
             </button>
           )}
 
-          <div className="w-9 h-9 sm:w-10 sm:h-10 rounded-full bg-teal-100 border border-teal-200 flex items-center justify-center text-[#00636b] font-bold text-sm shrink-0 overflow-hidden">
+          <div className="w-9 h-9 sm:w-10 sm:h-10 rounded-full bg-teal-100 border border-teal-200 flex items-center justify-center text-[#0274b3] font-bold text-sm shrink-0 overflow-hidden">
             {otherParticipant?.avatarUrl ? (
               <img
                 src={otherParticipant.avatarUrl}
@@ -392,7 +392,7 @@ export function ChatConversationView({
                     className={cn(
                       "max-w-[85%] sm:max-w-[70%] rounded-2xl text-xs leading-relaxed transition-shadow",
                       isMe
-                        ? "bg-[#00636b] text-white rounded-br-xs shadow-xs" // User End Message: Green Card
+                        ? "bg-[#0274b3] text-white rounded-br-xs shadow-xs" // User End Message: Green Card
                         : "bg-white text-slate-800 border border-slate-200/90 rounded-bl-xs shadow-2xs" // Opposite Side: White Card
                     )}
                   >
@@ -465,7 +465,7 @@ export function ChatConversationView({
                                       "underline inline-flex items-center gap-0.5 font-medium",
                                       isMe
                                         ? "text-teal-200 hover:text-white"
-                                        : "text-[#00636b] hover:underline"
+                                        : "text-[#0274b3] hover:underline"
                                     )}
                                   >
                                     <span>{part.content}</span>
@@ -619,7 +619,7 @@ export function ChatConversationView({
           type="button"
           onClick={() => fileInputRef.current?.click()}
           disabled={sending || uploadingImage}
-          className="p-2 text-slate-500 hover:text-[#00636b] hover:bg-teal-50 rounded-lg transition shrink-0"
+          className="p-2 text-slate-500 hover:text-[#0274b3] hover:bg-teal-50 rounded-lg transition shrink-0"
           title="ছবি পাঠান"
         >
           <ImageIcon className="h-5 w-5" />
@@ -635,14 +635,14 @@ export function ChatConversationView({
           value={inputText}
           onChange={(e) => setInputText(e.target.value)}
           maxLength={2000}
-          className="flex-1 text-xs sm:text-sm h-10 border-slate-300 focus:ring-[#00636b]"
+          className="flex-1 text-xs sm:text-sm h-10 border-slate-300 focus:ring-[#0274b3]"
         />
 
         {/* Send Button */}
         <Button
           type="submit"
           disabled={(!inputText.trim() && !selectedImageFile) || sending}
-          className="h-10 px-4 bg-[#00636b] hover:bg-[#004f56] text-white text-xs gap-1.5 shrink-0 shadow-2xs font-semibold"
+          className="h-10 px-4 bg-[#0274b3] hover:bg-[#015b93] text-white text-xs gap-1.5 shrink-0 shadow-2xs font-semibold"
         >
           {sending || uploadingImage ? (
             <>

@@ -31,7 +31,7 @@ export const Input = React.forwardRef<HTMLInputElement, InputProps>(
 
     const isDate = type === "date";
     const effectiveLeftIcon =
-      leftIcon || (isDate ? <Calendar className="h-4 w-4 text-[#00636b]" /> : null);
+      leftIcon || (isDate ? <Calendar className="h-4 w-4 text-[#0274b3]" /> : null);
 
     return (
       <div className="w-full space-y-1.5">
@@ -60,7 +60,7 @@ export const Input = React.forwardRef<HTMLInputElement, InputProps>(
             id={inputId}
             type={type}
             className={cn(
-              "flex h-10 w-full rounded-lg border border-slate-300 bg-white px-3 py-2 text-sm text-slate-900 placeholder:text-slate-400 transition-colors shadow-2xs focus:border-[#00636b] focus:outline-none focus:ring-1 focus:ring-[#00636b] disabled:cursor-not-allowed disabled:bg-slate-50 disabled:text-slate-500",
+              "flex h-10 w-full rounded-lg border border-slate-300 bg-white px-3 py-2 text-sm text-slate-900 placeholder:text-slate-400 transition-colors shadow-2xs focus:border-[#0274b3] focus:outline-none focus:ring-1 focus:ring-[#0274b3] disabled:cursor-not-allowed disabled:bg-slate-50 disabled:text-slate-500",
               effectiveLeftIcon && "pl-9",
               rightIcon && "pr-9",
               isDate && "cursor-pointer",

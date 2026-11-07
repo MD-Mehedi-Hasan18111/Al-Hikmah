@@ -233,7 +233,7 @@ export default function TeacherAttendancePage() {
                 value={selectedBatchId}
                 onChange={(e) => setSelectedBatchId(e.target.value)}
                 disabled={loadingBatches || batches.length === 0}
-                className="w-full px-3 py-2 text-xs bg-slate-50 border border-slate-300 rounded-lg focus:outline-none focus:ring-1 focus:ring-[#00636b] focus:bg-white transition"
+                className="w-full px-3 py-2 text-xs bg-slate-50 border border-slate-300 rounded-lg focus:outline-none focus:ring-1 focus:ring-[#0274b3] focus:bg-white transition"
               >
                 {batches.map((b) => (
                   <option key={b._id} value={b._id}>
@@ -251,7 +251,7 @@ export default function TeacherAttendancePage() {
                 type="date"
                 value={selectedDate}
                 onChange={(e) => setSelectedDate(e.target.value)}
-                className="w-full px-3 py-2 text-xs bg-slate-50 border border-slate-300 rounded-lg focus:outline-none focus:ring-1 focus:ring-[#00636b] focus:bg-white transition"
+                className="w-full px-3 py-2 text-xs bg-slate-50 border border-slate-300 rounded-lg focus:outline-none focus:ring-1 focus:ring-[#0274b3] focus:bg-white transition"
               />
             </div>
 
@@ -316,7 +316,7 @@ export default function TeacherAttendancePage() {
         <CardHeader className="border-b border-slate-100 pb-3">
           <CardTitle className="text-base font-bold text-slate-900 flex items-center justify-between">
             <div className="flex items-center gap-2">
-              <CalendarCheck className="h-5 w-5 text-[#00636b]" />
+              <CalendarCheck className="h-5 w-5 text-[#0274b3]" />
               <span>শিক্ষার্থী তালিকা ({toBanglaNumber(records.length)} জন)</span>
             </div>
           </CardTitle>
@@ -363,7 +363,7 @@ export default function TeacherAttendancePage() {
                       <td className="py-3 px-4 font-mono font-medium text-slate-600">
                         {student.rollNumber ? toBanglaNumber(student.rollNumber) : "-"}
                       </td>
-                      <td className="py-3 px-4 font-mono font-semibold text-[#00636b]">
+                      <td className="py-3 px-4 font-mono font-semibold text-[#0274b3]">
                         {student.studentCode}
                       </td>
                       <td className="py-3 px-4 font-bold text-slate-900">
@@ -438,7 +438,7 @@ export default function TeacherAttendancePage() {
                               )
                             );
                           }}
-                          className="w-full px-2.5 py-1 text-xs bg-white border border-slate-200 rounded focus:outline-none focus:ring-1 focus:ring-[#00636b]"
+                          className="w-full px-2.5 py-1 text-xs bg-white border border-slate-200 rounded focus:outline-none focus:ring-1 focus:ring-[#0274b3]"
                         />
                       </td>
                     </tr>

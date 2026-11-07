@@ -1,20 +1,20 @@
 /**
- * Shikkhon Academic Care (শিক্ষণ একাডেমিক কেয়ার)
+ * Al-Hikmah Coaching Center (আল-হিকমাহ্ কোচিং সেন্টার)
  * Centralized Natural Bangladeshi Bengali Dictionaries & Strings
  */
 
 export const bn = {
   institution: {
-    name: "শিক্ষণ একাডেমিক কেয়ার",
-    shortName: "শিক্ষণ",
-    englishName: "Shikkhon Academic Care",
-    motto: "চলো সেরা হই...",
-    subTitle: "জেনারেল ও আলিয়া মাদ্রাসার একটি পূর্ণাঙ্গ একাডেমিক কেয়ার",
-    classesOffer: "৬ষ্ঠ থেকে ১০ম শ্রেণি • একাদশ-দ্বাদশ শ্রেণি",
-    address: "এস ক্লাব মোড় (এর পশ্চিম পার্শ্বে), রোড-০২, বি-ব্লক, হালিশহর, চট্টগ্রাম",
-    phones: ["০১৯৮-২৭০৫৬৪৬", "০১৮৫৯-৭৮৭৩৯৯"],
-    phonesRaw: ["01982705646", "01859787399"],
-    email: "info@shikkhon.edu.bd",
+    name: "আল-হিকমাহ্ কোচিং সেন্টার",
+    shortName: "আল-হিকমাহ্",
+    englishName: "Al-Hikmah Coaching Center",
+    motto: "আলোর পথে সফলতা প্রাপ্তির প্রচেষ্টায়...",
+    subTitle: "বিশেষায়িত কওমী ও আলিয়া মাদ্রাসার আরবী ও সাধারণ সকল বিষয়ের স্বয়ংসম্পূর্ণ কোচিং সেন্টার",
+    classesOffer: "প্লে থেকে ৫ম (প্রাথমিক বিভাগ) • ষষ্ঠ থেকে ১০ম শ্রেণি (মাধ্যমিক বিভাগ)",
+    address: "বি-ব্লক, হালিশহর, চট্টগ্রাম",
+    phones: ["০১৬৪২-৭৩৩১০৬", "০১৮২৪-০৬৬৫৫৫", "০১৮৭৬-৮৫০৪০৮"],
+    phonesRaw: ["01642733106", "01824066555", "01876850408"],
+    email: "info@alhikmah.edu.bd",
     sessionYear: "২০২৬ শিক্ষাবর্ষ",
   },
 

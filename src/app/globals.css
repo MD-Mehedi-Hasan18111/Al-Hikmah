@@ -1,32 +1,35 @@
 @import "tailwindcss";
 
 :root {
-  /* Strictly fixed light theme palette based on Shikkhon Academic Care brand */
+  /* Strictly fixed light theme palette based on Al-Hikmah Coaching Center brand */
   color-scheme: light only !important;
   --background: #f8fafc;
   --foreground: #0f172a;
 
-  /* Primary Teal Scale (50 to 950) */
-  --color-primary-50: #eff8f9;
-  --color-primary-100: #d7eef1;
-  --color-primary-200: #b0dfe5;
-  --color-primary-300: #7dc8d3;
-  --color-primary-400: #3eaebd;
-  --color-primary-500: #007a85;
-  --color-primary-600: #00636b;
-  --color-primary-700: #004f56;
-  --color-primary-800: #003e44;
-  --color-primary-900: #002e33;
-  --color-primary-950: #001e22;
+  /* Primary Blue Scale (50 to 950) - Al-Hikmah Royal Blue */
+  --color-primary-50: #f0f7ff;
+  --color-primary-100: #e0f0fe;
+  --color-primary-200: #bae0fd;
+  --color-primary-300: #7cc5fa;
+  --color-primary-400: #38a7f4;
+  --color-primary-500: #0c8be8;
+  --color-primary-600: #0274b3;
+  --color-primary-700: #015b93;
+  --color-primary-800: #0d3b66;
+  --color-primary-900: #083456;
+  --color-primary-950: #052138;
 
-  /* Brand Teal */
-  --brand-teal-50: #eff8f9;
-  --brand-teal-100: #d7eef1;
-  --brand-teal-500: #007a85;
-  --brand-teal-600: #00636b;
-  --brand-teal-700: #004f56;
-  --brand-teal-800: #003e44;
-  --brand-teal-900: #002e33;
+  /* Brand Blue */
+  --brand-teal-50: #f0f7ff;
+  --brand-teal-100: #e0f0fe;
+  --brand-teal-200: #bae0fd;
+  --brand-teal-300: #7cc5fa;
+  --brand-teal-400: #38a7f4;
+  --brand-teal-500: #0c8be8;
+  --brand-teal-600: #0274b3;
+  --brand-teal-700: #015b93;
+  --brand-teal-800: #0d3b66;
+  --brand-teal-900: #083456;
 
   /* Brand Warm Gold / Ochre */
   --brand-gold-50: #fef9ee;
@@ -66,6 +69,9 @@
 
   --color-teal-50: var(--brand-teal-50);
   --color-teal-100: var(--brand-teal-100);
+  --color-teal-200: var(--brand-teal-200);
+  --color-teal-300: var(--brand-teal-300);
+  --color-teal-400: var(--brand-teal-400);
   --color-teal-500: var(--brand-teal-500);
   --color-teal-600: var(--brand-teal-600);
   --color-teal-700: var(--brand-teal-700);
@@ -98,22 +104,22 @@ body {
 
 /* Guaranteed Brand Banner Styling: 100% solid, immutable background and text */
 .bg-brand-banner {
-  background-color: #002e33 !important;
+  background-color: #0b2545 !important;
   background-image: linear-gradient(
     180deg,
-    #001e22 0%,
-    #002e33 50%,
-    #003e44 100%
+    #071a33 0%,
+    #0b2545 50%,
+    #103259 100%
   ) !important;
   color: #ffffff !important;
 }
 
 /* Guaranteed Brand Dark Card Styling */
 .bg-brand-card-dark {
-  background-color: #002e33 !important;
-  background-image: linear-gradient(135deg, #002e33 0%, #001e22 100%) !important;
+  background-color: #0b2545 !important;
+  background-image: linear-gradient(135deg, #0b2545 0%, #071a33 100%) !important;
   color: #ffffff !important;
-  border-color: #004f56 !important;
+  border-color: #015b93 !important;
 }
 
 /* Scrollbar styling */

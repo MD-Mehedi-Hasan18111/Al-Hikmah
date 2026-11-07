@@ -142,7 +142,7 @@ export default function TeacherOverviewDashboard() {
   return (
     <div className="space-y-6">
       {/* Welcome Banner */}
-      <div className="relative overflow-hidden rounded-2xl bg-gradient-to-r from-[#004f55] via-[#00636b] to-[#007a85] p-6 sm:p-8 text-white shadow-sm">
+      <div className="relative overflow-hidden rounded-2xl bg-gradient-to-r from-[#015b93] via-[#0274b3] to-[#0c8be8] p-6 sm:p-8 text-white shadow-sm">
         <div className="relative z-10 flex flex-col md:flex-row justify-between items-start md:items-center gap-4">
           <div className="space-y-1">
             <div className="inline-flex items-center gap-1.5 px-2.5 py-1 rounded-full bg-white/15 text-xs text-[#fde68a] font-medium backdrop-blur-xs mb-2">
@@ -188,7 +188,7 @@ export default function TeacherOverviewDashboard() {
         {/* Card 1: Assigned Batches */}
         <Card className="border-slate-200 shadow-2xs hover:shadow-xs transition">
           <CardContent className="p-5 flex items-center gap-4">
-            <div className="h-12 w-12 rounded-xl bg-primary-100 text-[#00636b] flex items-center justify-center shrink-0">
+            <div className="h-12 w-12 rounded-xl bg-primary-100 text-[#0274b3] flex items-center justify-center shrink-0">
               <Users className="h-6 w-6" />
             </div>
             <div>
@@ -272,7 +272,7 @@ export default function TeacherOverviewDashboard() {
             <CardHeader className="flex flex-row items-center justify-between border-b border-slate-100 pb-4">
               <div>
                 <CardTitle className="text-base font-bold text-slate-900 flex items-center gap-2">
-                  <Clock className="h-4 w-4 text-[#00636b]" />
+                  <Clock className="h-4 w-4 text-[#0274b3]" />
                   <span>আজকের ক্লাস সূচী ({daysOfWeekBangla[todayKey]})</span>
                 </CardTitle>
                 <p className="text-xs text-slate-500 mt-0.5">
@@ -281,7 +281,7 @@ export default function TeacherOverviewDashboard() {
                 </p>
               </div>
               <Link href="/dashboard/teacher/timetable">
-                <Button variant="ghost" size="sm" className="text-xs text-[#00636b]">
+                <Button variant="ghost" size="sm" className="text-xs text-[#0274b3]">
                   পূর্ণাঙ্গ রুটিন
                 </Button>
               </Link>
@@ -302,7 +302,7 @@ export default function TeacherOverviewDashboard() {
                   {todayClasses.map((cls, idx) => (
                     <div
                       key={idx}
-                      className="p-4 rounded-xl border border-slate-200 hover:border-[#00636b] transition bg-white flex flex-col sm:flex-row sm:items-center justify-between gap-3"
+                      className="p-4 rounded-xl border border-slate-200 hover:border-[#0274b3] transition bg-white flex flex-col sm:flex-row sm:items-center justify-between gap-3"
                     >
                       <div className="space-y-1">
                         <div className="flex items-center gap-2">
@@ -347,12 +347,12 @@ export default function TeacherOverviewDashboard() {
             <CardHeader className="flex flex-row items-center justify-between border-b border-slate-100 pb-4">
               <div>
                 <CardTitle className="text-base font-bold text-slate-900 flex items-center gap-2">
-                  <Users className="h-4 w-4 text-[#00636b]" />
+                  <Users className="h-4 w-4 text-[#0274b3]" />
                   <span>আমার তত্ত্বাবধানের ব্যাচসমূহ</span>
                 </CardTitle>
               </div>
               <Link href="/dashboard/teacher/batches">
-                <Button variant="ghost" size="sm" className="text-xs text-[#00636b]">
+                <Button variant="ghost" size="sm" className="text-xs text-[#0274b3]">
                   সকল ব্যাচ দেখুন
                 </Button>
               </Link>
@@ -374,7 +374,7 @@ export default function TeacherOverviewDashboard() {
                   {batches.slice(0, 4).map((b) => (
                     <div
                       key={b._id}
-                      className="p-3.5 rounded-xl border border-slate-200 bg-slate-50/50 hover:bg-white hover:border-[#00636b] transition space-y-2"
+                      className="p-3.5 rounded-xl border border-slate-200 bg-slate-50/50 hover:bg-white hover:border-[#0274b3] transition space-y-2"
                     >
                       <div className="flex items-center justify-between">
                         <span className="font-bold text-sm text-slate-800 truncate">
@@ -393,7 +393,7 @@ export default function TeacherOverviewDashboard() {
                         </span>
                         <Link
                           href={`/dashboard/teacher/batches`}
-                          className="text-[#00636b] font-semibold hover:underline inline-flex items-center gap-1"
+                          className="text-[#0274b3] font-semibold hover:underline inline-flex items-center gap-1"
                         >
                           শিক্ষার্থী তালিকা <ArrowRight className="h-3 w-3" />
                         </Link>
@@ -416,7 +416,7 @@ export default function TeacherOverviewDashboard() {
                 <span>সাম্প্রতিক নোটিশ ও বিজ্ঞপ্তি</span>
               </CardTitle>
               <Link href="/dashboard/teacher/notices">
-                <Button variant="ghost" size="sm" className="text-xs text-[#00636b]">
+                <Button variant="ghost" size="sm" className="text-xs text-[#0274b3]">
                   সব নোটিশ
                 </Button>
               </Link>

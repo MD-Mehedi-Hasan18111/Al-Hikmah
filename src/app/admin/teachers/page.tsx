@@ -400,7 +400,7 @@ export default function TeacherManagementPage() {
               setFormErrors({});
               setCreateDialogOpen(true);
             }}
-            className="flex items-center gap-1.5 bg-[#00636b] hover:bg-[#004f55] text-white"
+            className="flex items-center gap-1.5 bg-[#0274b3] hover:bg-[#015b93] text-white"
           >
             <Plus className="h-4 w-4" />
             <span>নতুন শিক্ষক যুক্ত করুন</span>
@@ -422,7 +422,7 @@ export default function TeacherManagementPage() {
                   setPage(1);
                 }}
                 placeholder="শিক্ষকের নাম, কোড, মোবাইল বা বিষয় লিখে খুঁজুন..."
-                className="w-full h-10 pl-9 pr-4 rounded-lg bg-slate-50 border border-slate-200 text-sm focus:bg-white focus:border-[#00636b] focus:outline-none focus:ring-1 focus:ring-[#00636b] transition"
+                className="w-full h-10 pl-9 pr-4 rounded-lg bg-slate-50 border border-slate-200 text-sm focus:bg-white focus:border-[#0274b3] focus:outline-none focus:ring-1 focus:ring-[#0274b3] transition"
               />
             </div>
 
@@ -645,7 +645,7 @@ export default function TeacherManagementPage() {
             <Button
               onClick={() => handleSaveTeacher(editDialogOpen)}
               disabled={formSubmitting}
-              className="bg-[#00636b] hover:bg-[#004f55] text-white"
+              className="bg-[#0274b3] hover:bg-[#015b93] text-white"
             >
               {formSubmitting
                 ? "সংরক্ষণ হচ্ছে..."
@@ -660,8 +660,8 @@ export default function TeacherManagementPage() {
           {/* Teacher Image Upload */}
           <div className="p-4 sm:p-4.5 rounded-xl bg-slate-50 border border-slate-200/90 shadow-2xs">
             <div className="flex items-center justify-between mb-3 border-b border-slate-200/70 pb-2">
-              <h5 className="text-xs font-bold text-[#00636b] uppercase tracking-wider flex items-center gap-1.5">
-                <span className="h-2 w-2 rounded-full bg-[#00636b]" />
+              <h5 className="text-xs font-bold text-[#0274b3] uppercase tracking-wider flex items-center gap-1.5">
+                <span className="h-2 w-2 rounded-full bg-[#0274b3]" />
                 শিক্ষকের ছবি (Passport Photo)
               </h5>
               <span className="text-[11px] font-medium text-slate-600 bg-white px-2 py-0.5 rounded-md border border-slate-200">
@@ -815,7 +815,7 @@ export default function TeacherManagementPage() {
                     className="w-14 h-14 rounded-full object-cover border border-slate-200 shadow-2xs shrink-0"
                   />
                 ) : (
-                  <div className="w-14 h-14 rounded-full bg-[#00636b]/10 text-[#00636b] flex items-center justify-center font-bold text-lg border border-[#00636b]/20 shrink-0">
+                  <div className="w-14 h-14 rounded-full bg-[#0274b3]/10 text-[#0274b3] flex items-center justify-center font-bold text-lg border border-[#0274b3]/20 shrink-0">
                     {targetTeacher.fullName.charAt(0)}
                   </div>
                 )}
@@ -917,7 +917,7 @@ export default function TeacherManagementPage() {
         <div className="py-2 text-sm text-slate-600">
           আপনি কি নিশ্চিতভাবে{" "}
           <strong className="text-slate-900">{targetTeacher?.fullName}</strong> (কোড:{" "}
-          <span className="font-mono text-[#00636b]">{targetTeacher?.teacherCode}</span>)-কে
+          <span className="font-mono text-[#0274b3]">{targetTeacher?.teacherCode}</span>)-কে
           পুনরায় সক্রিয় করতে চান?
         </div>
       </Dialog>

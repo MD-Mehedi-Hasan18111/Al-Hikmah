@@ -53,7 +53,7 @@ export function PublicFooter({ settings }: PublicFooterProps = {}) {
     <>
       <footer className="bg-slate-900 text-slate-300 border-t border-slate-800 text-xs">
         {/* Top Banner Accent Line */}
-        <div className="h-1 bg-gradient-to-r from-[#00636b] via-[#c27a29] to-[#00636b]" />
+        <div className="h-1 bg-gradient-to-r from-[#0274b3] via-[#c27a29] to-[#0274b3]" />
 
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-12">
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
@@ -85,8 +85,8 @@ export function PublicFooter({ settings }: PublicFooterProps = {}) {
                 শিক্ষকমণ্ডলীর নিবিড় তত্ত্বাবধান।
               </p>
 
-              <div className="flex items-center gap-2 text-[11px] text-[#d7eef1]">
-                <ShieldCheck className="h-4 w-4 text-[#007a85]" />
+              <div className="flex items-center gap-2 text-[11px] text-[#e0f0fe]">
+                <ShieldCheck className="h-4 w-4 text-[#0c8be8]" />
                 <span>{bn.institution.classesOffer}</span>
               </div>
 
@@ -111,7 +111,7 @@ export function PublicFooter({ settings }: PublicFooterProps = {}) {
                     href="/"
                     className="hover:text-white transition flex items-center gap-1"
                   >
-                    <ChevronRight className="h-3 w-3 text-[#007a85]" />
+                    <ChevronRight className="h-3 w-3 text-[#0c8be8]" />
                     <span>হোম পেজ</span>
                   </Link>
                 </li>
@@ -120,7 +120,7 @@ export function PublicFooter({ settings }: PublicFooterProps = {}) {
                     href="/about"
                     className="hover:text-white transition flex items-center gap-1"
                   >
-                    <ChevronRight className="h-3 w-3 text-[#007a85]" />
+                    <ChevronRight className="h-3 w-3 text-[#0c8be8]" />
                     <span>আমাদের সম্পর্কে</span>
                   </Link>
                 </li>
@@ -129,7 +129,7 @@ export function PublicFooter({ settings }: PublicFooterProps = {}) {
                     href="/classes"
                     className="hover:text-white transition flex items-center gap-1"
                   >
-                    <ChevronRight className="h-3 w-3 text-[#007a85]" />
+                    <ChevronRight className="h-3 w-3 text-[#0c8be8]" />
                     <span>পাঠদান ও ব্যাচ</span>
                   </Link>
                 </li>
@@ -138,7 +138,7 @@ export function PublicFooter({ settings }: PublicFooterProps = {}) {
                     href="/teachers"
                     className="hover:text-white transition flex items-center gap-1"
                   >
-                    <ChevronRight className="h-3 w-3 text-[#007a85]" />
+                    <ChevronRight className="h-3 w-3 text-[#0c8be8]" />
                     <span>শিক্ষকমণ্ডলী</span>
                   </Link>
                 </li>
@@ -147,7 +147,7 @@ export function PublicFooter({ settings }: PublicFooterProps = {}) {
                     href="/notices"
                     className="hover:text-white transition flex items-center gap-1"
                   >
-                    <ChevronRight className="h-3 w-3 text-[#007a85]" />
+                    <ChevronRight className="h-3 w-3 text-[#0c8be8]" />
                     <span>বিজ্ঞপ্তি বোর্ড</span>
                   </Link>
                 </li>
@@ -156,7 +156,7 @@ export function PublicFooter({ settings }: PublicFooterProps = {}) {
                     href="/events"
                     className="hover:text-white transition flex items-center gap-1"
                   >
-                    <ChevronRight className="h-3 w-3 text-[#007a85]" />
+                    <ChevronRight className="h-3 w-3 text-[#0c8be8]" />
                     <span>ইভেন্ট ও সেমিনার</span>
                   </Link>
                 </li>
@@ -165,7 +165,7 @@ export function PublicFooter({ settings }: PublicFooterProps = {}) {
                     href="/blog"
                     className="hover:text-white transition flex items-center gap-1"
                   >
-                    <ChevronRight className="h-3 w-3 text-[#007a85]" />
+                    <ChevronRight className="h-3 w-3 text-[#0c8be8]" />
                     <span>ব্লগ ও পরামর্শ</span>
                   </Link>
                 </li>
@@ -174,7 +174,7 @@ export function PublicFooter({ settings }: PublicFooterProps = {}) {
                     href="/admissions"
                     className="hover:text-white transition flex items-center gap-1"
                   >
-                    <ChevronRight className="h-3 w-3 text-[#007a85]" />
+                    <ChevronRight className="h-3 w-3 text-[#0c8be8]" />
                     <span>সরাসরি ভর্তি নির্দেশিকা</span>
                   </Link>
                 </li>
@@ -183,7 +183,7 @@ export function PublicFooter({ settings }: PublicFooterProps = {}) {
                     href="/contact"
                     className="hover:text-white transition flex items-center gap-1"
                   >
-                    <ChevronRight className="h-3 w-3 text-[#007a85]" />
+                    <ChevronRight className="h-3 w-3 text-[#0c8be8]" />
                     <span>যোগাযোগ</span>
                   </Link>
                 </li>
@@ -226,7 +226,7 @@ export function PublicFooter({ settings }: PublicFooterProps = {}) {
               </h5>
               <div className="space-y-3 text-slate-400">
                 <div className="flex items-start gap-2.5">
-                  <MapPin className="h-4 w-4 text-[#007a85] shrink-0 mt-0.5" />
+                  <MapPin className="h-4 w-4 text-[#0c8be8] shrink-0 mt-0.5" />
                   <span className="leading-relaxed">{institutionAddress}</span>
                 </div>
                 <div className="flex items-center gap-2.5">

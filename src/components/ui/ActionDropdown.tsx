@@ -133,7 +133,7 @@ export function ActionDropdown({
       case "success":
         return "text-emerald-600 hover:text-emerald-700 hover:bg-emerald-50 active:bg-emerald-100";
       case "primary":
-        return "text-[#00636b] hover:text-[#004f55] hover:bg-[#00636b]/10 active:bg-[#00636b]/20";
+        return "text-[#0274b3] hover:text-[#015b93] hover:bg-[#0274b3]/10 active:bg-[#0274b3]/20";
       default:
         return "text-slate-700 hover:text-slate-900 hover:bg-slate-100 active:bg-slate-200";
     }
@@ -149,7 +149,7 @@ export function ActionDropdown({
       case "success":
         return "text-emerald-600";
       case "primary":
-        return "text-[#00636b]";
+        return "text-[#0274b3]";
       default:
         return "text-slate-500";
     }
@@ -165,7 +165,7 @@ export function ActionDropdown({
         aria-expanded={isOpen}
         aria-haspopup="menu"
         className={cn(
-          "inline-flex items-center justify-center w-8 h-8 rounded-lg text-slate-500 hover:text-slate-800 hover:bg-slate-100 active:bg-slate-200 focus:outline-none focus:ring-2 focus:ring-[#00636b]/20 transition-all",
+          "inline-flex items-center justify-center w-8 h-8 rounded-lg text-slate-500 hover:text-slate-800 hover:bg-slate-100 active:bg-slate-200 focus:outline-none focus:ring-2 focus:ring-[#0274b3]/20 transition-all",
           isOpen && "bg-slate-100 text-slate-900 shadow-sm",
           buttonClassName
         )}

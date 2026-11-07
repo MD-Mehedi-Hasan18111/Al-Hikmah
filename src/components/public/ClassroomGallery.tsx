@@ -108,7 +108,7 @@ export function ClassroomGallery({
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 space-y-10">
         {/* Header Title Section */}
         <div className="text-center max-w-3xl mx-auto space-y-3">
-          <div className="inline-flex items-center gap-1.5 px-3 py-1 rounded-full bg-[#eff8f9] border border-[#d7eef1] text-xs font-semibold text-[#00636b]">
+          <div className="inline-flex items-center gap-1.5 px-3 py-1 rounded-full bg-[#f0f7ff] border border-[#e0f0fe] text-xs font-semibold text-[#0274b3]">
             <Sparkles className="h-3.5 w-3.5 text-[#c27a29]" />
             <span>{badgeText}</span>
           </div>
@@ -123,7 +123,7 @@ export function ClassroomGallery({
         {/* Feature Highlights Pills */}
         <div className="grid grid-cols-2 md:grid-cols-4 gap-3 max-w-4xl mx-auto">
           <div className="p-3 bg-slate-50 border border-slate-200 rounded-xl flex items-center gap-2.5">
-            <div className="h-8 w-8 rounded-lg bg-teal-100 text-[#00636b] flex items-center justify-center shrink-0">
+            <div className="h-8 w-8 rounded-lg bg-teal-100 text-[#0274b3] flex items-center justify-center shrink-0">
               <Users className="h-4 w-4" />
             </div>
             <div>
@@ -168,7 +168,7 @@ export function ClassroomGallery({
           {displayItems.map((room, idx) => (
             <Card
               key={room.id}
-              className="group overflow-hidden border border-slate-200 hover:border-[#00636b] hover:shadow-lg transition-all duration-300 flex flex-col justify-between bg-white rounded-2xl"
+              className="group overflow-hidden border border-slate-200 hover:border-[#0274b3] hover:shadow-lg transition-all duration-300 flex flex-col justify-between bg-white rounded-2xl"
             >
               {/* Photo Container */}
               <div
@@ -188,21 +188,21 @@ export function ClassroomGallery({
 
                 {/* Top Badge */}
                 <div className="absolute top-3 left-3">
-                  <span className="inline-flex items-center px-2.5 py-1 rounded-full text-[10px] font-bold bg-[#00636b] text-white shadow-sm">
+                  <span className="inline-flex items-center px-2.5 py-1 rounded-full text-[10px] font-bold bg-[#0274b3] text-white shadow-sm">
                     {room.badge}
                   </span>
                 </div>
 
                 {/* Zoom Hint Icon */}
                 <div className="absolute bottom-3 right-3 h-8 w-8 rounded-full bg-white/80 backdrop-blur-xs text-slate-800 flex items-center justify-center opacity-0 group-hover:opacity-100 transition-opacity shadow-sm">
-                  <Maximize2 className="h-4 w-4 text-[#00636b]" />
+                  <Maximize2 className="h-4 w-4 text-[#0274b3]" />
                 </div>
               </div>
 
               {/* Details Content */}
               <div className="p-4 space-y-3 flex-1 flex flex-col justify-between">
                 <div>
-                  <h3 className="font-bold text-slate-900 text-sm group-hover:text-[#00636b] transition leading-snug">
+                  <h3 className="font-bold text-slate-900 text-sm group-hover:text-[#0274b3] transition leading-snug">
                     {room.title}
                   </h3>
                   <p className="text-xs text-slate-500 mt-1.5 leading-relaxed line-clamp-3">
@@ -228,7 +228,7 @@ export function ClassroomGallery({
               <div className="px-4 pb-4 pt-1">
                 <button
                   onClick={() => openLightbox(idx)}
-                  className="w-full py-2 px-3 rounded-xl border border-slate-200 text-[11px] font-semibold text-slate-700 group-hover:border-[#00636b] group-hover:text-[#00636b] hover:bg-slate-50 transition flex items-center justify-center gap-1.5"
+                  className="w-full py-2 px-3 rounded-xl border border-slate-200 text-[11px] font-semibold text-slate-700 group-hover:border-[#0274b3] group-hover:text-[#0274b3] hover:bg-slate-50 transition flex items-center justify-center gap-1.5"
                 >
                   <Eye className="h-3.5 w-3.5" />
                   <span>ছবিটি বড় করে দেখুন</span>
@@ -299,7 +299,7 @@ export function ClassroomGallery({
             <div className="p-4 sm:p-5 bg-slate-900 text-white flex flex-col sm:flex-row sm:items-center sm:justify-between gap-3 border-t border-white/10">
               <div className="space-y-1">
                 <div className="flex items-center gap-2">
-                  <span className="px-2 py-0.5 rounded text-[10px] font-bold bg-[#00636b] text-white">
+                  <span className="px-2 py-0.5 rounded text-[10px] font-bold bg-[#0274b3] text-white">
                     {activeItem.badge}
                   </span>
                   <h4 className="font-bold text-sm sm:text-base text-white">

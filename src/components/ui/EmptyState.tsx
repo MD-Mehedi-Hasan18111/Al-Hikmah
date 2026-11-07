@@ -27,7 +27,7 @@ export function EmptyState({
         className
       )}
     >
-      <div className="flex h-14 w-14 items-center justify-center rounded-2xl bg-white border border-slate-200 text-[#00636b] shadow-2xs mb-4">
+      <div className="flex h-14 w-14 items-center justify-center rounded-2xl bg-white border border-slate-200 text-[#0274b3] shadow-2xs mb-4">
         {icon || <FolderSearch className="h-7 w-7 text-slate-400" />}
       </div>
       <h4 className="text-sm font-bold text-slate-900 mb-1">{title}</h4>

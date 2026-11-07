@@ -9,7 +9,7 @@ const badgeVariants = cva(
       variant: {
         default: "border-slate-200 bg-slate-100 text-slate-700",
         secondary: "border-slate-200 bg-slate-100 text-slate-700",
-        primary: "border-[#d7eef1] bg-[#eff8f9] text-[#00636b]",
+        primary: "border-[#e0f0fe] bg-[#f0f7ff] text-[#0274b3]",
         gold: "border-[#fde68a] bg-[#fef9ee] text-[#aa651d]",
         success: "border-emerald-200 bg-emerald-50 text-emerald-800",
         warning: "border-amber-200 bg-amber-50 text-amber-800",
@@ -42,7 +42,7 @@ export function Badge({ className, variant, size, dot, children, ...props }: Bad
         <span
           className={cn(
             "h-1.5 w-1.5 rounded-full shrink-0",
-            variant === "primary" && "bg-[#00636b]",
+            variant === "primary" && "bg-[#0274b3]",
             variant === "success" && "bg-emerald-600",
             variant === "gold" && "bg-[#aa651d]",
             variant === "danger" && "bg-[#c22126]",

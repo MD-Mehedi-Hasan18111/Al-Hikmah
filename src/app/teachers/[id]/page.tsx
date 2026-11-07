@@ -30,10 +30,10 @@ export const revalidate = 60;
 export async function generateMetadata({ params }: PageProps) {
   const { id } = await params;
   const teacher = await getTeacherById(id);
-  if (!teacher) return { title: "শিক্ষক পাওয়া যায়নি | শিক্ষণ একাডেমিক কেয়ার" };
+  if (!teacher) return { title: "শিক্ষক পাওয়া যায়নি | আল-হিকমাহ্ কোচিং সেন্টার" };
 
   return {
-    title: `${teacher.fullName} | শিক্ষক প্রোফাইল | শিক্ষণ একাডেমিক কেয়ার`,
+    title: `${teacher.fullName} | শিক্ষক প্রোফাইল | আল-হিকমাহ্ কোচিং সেন্টার`,
     description: `${teacher.fullName}-এর শিক্ষাগত যোগ্যতা, পাঠদানের বিষয় ও বর্তমান ব্যাচের সময়সূচী।`,
   };
 }
@@ -73,7 +73,7 @@ export default async function TeacherDetailPage({ params }: PageProps) {
 
       <main className="flex-1">
         {/* Breadcrumb banner */}
-        <section className="bg-brand-banner bg-[#002e33] bg-gradient-to-b from-[#001e22] via-[#002e33] to-[#003e44] text-white py-10 lg:py-12">
+        <section className="bg-brand-banner bg-[#0b2545] bg-gradient-to-b from-[#071a33] via-[#0b2545] to-[#103259] text-white py-10 lg:py-12">
           <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
             <div className="flex items-center gap-2 text-sm text-teal-200 mb-4">
               <Link href="/" className="hover:underline">

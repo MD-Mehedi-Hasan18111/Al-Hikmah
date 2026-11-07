@@ -626,7 +626,7 @@ export default function StudentManagementPage() {
               setFormErrors({});
               setCreateDialogOpen(true);
             }}
-            className="flex items-center gap-1.5 bg-[#00636b] hover:bg-[#004f55] text-white"
+            className="flex items-center gap-1.5 bg-[#0274b3] hover:bg-[#015b93] text-white"
           >
             <Plus className="h-4 w-4" />
             <span>নতুন শিক্ষার্থী ভর্তি</span>
@@ -649,7 +649,7 @@ export default function StudentManagementPage() {
                   setPage(1);
                 }}
                 placeholder="নাম, শিক্ষার্থী আইডি, মোবাইল বা স্কুল দিয়ে খুঁজুন..."
-                className="w-full h-10 pl-9 pr-4 rounded-lg bg-slate-50 border border-slate-200 text-sm focus:bg-white focus:border-[#00636b] focus:outline-none focus:ring-1 focus:ring-[#00636b] transition"
+                className="w-full h-10 pl-9 pr-4 rounded-lg bg-slate-50 border border-slate-200 text-sm focus:bg-white focus:border-[#0274b3] focus:outline-none focus:ring-1 focus:ring-[#0274b3] transition"
               />
             </div>
 
@@ -735,7 +735,7 @@ export default function StudentManagementPage() {
                 <TableBody>
                   {students.map((student) => (
                     <TableRow key={student._id} className="hover:bg-slate-50">
-                      <TableCell className="font-mono text-xs font-bold text-[#00636b]">
+                      <TableCell className="font-mono text-xs font-bold text-[#0274b3]">
                         {student.studentId}
                       </TableCell>
                       <TableCell>
@@ -802,7 +802,7 @@ export default function StudentManagementPage() {
                   <div className="flex items-start justify-between gap-2">
                     <div className="space-y-0.5">
                       <div className="flex items-center gap-2">
-                        <span className="font-mono text-xs font-bold text-[#00636b] bg-teal-50 px-2 py-0.5 rounded">
+                        <span className="font-mono text-xs font-bold text-[#0274b3] bg-teal-50 px-2 py-0.5 rounded">
                           {student.studentId}
                         </span>
                         <Badge
@@ -896,7 +896,7 @@ export default function StudentManagementPage() {
             <Button
               onClick={() => handleSaveStudent(editDialogOpen)}
               disabled={formSubmitting}
-              className="bg-[#00636b] hover:bg-[#004f55] text-white"
+              className="bg-[#0274b3] hover:bg-[#015b93] text-white"
             >
               {formSubmitting
                 ? "সংরক্ষণ হচ্ছে..."
@@ -911,8 +911,8 @@ export default function StudentManagementPage() {
           {/* Section 0: Student Image Upload */}
           <div className="p-4 sm:p-4.5 rounded-xl bg-slate-50 border border-slate-200/90 shadow-2xs">
             <div className="flex items-center justify-between mb-3 border-b border-slate-200/70 pb-2">
-              <h5 className="text-xs font-bold text-[#00636b] uppercase tracking-wider flex items-center gap-1.5">
-                <span className="h-2 w-2 rounded-full bg-[#00636b]" />
+              <h5 className="text-xs font-bold text-[#0274b3] uppercase tracking-wider flex items-center gap-1.5">
+                <span className="h-2 w-2 rounded-full bg-[#0274b3]" />
                 শিক্ষার্থীর ছবি (Passport Photo)
               </h5>
               <span className="text-[11px] font-medium text-slate-600 bg-white px-2 py-0.5 rounded-md border border-slate-200">
@@ -943,7 +943,7 @@ export default function StudentManagementPage() {
 
           {/* Section 1: Basic Info */}
           <div>
-            <h5 className="text-xs font-bold text-[#00636b] uppercase tracking-wider mb-2">
+            <h5 className="text-xs font-bold text-[#0274b3] uppercase tracking-wider mb-2">
               ১. শিক্ষার্থীর মৌলিক তথ্য
             </h5>
             <div className="grid grid-cols-1 sm:grid-cols-2 gap-3">
@@ -1054,7 +1054,7 @@ export default function StudentManagementPage() {
 
           {/* Section 2: Guardian Info */}
           <div className="pt-2 border-t border-slate-100">
-            <h5 className="text-xs font-bold text-[#00636b] uppercase tracking-wider mb-2">
+            <h5 className="text-xs font-bold text-[#0274b3] uppercase tracking-wider mb-2">
               ২. অভিভাবকের তথ্য
             </h5>
             <div className="grid grid-cols-1 sm:grid-cols-2 gap-3">
@@ -1116,7 +1116,7 @@ export default function StudentManagementPage() {
 
           {/* Section 3: Address */}
           <div className="pt-2 border-t border-slate-100">
-            <h5 className="text-xs font-bold text-[#00636b] uppercase tracking-wider mb-2">
+            <h5 className="text-xs font-bold text-[#0274b3] uppercase tracking-wider mb-2">
               ৩. বর্তমান ও স্থায়ী ঠিকানা
             </h5>
             <div className="grid grid-cols-1 sm:grid-cols-2 gap-3">
@@ -1177,7 +1177,7 @@ export default function StudentManagementPage() {
               {/* Header Card */}
               <div className="p-4 rounded-xl bg-slate-50 border border-slate-200 flex flex-col sm:flex-row sm:items-center justify-between gap-3">
                 <div>
-                  <span className="font-mono text-xs font-bold text-[#00636b] bg-teal-50 px-2 py-0.5 rounded border border-teal-200">
+                  <span className="font-mono text-xs font-bold text-[#0274b3] bg-teal-50 px-2 py-0.5 rounded border border-teal-200">
                     {targetStudent.studentId}
                   </span>
                   <h3 className="text-lg font-bold text-slate-900 mt-1">
@@ -1240,7 +1240,7 @@ export default function StudentManagementPage() {
               {/* Enrolled Batches */}
               <div>
                 <h5 className="text-xs font-bold text-slate-800 uppercase tracking-wider mb-2 flex items-center gap-1.5">
-                  <GraduationCap className="h-4 w-4 text-[#00636b]" />
+                  <GraduationCap className="h-4 w-4 text-[#0274b3]" />
                   <span>ভর্তিকৃত ব্যাচসমূহ (Enrollment History)</span>
                 </h5>
                 {!studentDetails?.enrollments?.length ? (
@@ -1297,7 +1297,7 @@ export default function StudentManagementPage() {
                           </p>
                         </div>
                         <div className="text-right">
-                          <span className="font-bold text-[#00636b]">
+                          <span className="font-bold text-[#0274b3]">
                             {toBanglaNumber(res.obtainedMarks)} /{" "}
                             {toBanglaNumber(res.exam.maximumMarks)}
                           </span>
@@ -1342,7 +1342,7 @@ export default function StudentManagementPage() {
                   availableBatches.find((b) => b._id === selectedBatchId)!.enrolledCount! >=
                     availableBatches.find((b) => b._id === selectedBatchId)!.capacity)
               }
-              className="bg-[#00636b] hover:bg-[#004f55] text-white disabled:opacity-50"
+              className="bg-[#0274b3] hover:bg-[#015b93] text-white disabled:opacity-50"
             >
               {enrollLoading ? "ভর্তি হচ্ছে..." : "ভর্তি নিশ্চিত করুন"}
             </Button>
@@ -1476,7 +1476,7 @@ export default function StudentManagementPage() {
         <div className="py-2 text-sm text-slate-600">
           আপনি কি নিশ্চিতভাবে{" "}
           <strong className="text-slate-900">{targetStudent?.fullName}</strong> (আইডি:{" "}
-          <span className="font-mono text-[#00636b]">{targetStudent?.studentId}</span>)-কে
+          <span className="font-mono text-[#0274b3]">{targetStudent?.studentId}</span>)-কে
           নিষ্ক্রিয় ও আর্কাইভ করতে চান?
         </div>
       </Dialog>
@@ -1507,7 +1507,7 @@ export default function StudentManagementPage() {
         <div className="py-2 text-sm text-slate-600">
           আপনি কি নিশ্চিতভাবে{" "}
           <strong className="text-slate-900">{targetStudent?.fullName}</strong> (আইডি:{" "}
-          <span className="font-mono text-[#00636b]">{targetStudent?.studentId}</span>)-কে
+          <span className="font-mono text-[#0274b3]">{targetStudent?.studentId}</span>)-কে
           পুনরায় সক্রিয় করতে চান?
         </div>
       </Dialog>

@@ -25,7 +25,7 @@ interface PageProps {
 export const revalidate = 60;
 
 export const metadata = {
-  title: "শিক্ষামূলক ব্লগ ও গাইডলাইন | শিক্ষণ একাডেমিক কেয়ার",
+  title: "শিক্ষামূলক ব্লগ ও গাইডলাইন | আল-হিকমাহ্ কোচিং সেন্টার",
   description:
     "পড়াশোনার কৌশল, বোর্ড পরীক্ষার প্রস্তুতি, গণিত ও বিজ্ঞানের সহজ সমাধান এবং ক্যারিয়ার গাইডলাইন বিষয়ক শিক্ষামূলক ব্লগ।",
 };
@@ -53,7 +53,7 @@ export default async function BlogPage({ searchParams }: PageProps) {
 
       <main className="flex-1">
         {/* Banner Section */}
-        <section className="bg-brand-banner bg-[#002e33] bg-gradient-to-b from-[#001e22] via-[#002e33] to-[#003e44] text-white py-14 lg:py-16">
+        <section className="bg-brand-banner bg-[#0b2545] bg-gradient-to-b from-[#071a33] via-[#0b2545] to-[#103259] text-white py-14 lg:py-16">
           <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
             <div className="flex items-center gap-2 text-sm text-teal-200 mb-4">
               <Link href="/" className="hover:underline">

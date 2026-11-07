@@ -130,7 +130,7 @@ export default function TeacherTimetablePage() {
                 key={d.key}
                 className={`border transition shadow-2xs ${
                   isToday
-                    ? "border-[#00636b] ring-1 ring-[#00636b]/30 bg-white"
+                    ? "border-[#0274b3] ring-1 ring-[#0274b3]/30 bg-white"
                     : "border-slate-200 bg-white"
                 }`}
               >
@@ -140,7 +140,7 @@ export default function TeacherTimetablePage() {
                       {d.label}
                     </CardTitle>
                     {isToday && (
-                      <Badge className="bg-[#00636b] text-white text-[10px]">
+                      <Badge className="bg-[#0274b3] text-white text-[10px]">
                         আজকের দিন
                       </Badge>
                     )}
@@ -159,7 +159,7 @@ export default function TeacherTimetablePage() {
                       {items.map((slot, idx) => (
                         <div
                           key={idx}
-                          className="p-3.5 rounded-xl border border-slate-200 bg-slate-50 hover:bg-white hover:border-[#00636b] transition space-y-2"
+                          className="p-3.5 rounded-xl border border-slate-200 bg-slate-50 hover:bg-white hover:border-[#0274b3] transition space-y-2"
                         >
                           <div className="flex items-center justify-between gap-1">
                             <span className="font-bold text-sm text-slate-800 truncate">
@@ -170,7 +170,7 @@ export default function TeacherTimetablePage() {
                             </Badge>
                           </div>
 
-                          <div className="flex items-center gap-1.5 text-xs text-[#00636b] font-semibold">
+                          <div className="flex items-center gap-1.5 text-xs text-[#0274b3] font-semibold">
                             <Clock className="h-3.5 w-3.5" />
                             <span>
                               {formatTo12h(slot.startTime)} –{" "}

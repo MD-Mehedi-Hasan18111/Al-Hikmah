@@ -27,9 +27,9 @@ export const dynamic = "force-dynamic";
 export const revalidate = 0;
 
 export const metadata = {
-  title: "আমাদের সম্পর্কে | শিক্ষণ একাডেমিক কেয়ার",
+  title: "আমাদের সম্পর্কে | আল-হিকমাহ্ কোচিং সেন্টার",
   description:
-    "শিক্ষণ একাডেমিক কেয়ার চট্টগ্রাম হালিশহরের শীর্ষস্থানীয় কোচিং সেন্টার। আমাদের লক্ষ্য, আদর্শ ও কার্যপদ্ধতি জানুন।",
+    "আল-হিকমাহ্ কোচিং সেন্টার চট্টগ্রাম হালিশহরের শীর্ষস্থানীয় কোচিং সেন্টার। আমাদের লক্ষ্য, আদর্শ ও কার্যপদ্ধতি জানুন।",
 };
 
 export default async function AboutPage() {
@@ -40,7 +40,7 @@ export default async function AboutPage() {
 
   const corePillars = [
     {
-      icon: <Target className="h-6 w-6 text-[#00636b]" />,
+      icon: <Target className="h-6 w-6 text-[#0274b3]" />,
       title: "আমাদের লক্ষ্য (Mission)",
       description:
         settings.aboutMission ||
@@ -90,7 +90,7 @@ export default async function AboutPage() {
               আমাদের সম্পর্কে (About Us)
             </h1>
             <p className="text-sm text-slate-600 max-w-2xl mx-auto leading-relaxed">
-              {settings.institutionName || "শিক্ষণ একাডেমিক কেয়ার"} — শিক্ষার্থীদের মেধা
+              {settings.institutionName || "আল-হিকমাহ্ কোচিং সেন্টার"} — শিক্ষার্থীদের মেধা
               বিকাশ, অধ্যবসায় ও বোর্ড পরীক্ষায় শতভাগ পাসের বিশ্বস্ত ঠিকানা।
             </p>
           </div>
@@ -101,7 +101,7 @@ export default async function AboutPage() {
           <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
             <div className="grid grid-cols-1 lg:grid-cols-12 gap-10 items-center">
               <div className="lg:col-span-7 space-y-5 text-left">
-                <span className="text-xs font-bold text-[#00636b] uppercase tracking-wider">
+                <span className="text-xs font-bold text-[#0274b3] uppercase tracking-wider">
                   প্রতিষ্ঠান বৃত্তান্ত
                 </span>
                 <h2 className="text-2xl sm:text-3xl font-extrabold text-slate-900 leading-snug">
@@ -111,7 +111,7 @@ export default async function AboutPage() {
                 <div className="text-sm text-slate-600 space-y-4 leading-relaxed">
                   <p>
                     {settings.aboutText ||
-                      "শিক্ষণ একাডেমিক কেয়ার চট্টগ্রাম হালিশহরে প্রতিষ্ঠিত একটি প্রথম সারির পাঠদান কেন্দ্র। অভিজ্ঞ শিক্ষকমণ্ডলী, নিয়মিত ওএমআর মডেল টেস্ট এবং দুর্বল শিক্ষার্থীদের জন্য বিশেষ তদারকির মাধ্যমে আমরা প্রতিটি শিক্ষার্থীর কাঙ্ক্ষিত ফলাফল নিশ্চিত করি।"}
+                      "আল-হিকমাহ্ কোচিং সেন্টার চট্টগ্রাম হালিশহরে প্রতিষ্ঠিত একটি প্রথম সারির পাঠদান কেন্দ্র। অভিজ্ঞ শিক্ষকমণ্ডলী, নিয়মিত ওএমআর মডেল টেস্ট এবং দুর্বল শিক্ষার্থীদের জন্য বিশেষ তদারকির মাধ্যমে আমরা প্রতিটি শিক্ষার্থীর কাঙ্ক্ষিত ফলাফল নিশ্চিত করি।"}
                   </p>
                   <p>
                     {settings.aboutStoryParagraph2 ||
@@ -121,7 +121,7 @@ export default async function AboutPage() {
 
                 <div className="grid grid-cols-2 gap-4 pt-2">
                   <div className="p-3 bg-slate-50 rounded-lg border border-slate-200">
-                    <p className="text-xl font-bold text-[#00636b]">
+                    <p className="text-xl font-bold text-[#0274b3]">
                       {toBanglaNumber(3500)}+
                     </p>
                     <p className="text-xs font-medium text-slate-600">কৃতী শিক্ষার্থী</p>
@@ -137,14 +137,14 @@ export default async function AboutPage() {
                 <div className="rounded-2xl overflow-hidden border border-slate-200 shadow-md bg-slate-100">
                   <Image
                     src={settings.bannerUrl || "/images/banner.png"}
-                    alt={settings.institutionName || "শিক্ষণ একাডেমিক কেয়ার"}
+                    alt={settings.institutionName || "আল-হিকমাহ্ কোচিং সেন্টার"}
                     width={800}
                     height={500}
                     className="w-full h-auto object-cover"
                   />
                   <div className="p-4 bg-white border-t border-slate-200 text-xs text-slate-600 space-y-1">
                     <p className="font-bold text-slate-900 flex items-center gap-1.5">
-                      <MapPin className="h-4 w-4 text-[#00636b]" />
+                      <MapPin className="h-4 w-4 text-[#0274b3]" />
                       <span>{settings.address || "হালিশহর, চট্টগ্রাম"}</span>
                     </p>
                     <p className="text-slate-400 pl-5">
@@ -189,7 +189,7 @@ export default async function AboutPage() {
           </div>
         </section>
 
-        {/* Why Shikkhon Academic Care (Checklist) */}
+        {/* Why Al-Hikmah Coaching Center (Checklist) */}
         <section className="py-16 bg-white border-b border-slate-200">
           <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 space-y-10">
             <div className="text-center max-w-2xl mx-auto space-y-2">
@@ -248,7 +248,7 @@ export default async function AboutPage() {
                         className="p-4 bg-white rounded-xl border border-slate-200 text-center space-y-1"
                       >
                         <p className="font-bold text-sm text-slate-900">{t.fullName}</p>
-                        <p className="text-xs text-[#00636b] font-medium">
+                        <p className="text-xs text-[#0274b3] font-medium">
                           {t.designation || "বিষয় শিক্ষক"}
                         </p>
                         <p className="text-[11px] text-slate-400">
@@ -278,7 +278,7 @@ export default async function AboutPage() {
         />
 
         {/* Call to action */}
-        <section className="py-12 bg-[#004f56] text-white text-center">
+        <section className="py-12 bg-[#015b93] text-white text-center">
           <div className="max-w-3xl mx-auto px-4 space-y-4">
             <h2 className="text-2xl font-bold">
               আপনার সন্তানের উজ্জ্বল ভবিষ্যৎ নিশ্চিত করুন

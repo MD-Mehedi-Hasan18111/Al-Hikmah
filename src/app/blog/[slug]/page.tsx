@@ -30,10 +30,10 @@ export const revalidate = 60;
 export async function generateMetadata({ params }: PageProps) {
   const { slug } = await params;
   const data = await getBlogPostBySlug(slug);
-  if (!data?.post) return { title: "ব্লগ পোস্ট পাওয়া যায়নি | শিক্ষণ একাডেমিক কেয়ার" };
+  if (!data?.post) return { title: "ব্লগ পোস্ট পাওয়া যায়নি | আল-হিকমাহ্ কোচিং সেন্টার" };
 
   return {
-    title: `${data.post.title} | শিক্ষামূলক ব্লগ | শিক্ষণ একাডেমিক কেয়ার`,
+    title: `${data.post.title} | শিক্ষামূলক ব্লগ | আল-হিকমাহ্ কোচিং সেন্টার`,
     description: data.post.summary,
     openGraph: {
       title: data.post.title,
@@ -62,7 +62,7 @@ export default async function BlogPostPage({ params }: PageProps) {
 
       <main className="flex-1">
         {/* Breadcrumb banner */}
-        <section className="bg-brand-banner bg-[#002e33] bg-gradient-to-b from-[#001e22] via-[#002e33] to-[#003e44] text-white py-10 lg:py-12">
+        <section className="bg-brand-banner bg-[#0b2545] bg-gradient-to-b from-[#071a33] via-[#0b2545] to-[#103259] text-white py-10 lg:py-12">
           <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
             <div className="flex items-center gap-2 text-sm text-teal-200 mb-4">
               <Link href="/" className="hover:underline">
@@ -173,7 +173,7 @@ export default async function BlogPostPage({ params }: PageProps) {
                           {post.author?.fullName || "শিক্ষক মণ্ডলী"}
                         </h4>
                         <p className="text-xs text-primary-700 font-medium mb-1">
-                          লেখক ও মেন্টর, {settings.institutionName || "শিক্ষণ একাডেমি"}
+                          লেখক ও মেন্টর, {settings.institutionName || "আল-হিকমাহ্ কোচিং সেন্টার"}
                         </p>
                         <p className="text-xs text-slate-600 leading-relaxed">
                           শিক্ষার্থীদের নিয়মিত পড়াশোনার অভ্যাস গঠন ও বোর্ড পরীক্ষায়
@@ -230,7 +230,7 @@ export default async function BlogPostPage({ params }: PageProps) {
               )}
 
               {/* Admission CTA Box */}
-              <div className="bg-brand-card-dark bg-[#002e33] bg-gradient-to-br from-[#002e33] to-[#001e22] text-white p-6 rounded-2xl border border-teal-800 shadow-md">
+              <div className="bg-brand-card-dark bg-[#0b2545] bg-gradient-to-br from-[#0b2545] to-[#071a33] text-white p-6 rounded-2xl border border-teal-800 shadow-md">
                 <Sparkles className="h-8 w-8 text-amber-400 mb-3" />
                 <h3 className="font-bold text-lg mb-2 text-white">
                   নতুন ব্যাচে ভর্তি চলছে!

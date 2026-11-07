@@ -101,7 +101,7 @@ export function Pagination({
                 onClick={() => onPageChange(p)}
                 className={`h-8 w-8 rounded-lg text-xs font-semibold transition ${
                   p === currentPage
-                    ? "bg-[#00636b] text-white shadow-2xs"
+                    ? "bg-[#0274b3] text-white shadow-2xs"
                     : "text-slate-600 hover:bg-slate-100"
                 }`}
                 aria-current={p === currentPage ? "page" : undefined}

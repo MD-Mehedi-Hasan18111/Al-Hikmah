@@ -7,7 +7,7 @@ import {
 } from "@/lib/public-data";
 
 export default async function sitemap(): Promise<MetadataRoute.Sitemap> {
-  const baseUrl = process.env.NEXT_PUBLIC_APP_URL || "https://shikkhon.edu.bd";
+  const baseUrl = process.env.NEXT_PUBLIC_APP_URL || "https://alhikmah.edu.bd";
 
   const staticRoutes: MetadataRoute.Sitemap = [
     {

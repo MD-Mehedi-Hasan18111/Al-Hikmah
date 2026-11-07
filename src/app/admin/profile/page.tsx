@@ -252,10 +252,10 @@ export default function AdminProfilePage() {
         {/* Left Column: Admin Identity & System Privileges Card */}
         <div className="lg:col-span-4 space-y-6">
           <Card className="border-slate-200 shadow-2xs overflow-hidden">
-            <div className="h-24 bg-gradient-to-r from-[#004f56] to-[#00636b] relative" />
+            <div className="h-24 bg-gradient-to-r from-[#015b93] to-[#0274b3] relative" />
             <CardContent className="pt-0 relative px-6 pb-6">
               <div className="flex flex-col items-center -mt-12 text-center">
-                <div className="h-24 w-24 rounded-2xl bg-white border-4 border-white shadow-md flex items-center justify-center font-bold text-3xl text-[#00636b] bg-slate-50 overflow-hidden relative">
+                <div className="h-24 w-24 rounded-2xl bg-white border-4 border-white shadow-md flex items-center justify-center font-bold text-3xl text-[#0274b3] bg-slate-50 overflow-hidden relative">
                   {avatarUrl || profileData?.avatarUrl ? (
                     <Image
                       src={avatarUrl || profileData?.avatarUrl}
@@ -332,7 +332,7 @@ export default function AdminProfilePage() {
           <Card className="border-slate-200 shadow-2xs bg-slate-50/60">
             <CardHeader className="pb-3 border-b border-slate-100">
               <CardTitle className="text-xs font-bold text-slate-800 flex items-center gap-1.5 uppercase tracking-wider">
-                <Layers className="h-4 w-4 text-[#00636b]" />
+                <Layers className="h-4 w-4 text-[#0274b3]" />
                 <span>প্রশাসনিক দায়িত্ব ও অধিকার</span>
               </CardTitle>
             </CardHeader>
@@ -363,7 +363,7 @@ export default function AdminProfilePage() {
           <Card className="border-slate-200 shadow-2xs">
             <CardHeader className="border-b border-slate-100 pb-3">
               <CardTitle className="text-base font-bold text-slate-900 flex items-center gap-2">
-                <User className="h-4 w-4 text-[#00636b]" />
+                <User className="h-4 w-4 text-[#0274b3]" />
                 <span>ব্যক্তিগত ও প্রাতিষ্ঠানিক তথ্য</span>
               </CardTitle>
             </CardHeader>
@@ -393,7 +393,7 @@ export default function AdminProfilePage() {
                       value={fullName}
                       onChange={(e) => setFullName(e.target.value)}
                       placeholder="যেমন: প্রধান প্রশাসক"
-                      className="w-full px-3.5 py-2 text-sm bg-white border border-slate-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-[#00636b] transition"
+                      className="w-full px-3.5 py-2 text-sm bg-white border border-slate-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-[#0274b3] transition"
                     />
                   </div>
 
@@ -423,7 +423,7 @@ export default function AdminProfilePage() {
                       value={email}
                       onChange={(e) => setEmail(e.target.value)}
                       placeholder="admin@coaching.edu.bd"
-                      className="w-full px-3.5 py-2 text-sm bg-white border border-slate-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-[#00636b] transition"
+                      className="w-full px-3.5 py-2 text-sm bg-white border border-slate-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-[#0274b3] transition"
                     />
                   </div>
 
@@ -449,7 +449,7 @@ export default function AdminProfilePage() {
                     value={biography}
                     onChange={(e) => setBiography(e.target.value)}
                     placeholder="কোচিং পরিচালনা ও অ্যাকাডেমিক দায়িত্ব সংক্রান্ত সংক্ষিপ্ত বিবরণ..."
-                    className="w-full px-3.5 py-2 text-sm bg-white border border-slate-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-[#00636b] transition"
+                    className="w-full px-3.5 py-2 text-sm bg-white border border-slate-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-[#0274b3] transition"
                   />
                 </div>
 
@@ -457,7 +457,7 @@ export default function AdminProfilePage() {
                   <Button
                     type="submit"
                     disabled={savingProfile}
-                    className="gap-2 bg-[#00636b] hover:bg-[#004f56] text-white"
+                    className="gap-2 bg-[#0274b3] hover:bg-[#015b93] text-white"
                   >
                     {savingProfile ? (
                       <>
@@ -530,7 +530,7 @@ export default function AdminProfilePage() {
                       value={currentPassword}
                       onChange={(e) => setCurrentPassword(e.target.value)}
                       placeholder="বর্তমান গোপন পাসওয়ার্ড দিন"
-                      className="w-full px-3.5 py-2 text-sm bg-white border border-slate-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-[#00636b] transition"
+                      className="w-full px-3.5 py-2 text-sm bg-white border border-slate-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-[#0274b3] transition"
                     />
                   </div>
 
@@ -545,7 +545,7 @@ export default function AdminProfilePage() {
                         value={newPassword}
                         onChange={(e) => setNewPassword(e.target.value)}
                         placeholder="কমপক্ষে ৬ অক্ষরের নতুন পাসওয়ার্ড"
-                        className="w-full px-3.5 py-2 text-sm bg-white border border-slate-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-[#00636b] transition"
+                        className="w-full px-3.5 py-2 text-sm bg-white border border-slate-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-[#0274b3] transition"
                       />
                     </div>
 
@@ -560,7 +560,7 @@ export default function AdminProfilePage() {
                         value={confirmPassword}
                         onChange={(e) => setConfirmPassword(e.target.value)}
                         placeholder="নতুন পাসওয়ার্ডটি পুনরায় লিখুন"
-                        className="w-full px-3.5 py-2 text-sm bg-white border border-slate-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-[#00636b] transition"
+                        className="w-full px-3.5 py-2 text-sm bg-white border border-slate-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-[#0274b3] transition"
                       />
                     </div>
                   </div>

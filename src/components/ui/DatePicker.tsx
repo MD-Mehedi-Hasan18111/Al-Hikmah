@@ -49,9 +49,9 @@ export function DatePicker({
 
       <div
         onClick={handleOpenPicker}
-        className="relative flex items-center bg-white border border-slate-300 rounded-lg shadow-2xs hover:border-[#00636b] focus-within:border-[#00636b] focus-within:ring-1 focus-within:ring-[#00636b] cursor-pointer transition"
+        className="relative flex items-center bg-white border border-slate-300 rounded-lg shadow-2xs hover:border-[#0274b3] focus-within:border-[#0274b3] focus-within:ring-1 focus-within:ring-[#0274b3] cursor-pointer transition"
       >
-        <div className="absolute left-3 pointer-events-none text-[#00636b]">
+        <div className="absolute left-3 pointer-events-none text-[#0274b3]">
           <CalendarIcon className="h-4 w-4" />
         </div>
 

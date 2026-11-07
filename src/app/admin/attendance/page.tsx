@@ -662,7 +662,7 @@ export default function AttendanceManagementPage() {
           onClick={() => setActiveTab("daily")}
           className={`flex items-center gap-2 py-3 px-4 font-semibold text-xs sm:text-sm border-b-2 transition cursor-pointer ${
             activeTab === "daily"
-              ? "border-[#00636b] text-[#00636b]"
+              ? "border-[#0274b3] text-[#0274b3]"
               : "border-transparent text-slate-500 hover:text-slate-800"
           }`}
         >
@@ -674,7 +674,7 @@ export default function AttendanceManagementPage() {
           onClick={() => setActiveTab("summary")}
           className={`flex items-center gap-2 py-3 px-4 font-semibold text-xs sm:text-sm border-b-2 transition cursor-pointer ${
             activeTab === "summary"
-              ? "border-[#00636b] text-[#00636b]"
+              ? "border-[#0274b3] text-[#0274b3]"
               : "border-transparent text-slate-500 hover:text-slate-800"
           }`}
         >
@@ -686,7 +686,7 @@ export default function AttendanceManagementPage() {
           onClick={() => setActiveTab("history")}
           className={`flex items-center gap-2 py-3 px-4 font-semibold text-xs sm:text-sm border-b-2 transition cursor-pointer ${
             activeTab === "history"
-              ? "border-[#00636b] text-[#00636b]"
+              ? "border-[#0274b3] text-[#0274b3]"
               : "border-transparent text-slate-500 hover:text-slate-800"
           }`}
         >
@@ -736,9 +736,9 @@ export default function AttendanceManagementPage() {
                 {toBanglaNumber(excusedCount)} জন
               </p>
             </Card>
-            <Card className="p-3 bg-[#eff8f9] border-[#d7eef1] col-span-2 sm:col-span-1">
-              <span className="text-xs text-[#00636b] font-medium">উপস্থিতির হার</span>
-              <p className="text-xl font-bold text-[#00636b] mt-1">
+            <Card className="p-3 bg-[#f0f7ff] border-[#e0f0fe] col-span-2 sm:col-span-1">
+              <span className="text-xs text-[#0274b3] font-medium">উপস্থিতির হার</span>
+              <p className="text-xl font-bold text-[#0274b3] mt-1">
                 {toBanglaNumber(dailyRate)}%
               </p>
             </Card>
@@ -911,7 +911,7 @@ export default function AttendanceManagementPage() {
                     <div key={row.studentId} className="p-4 bg-white hover:bg-slate-50/60 transition space-y-3">
                       <div>
                         <div className="flex items-center gap-2">
-                          <span className="font-mono text-xs font-bold text-[#00636b] bg-teal-50 px-2 py-0.5 rounded">
+                          <span className="font-mono text-xs font-bold text-[#0274b3] bg-teal-50 px-2 py-0.5 rounded">
                             {row.rollNumber ? `রোল: ${toBanglaNumber(row.rollNumber)}` : "রোল নাই"}
                           </span>
                           <span className="text-[11px] text-slate-400 font-mono">ID: {row.studentId}</span>
@@ -1126,7 +1126,7 @@ export default function AttendanceManagementPage() {
                       <div className="flex items-start justify-between gap-2">
                         <div>
                           <div className="flex items-center gap-2">
-                            <span className="font-mono text-xs font-bold text-[#00636b] bg-teal-50 px-2 py-0.5 rounded">
+                            <span className="font-mono text-xs font-bold text-[#0274b3] bg-teal-50 px-2 py-0.5 rounded">
                               {item.rollNumber ? `রোল: ${toBanglaNumber(item.rollNumber)}` : "রোল নাই"}
                             </span>
                             <span className="text-[11px] text-slate-400 font-mono">ID: {item.studentId}</span>

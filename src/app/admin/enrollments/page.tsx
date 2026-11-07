@@ -374,7 +374,7 @@ export default function EnrollmentManagementPage() {
                         <div className="font-semibold text-slate-900 text-sm">
                           {enr.student?.fullName || "অজ্ঞাত"}
                         </div>
-                        <div className="text-[11px] font-mono text-[#00636b]">
+                        <div className="text-[11px] font-mono text-[#0274b3]">
                           আইডি: {enr.student?.studentId} • {enr.student?.phone}
                         </div>
                       </TableCell>
@@ -445,7 +445,7 @@ export default function EnrollmentManagementPage() {
                   <div className="flex items-start justify-between gap-2">
                     <div className="space-y-0.5">
                       <div className="flex items-center gap-2">
-                        <span className="font-mono text-xs font-bold text-[#00636b] bg-teal-50 px-2 py-0.5 rounded">
+                        <span className="font-mono text-xs font-bold text-[#0274b3] bg-teal-50 px-2 py-0.5 rounded">
                           {enr.student?.studentId || "ID-N/A"}
                         </span>
                         <Badge
@@ -644,7 +644,7 @@ export default function EnrollmentManagementPage() {
                 activeBatches.find((b) => b._id === transferTargetBatchId)!.enrolledCount! >=
                   activeBatches.find((b) => b._id === transferTargetBatchId)!.capacity)
             }
-            className="bg-[#00636b] hover:bg-[#004f55] text-white disabled:opacity-50"
+            className="bg-[#0274b3] hover:bg-[#015b93] text-white disabled:opacity-50"
           >
             {transferLoading ? "স্থানান্তর হচ্ছে..." : "স্থানান্তর সম্পন্ন করুন"}
           </Button>

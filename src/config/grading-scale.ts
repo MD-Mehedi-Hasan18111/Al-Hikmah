@@ -38,7 +38,7 @@ export const DEFAULT_BANGLADESH_GRADING_SCALE: GradeTier[] = [
     descriptionBn: "অতি উত্তম (Excellent)",
     descriptionEn: "Excellent",
     isPassed: true,
-    colorClass: "text-[#00636b] bg-[#eff8f9] border-[#d7eef1]",
+    colorClass: "text-[#0274b3] bg-[#f0f7ff] border-[#e0f0fe]",
     badgeVariant: "primary",
   },
   {

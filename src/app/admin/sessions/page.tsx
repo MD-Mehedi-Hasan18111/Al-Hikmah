@@ -240,7 +240,7 @@ export default function AcademicSessionManagementPage() {
         actions={
           <Button
             onClick={openCreateDialog}
-            className="flex items-center gap-1.5 bg-[#00636b] hover:bg-[#004f55] text-white"
+            className="flex items-center gap-1.5 bg-[#0274b3] hover:bg-[#015b93] text-white"
           >
             <Plus className="h-4 w-4" />
             <span>নতুন শিক্ষাবর্ষ তৈরি করুন</span>
@@ -292,7 +292,7 @@ export default function AcademicSessionManagementPage() {
                 <TableBody>
                   {sessions.map((session) => (
                     <TableRow key={session._id} className="hover:bg-slate-50">
-                      <TableCell className="font-mono text-xs font-bold text-[#00636b]">
+                      <TableCell className="font-mono text-xs font-bold text-[#0274b3]">
                         {session.code}
                       </TableCell>
                       <TableCell className="font-semibold text-slate-900 text-sm">
@@ -344,7 +344,7 @@ export default function AcademicSessionManagementPage() {
                   <div className="flex items-start justify-between gap-2">
                     <div className="space-y-0.5">
                       <div className="flex items-center gap-2 flex-wrap">
-                        <span className="font-mono text-xs font-bold text-[#00636b] bg-teal-50 px-2 py-0.5 rounded">
+                        <span className="font-mono text-xs font-bold text-[#0274b3] bg-teal-50 px-2 py-0.5 rounded">
                           {session.code}
                         </span>
                         {session.isCurrent && (
@@ -452,7 +452,7 @@ export default function AcademicSessionManagementPage() {
               id="isCurrentCheck"
               checked={formData.isCurrent}
               onChange={(e) => setFormData({ ...formData, isCurrent: e.target.checked })}
-              className="h-4 w-4 rounded border-slate-300 text-[#00636b] focus:ring-[#00636b]"
+              className="h-4 w-4 rounded border-slate-300 text-[#0274b3] focus:ring-[#0274b3]"
             />
             <label
               htmlFor="isCurrentCheck"
@@ -476,7 +476,7 @@ export default function AcademicSessionManagementPage() {
           <Button
             onClick={() => handleSaveSession(editDialogOpen)}
             disabled={submitting}
-            className="bg-[#00636b] hover:bg-[#004f55] text-white"
+            className="bg-[#0274b3] hover:bg-[#015b93] text-white"
           >
             {submitting
               ? "সংরক্ষণ হচ্ছে..."

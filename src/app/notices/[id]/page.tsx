@@ -29,10 +29,10 @@ export const revalidate = 60;
 export async function generateMetadata({ params }: PageProps) {
   const { id } = await params;
   const notice = await getNoticeById(id);
-  if (!notice) return { title: "নোটিশ পাওয়া যায়নি | শিক্ষণ একাডেমিক কেয়ার" };
+  if (!notice) return { title: "নোটিশ পাওয়া যায়নি | আল-হিকমাহ্ কোচিং সেন্টার" };
 
   return {
-    title: `${notice.title} | নোটিশ বোর্ড | শিক্ষণ একাডেমিক কেয়ার`,
+    title: `${notice.title} | নোটিশ বোর্ড | আল-হিকমাহ্ কোচিং সেন্টার`,
     description: notice.summary || (notice.content ? notice.content.slice(0, 160) : ""),
   };
 }
@@ -72,7 +72,7 @@ export default async function NoticeDetailPage({ params }: PageProps) {
 
       <main className="flex-1">
         {/* Breadcrumb banner */}
-        <section className="bg-brand-banner bg-[#002e33] bg-gradient-to-b from-[#001e22] via-[#002e33] to-[#003e44] text-white py-10 lg:py-12">
+        <section className="bg-brand-banner bg-[#0b2545] bg-gradient-to-b from-[#071a33] via-[#0b2545] to-[#103259] text-white py-10 lg:py-12">
           <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
             <div className="flex items-center gap-2 text-sm text-teal-200 mb-4">
               <Link href="/" className="hover:underline">
@@ -158,7 +158,7 @@ export default async function NoticeDetailPage({ params }: PageProps) {
                         <User className="h-4 w-4 text-slate-400" />
                         <span>
                           কর্তৃপক্ষ:{" "}
-                          {settings.institutionName || "শিক্ষণ একাডেমিক কেয়ার প্রশাসন"}
+                          {settings.institutionName || "আল-হিকমাহ্ কোচিং সেন্টার প্রশাসন"}
                         </span>
                       </div>
 
@@ -215,7 +215,7 @@ export default async function NoticeDetailPage({ params }: PageProps) {
               </Card>
 
               {/* Admission Support Box */}
-              <div className="bg-brand-card-dark bg-[#002e33] bg-gradient-to-br from-[#002e33] to-[#001e22] text-white p-6 rounded-2xl border border-teal-800 shadow-md">
+              <div className="bg-brand-card-dark bg-[#0b2545] bg-gradient-to-br from-[#0b2545] to-[#071a33] text-white p-6 rounded-2xl border border-teal-800 shadow-md">
                 <h3 className="font-bold text-lg mb-2 text-white">
                   জরুরি তথ্যের জন্য যোগাযোগ
                 </h3>

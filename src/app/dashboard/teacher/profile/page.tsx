@@ -194,7 +194,7 @@ export default function TeacherProfilePage() {
         <div className="lg:col-span-5 space-y-6">
           <Card className="border-slate-200 shadow-2xs">
             <CardContent className="p-6 text-center space-y-4">
-              <div className="w-24 h-24 rounded-3xl bg-[#00636b] text-white flex items-center justify-center font-bold text-3xl mx-auto shadow-sm overflow-hidden relative">
+              <div className="w-24 h-24 rounded-3xl bg-[#0274b3] text-white flex items-center justify-center font-bold text-3xl mx-auto shadow-sm overflow-hidden relative">
                 {avatarUrl || teacher?.avatarUrl || profileData?.avatarUrl ? (
                   <Image
                     src={avatarUrl || teacher?.avatarUrl || profileData?.avatarUrl}
@@ -209,7 +209,7 @@ export default function TeacherProfilePage() {
               </div>
 
               <div>
-                <span className="inline-block px-2.5 py-0.5 rounded-full bg-[#00636b]/10 text-[#00636b] font-mono font-semibold text-xs mb-1">
+                <span className="inline-block px-2.5 py-0.5 rounded-full bg-[#0274b3]/10 text-[#0274b3] font-mono font-semibold text-xs mb-1">
                   আইডি: {teacher?.teacherCode || "TC-ACTIVE"}
                 </span>
                 <h3 className="text-xl font-bold text-slate-900">
@@ -277,7 +277,7 @@ export default function TeacherProfilePage() {
           <Card className="border-slate-200 shadow-2xs">
             <CardHeader className="border-b border-slate-100 pb-3">
               <CardTitle className="text-base font-bold text-slate-900 flex items-center gap-2">
-                <UserCheck className="h-5 w-5 text-[#00636b]" />
+                <UserCheck className="h-5 w-5 text-[#0274b3]" />
                 <span>প্রোফাইল তথ্য হালনাগাদ</span>
               </CardTitle>
             </CardHeader>
@@ -303,7 +303,7 @@ export default function TeacherProfilePage() {
                     required
                     value={fullName}
                     onChange={(e) => setFullName(e.target.value)}
-                    className="w-full px-3 py-2 text-xs bg-slate-50 border border-slate-300 rounded-lg focus:outline-none focus:ring-1 focus:ring-[#00636b] focus:bg-white transition"
+                    className="w-full px-3 py-2 text-xs bg-slate-50 border border-slate-300 rounded-lg focus:outline-none focus:ring-1 focus:ring-[#0274b3] focus:bg-white transition"
                   />
                 </div>
 
@@ -315,7 +315,7 @@ export default function TeacherProfilePage() {
                     type="email"
                     value={email}
                     onChange={(e) => setEmail(e.target.value)}
-                    className="w-full px-3 py-2 text-xs bg-slate-50 border border-slate-300 rounded-lg focus:outline-none focus:ring-1 focus:ring-[#00636b] focus:bg-white transition"
+                    className="w-full px-3 py-2 text-xs bg-slate-50 border border-slate-300 rounded-lg focus:outline-none focus:ring-1 focus:ring-[#0274b3] focus:bg-white transition"
                   />
                 </div>
 
@@ -327,7 +327,7 @@ export default function TeacherProfilePage() {
                     rows={3}
                     value={biography}
                     onChange={(e) => setBiography(e.target.value)}
-                    className="w-full px-3 py-2 text-xs bg-slate-50 border border-slate-300 rounded-lg focus:outline-none focus:ring-1 focus:ring-[#00636b] focus:bg-white transition"
+                    className="w-full px-3 py-2 text-xs bg-slate-50 border border-slate-300 rounded-lg focus:outline-none focus:ring-1 focus:ring-[#0274b3] focus:bg-white transition"
                   />
                 </div>
 
@@ -371,7 +371,7 @@ export default function TeacherProfilePage() {
                     placeholder="••••••••"
                     value={currentPassword}
                     onChange={(e) => setCurrentPassword(e.target.value)}
-                    className="w-full px-3 py-2 text-xs bg-slate-50 border border-slate-300 rounded-lg focus:outline-none focus:ring-1 focus:ring-[#00636b] focus:bg-white transition"
+                    className="w-full px-3 py-2 text-xs bg-slate-50 border border-slate-300 rounded-lg focus:outline-none focus:ring-1 focus:ring-[#0274b3] focus:bg-white transition"
                   />
                 </div>
 
@@ -386,7 +386,7 @@ export default function TeacherProfilePage() {
                       placeholder="••••••••"
                       value={newPassword}
                       onChange={(e) => setNewPassword(e.target.value)}
-                      className="w-full px-3 py-2 text-xs bg-slate-50 border border-slate-300 rounded-lg focus:outline-none focus:ring-1 focus:ring-[#00636b] focus:bg-white transition"
+                      className="w-full px-3 py-2 text-xs bg-slate-50 border border-slate-300 rounded-lg focus:outline-none focus:ring-1 focus:ring-[#0274b3] focus:bg-white transition"
                     />
                   </div>
 
@@ -400,7 +400,7 @@ export default function TeacherProfilePage() {
                       placeholder="••••••••"
                       value={confirmPassword}
                       onChange={(e) => setConfirmPassword(e.target.value)}
-                      className="w-full px-3 py-2 text-xs bg-slate-50 border border-slate-300 rounded-lg focus:outline-none focus:ring-1 focus:ring-[#00636b] focus:bg-white transition"
+                      className="w-full px-3 py-2 text-xs bg-slate-50 border border-slate-300 rounded-lg focus:outline-none focus:ring-1 focus:ring-[#0274b3] focus:bg-white transition"
                     />
                   </div>
                 </div>

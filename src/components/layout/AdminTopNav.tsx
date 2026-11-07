@@ -155,7 +155,7 @@ export function AdminTopNav() {
           <input
             type="search"
             placeholder="শিক্ষার্থী, রোল বা ব্যাচ অনুসন্ধান করুন..."
-            className="w-full h-9 pl-9 pr-4 rounded-lg bg-slate-50 border border-slate-200 text-xs text-slate-800 placeholder:text-slate-400 focus:bg-white focus:border-[#00636b] focus:outline-none focus:ring-1 focus:ring-[#00636b] transition-all"
+            className="w-full h-9 pl-9 pr-4 rounded-lg bg-slate-50 border border-slate-200 text-xs text-slate-800 placeholder:text-slate-400 focus:bg-white focus:border-[#0274b3] focus:outline-none focus:ring-1 focus:ring-[#0274b3] transition-all"
           />
         </div>
       </div>
@@ -164,14 +164,14 @@ export function AdminTopNav() {
       <div className="flex items-center gap-2 sm:gap-3">
         {/* Today's Date in Bengali */}
         <div className="hidden md:flex items-center gap-1.5 px-3 py-1.5 rounded-lg bg-slate-50 border border-slate-200/80 text-xs text-slate-600 select-none">
-          <Calendar className="h-3.5 w-3.5 text-[#00636b]" />
+          <Calendar className="h-3.5 w-3.5 text-[#0274b3]" />
           <span className="font-medium">{formatBanglaDateFull()}</span>
         </div>
 
         {/* Go to public website button */}
         <Link
           href="/"
-          className="inline-flex items-center gap-1.5 px-2.5 py-1.5 rounded-lg text-xs font-semibold text-[#00636b] bg-teal-50 hover:bg-teal-100 border border-teal-200 transition"
+          className="inline-flex items-center gap-1.5 px-2.5 py-1.5 rounded-lg text-xs font-semibold text-[#0274b3] bg-teal-50 hover:bg-teal-100 border border-teal-200 transition"
           title="পাবলিক ওয়েবসাইটে যান"
         >
           <Globe className="h-3.5 w-3.5" />
@@ -216,7 +216,7 @@ export function AdminTopNav() {
                     {unreadNotificationsCount > 0 && (
                       <button
                         onClick={handleMarkAllRead}
-                        className="text-[11px] text-[#00636b] hover:underline font-semibold flex items-center gap-1"
+                        className="text-[11px] text-[#0274b3] hover:underline font-semibold flex items-center gap-1"
                       >
                         <CheckCheck className="h-3 w-3" />
                         <span>সব পঠিত করুন</span>
@@ -253,7 +253,7 @@ export function AdminTopNav() {
                                   ? "bg-amber-100 text-amber-800"
                                   : item.type === "event"
                                   ? "bg-emerald-100 text-emerald-800"
-                                  : "bg-teal-100 text-[#00636b]"
+                                  : "bg-teal-100 text-[#0274b3]"
                               }`}
                             >
                               {item.type === "notice" ? (
@@ -274,7 +274,7 @@ export function AdminTopNav() {
                                       ? "bg-amber-100 text-amber-800"
                                       : item.type === "event"
                                       ? "bg-emerald-100 text-emerald-800"
-                                      : "bg-teal-100 text-[#00636b]"
+                                      : "bg-teal-100 text-[#0274b3]"
                                   }`}
                                 >
                                   {item.typeName}
@@ -296,7 +296,7 @@ export function AdminTopNav() {
 
                             {/* Unread Indicator */}
                             {isUnread && (
-                              <span className="h-2 w-2 rounded-full bg-[#00636b] mt-1 shrink-0" />
+                              <span className="h-2 w-2 rounded-full bg-[#0274b3] mt-1 shrink-0" />
                             )}
                           </div>
                         );
@@ -321,7 +321,7 @@ export function AdminTopNav() {
                 {headerDisplayName}
               </span>
             </div>
-            <div className="h-8 w-8 rounded-full bg-[#00636b] text-white flex items-center justify-center font-bold text-xs shadow-2xs overflow-hidden">
+            <div className="h-8 w-8 rounded-full bg-[#0274b3] text-white flex items-center justify-center font-bold text-xs shadow-2xs overflow-hidden">
               {user?.avatarUrl ? (
                 <img src={user.avatarUrl} alt="" className="h-full w-full object-cover" />
               ) : (
@@ -380,9 +380,9 @@ export function AdminTopNav() {
                   <Link
                     href="/"
                     onClick={() => setUserDropdownOpen(false)}
-                    className="flex items-center gap-2 px-4 py-2 text-[#00636b] hover:bg-teal-50 transition font-medium"
+                    className="flex items-center gap-2 px-4 py-2 text-[#0274b3] hover:bg-teal-50 transition font-medium"
                   >
-                    <Globe className="h-3.5 w-3.5 text-[#00636b]" />
+                    <Globe className="h-3.5 w-3.5 text-[#0274b3]" />
                     <span>মূল ওয়েবসাইটে যান</span>
                   </Link>
                   <Link

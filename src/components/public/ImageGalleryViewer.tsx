@@ -161,7 +161,7 @@ export function ImageGalleryViewer({
         <div className="pt-4 border-t border-slate-200">
           <div className="flex items-center justify-between mb-3.5">
             <h3 className="text-sm sm:text-base font-bold text-slate-900 flex items-center gap-2">
-              <Images className="h-4.5 w-4.5 text-[#00636b]" />
+              <Images className="h-4.5 w-4.5 text-[#0274b3]" />
               <span>
                 সংযুক্ত ছবিসমূহ ({toBanglaNumber(allImages.length)} টি)
               </span>
@@ -176,7 +176,7 @@ export function ImageGalleryViewer({
               <div
                 key={`${imgUrl}-${index}`}
                 onClick={() => openModal(index)}
-                className="group relative aspect-4/3 rounded-xl overflow-hidden border border-slate-200 bg-slate-100 cursor-pointer shadow-2xs hover:shadow-md hover:border-[#00636b] transition-all select-none"
+                className="group relative aspect-4/3 rounded-xl overflow-hidden border border-slate-200 bg-slate-100 cursor-pointer shadow-2xs hover:shadow-md hover:border-[#0274b3] transition-all select-none"
               >
                 <Image
                   src={imgUrl}
@@ -194,7 +194,7 @@ export function ImageGalleryViewer({
                 {/* Hover overlay with zoom icon */}
                 <div className="absolute inset-0 bg-black/30 opacity-0 group-hover:opacity-100 transition-opacity flex items-center justify-center">
                   <div className="h-8 w-8 rounded-full bg-white/90 text-slate-800 flex items-center justify-center shadow-md transform scale-90 group-hover:scale-100 transition-transform">
-                    <Maximize2 className="h-4 w-4 text-[#00636b]" />
+                    <Maximize2 className="h-4 w-4 text-[#0274b3]" />
                   </div>
                 </div>
 

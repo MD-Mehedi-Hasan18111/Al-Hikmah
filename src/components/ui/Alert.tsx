@@ -8,7 +8,7 @@ const alertVariants = cva(
   {
     variants: {
       variant: {
-        info: "border-[#d7eef1] bg-[#eff8f9] text-[#004f56]",
+        info: "border-[#e0f0fe] bg-[#f0f7ff] text-[#015b93]",
         success: "border-emerald-200 bg-emerald-50 text-emerald-900",
         warning: "border-amber-200 bg-amber-50 text-amber-900",
         danger: "border-rose-200 bg-[#fdf2f2] text-[#991b1b]",
@@ -36,7 +36,7 @@ export function Alert({
   ...props
 }: AlertProps) {
   const icons = {
-    info: <Info className="h-4 w-4 text-[#00636b] shrink-0 mt-0.5" />,
+    info: <Info className="h-4 w-4 text-[#0274b3] shrink-0 mt-0.5" />,
     success: <CheckCircle2 className="h-4 w-4 text-emerald-600 shrink-0 mt-0.5" />,
     warning: <AlertTriangle className="h-4 w-4 text-amber-600 shrink-0 mt-0.5" />,
     danger: <AlertCircle className="h-4 w-4 text-[#c22126] shrink-0 mt-0.5" />,

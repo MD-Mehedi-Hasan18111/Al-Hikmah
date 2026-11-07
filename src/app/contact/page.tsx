@@ -22,16 +22,16 @@ export const dynamic = "force-dynamic";
 export const revalidate = 0;
 
 export const metadata = {
-  title: "যোগাযোগ ও ক্যাম্পাস ঠিকানা | শিক্ষণ একাডেমিক কেয়ার",
+  title: "যোগাযোগ ও ক্যাম্পাস ঠিকানা | আল-হিকমাহ্ কোচিং সেন্টার",
   description:
-    "শিক্ষণ একাডেমিক কেয়ারের অফিস ঠিকানা, যোগাযোগ নম্বর, ইমেইল, সরাসরি হোয়াটসঅ্যাপ ও পরামর্শ কেন্দ্র।",
+    "আল-হিকমাহ্ কোচিং সেন্টারের অফিস ঠিকানা, যোগাযোগ নম্বর, ইমেইল, সরাসরি হোয়াটসঅ্যাপ ও পরামর্শ কেন্দ্র।",
 };
 
 export default async function ContactPage() {
   const settings = await getSiteSettings();
 
   const whatsAppPhone =
-    settings.whatsAppNumber || settings.whatsappNumber || "+8801859787399";
+    settings.whatsAppNumber || settings.whatsappNumber || "+8801642733106";
   const whatsAppLink = generateWhatsAppLink({
     phone: whatsAppPhone,
     message:
@@ -49,7 +49,7 @@ export default async function ContactPage() {
 
       <main className="flex-1">
         {/* Banner Section */}
-        <section className="bg-brand-banner bg-[#002e33] bg-gradient-to-b from-[#001e22] via-[#002e33] to-[#003e44] text-white py-14 lg:py-16">
+        <section className="bg-brand-banner bg-[#0b2545] bg-gradient-to-b from-[#071a33] via-[#0b2545] to-[#103259] text-white py-14 lg:py-16">
           <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
             <div className="flex items-center gap-2 text-sm text-teal-200 mb-4">
               <Link href="/" className="hover:underline">
@@ -133,7 +133,7 @@ export default async function ContactPage() {
                     {mainEmail}
                   </a>
                 ) : (
-                  <p className="text-xs text-slate-500">info@shikkhon.edu.bd</p>
+                  <p className="text-xs text-slate-500">info@alhikmah.edu.bd</p>
                 )}
                 <span className="text-[11px] text-slate-400 block mt-1">
                   অফিসিয়াল যোগাযোগ ও ক্যারিয়ার
@@ -213,7 +213,7 @@ export default async function ContactPage() {
                       </h4>
                       <div className="grid grid-cols-1 sm:grid-cols-2 gap-3 text-xs">
                         <div className="p-3 bg-slate-50 rounded-xl border border-slate-200">
-                          <span className="font-bold text-[#00636b] block mb-1">
+                          <span className="font-bold text-[#0274b3] block mb-1">
                             ১. কাউন্সেলিং ও ব্যাচ নির্বাচন
                           </span>
                           <span className="text-slate-600">
@@ -222,7 +222,7 @@ export default async function ContactPage() {
                           </span>
                         </div>
                         <div className="p-3 bg-slate-50 rounded-xl border border-slate-200">
-                          <span className="font-bold text-[#00636b] block mb-1">
+                          <span className="font-bold text-[#0274b3] block mb-1">
                             ২. কাগজপত্র জমা দিন
                           </span>
                           <span className="text-slate-600">
@@ -231,7 +231,7 @@ export default async function ContactPage() {
                           </span>
                         </div>
                         <div className="p-3 bg-slate-50 rounded-xl border border-slate-200">
-                          <span className="font-bold text-[#00636b] block mb-1">
+                          <span className="font-bold text-[#0274b3] block mb-1">
                             ৩. সফটওয়্যার রেজিস্ট্রেশন
                           </span>
                           <span className="text-slate-600">
@@ -240,7 +240,7 @@ export default async function ContactPage() {
                           </span>
                         </div>
                         <div className="p-3 bg-slate-50 rounded-xl border border-slate-200">
-                          <span className="font-bold text-[#00636b] block mb-1">
+                          <span className="font-bold text-[#0274b3] block mb-1">
                             ৪. আইডি কার্ড ও রুটিন
                           </span>
                           <span className="text-slate-600">
@@ -253,7 +253,7 @@ export default async function ContactPage() {
 
                     <div className="flex flex-wrap items-center gap-3 pt-2 border-t border-slate-100">
                       <Link href="/admissions">
-                        <Button className="bg-[#00636b] hover:bg-[#004f56] text-white text-xs gap-1.5">
+                        <Button className="bg-[#0274b3] hover:bg-[#015b93] text-white text-xs gap-1.5">
                           <span>সম্পূর্ণ ভর্তি নির্দেশিকা পড়ুন</span>
                           <ExternalLink className="h-3.5 w-3.5" />
                         </Button>
@@ -335,7 +335,7 @@ export default async function ContactPage() {
                         <MapPin className="h-10 w-10 text-primary-600 animate-bounce" />
                         <div>
                           <h4 className="font-bold text-slate-900 text-sm">
-                            {settings.institutionName || "শিক্ষণ একাডেমি ক্যাম্পাস"}
+                            {settings.institutionName || "আল-হিকমাহ্ ক্যাম্পাস"}
                           </h4>
                           <p className="text-xs text-slate-600 max-w-xs mt-1">
                             {settings.address || "ঢাকা, বাংলাদেশ"}

@@ -215,7 +215,7 @@ export function AdminSidebar() {
           </div>
           {!sidebarCollapsed && (
             <div className="flex flex-col min-w-0">
-              <span className="font-bold text-sm text-[#00636b] truncate leading-tight">
+              <span className="font-bold text-sm text-[#0274b3] truncate leading-tight">
                 {siteSettings.institutionName}
               </span>
               <span className="text-[10px] text-slate-500 truncate">
@@ -271,7 +271,7 @@ export function AdminSidebar() {
                   className={cn(
                     "flex items-center gap-3 px-2.5 py-2 rounded-lg text-xs font-semibold transition-colors select-none group relative",
                     isActive
-                      ? "bg-[#eff8f9] text-[#00636b] font-bold"
+                      ? "bg-[#f0f7ff] text-[#0274b3] font-bold"
                       : "text-slate-600 hover:bg-slate-100/80 hover:text-slate-900",
                     sidebarCollapsed && "justify-center px-0 h-10 w-10 mx-auto"
                   )}
@@ -281,7 +281,7 @@ export function AdminSidebar() {
                     className={cn(
                       "h-4 w-4 shrink-0 transition-colors",
                       isActive
-                        ? "text-[#00636b]"
+                        ? "text-[#0274b3]"
                         : "text-slate-400 group-hover:text-slate-600"
                     )}
                   />
@@ -307,7 +307,7 @@ export function AdminSidebar() {
 
                   {/* Active Indicator bar */}
                   {isActive && (
-                    <span className="absolute left-0 top-1/2 -translate-y-1/2 w-1 h-5 bg-[#00636b] rounded-r-full" />
+                    <span className="absolute left-0 top-1/2 -translate-y-1/2 w-1 h-5 bg-[#0274b3] rounded-r-full" />
                   )}
                 </Link>
               );
@@ -330,12 +330,12 @@ export function AdminSidebar() {
             className="flex items-center gap-2.5 min-w-0 hover:opacity-85 transition group"
             title="প্রোফাইল দেখুন"
           >
-            <div className="h-8 w-8 rounded-full bg-[#00636b] text-white flex items-center justify-center font-bold text-xs shrink-0 shadow-2xs group-hover:scale-105 transition-transform">
+            <div className="h-8 w-8 rounded-full bg-[#0274b3] text-white flex items-center justify-center font-bold text-xs shrink-0 shadow-2xs group-hover:scale-105 transition-transform">
               {user?.fullName?.charAt(0) || "শি"}
             </div>
             {!sidebarCollapsed && (
               <div className="flex flex-col min-w-0">
-                <span className="text-xs font-bold text-slate-800 truncate group-hover:text-[#00636b] transition-colors">
+                <span className="text-xs font-bold text-slate-800 truncate group-hover:text-[#0274b3] transition-colors">
                   {user?.fullName || "অ্যাডমিনিস্ট্রেটর"}
                 </span>
                 <span className="text-[10px] text-slate-500 truncate">
@@ -349,7 +349,7 @@ export function AdminSidebar() {
             <div className="flex items-center gap-1">
               <Link
                 href="/"
-                className="p-1.5 text-slate-400 hover:text-[#00636b] hover:bg-teal-50 rounded-md transition"
+                className="p-1.5 text-slate-400 hover:text-[#0274b3] hover:bg-teal-50 rounded-md transition"
                 title="মূল ওয়েবসাইট দেখুন"
                 aria-label="মূল ওয়েবসাইট"
               >

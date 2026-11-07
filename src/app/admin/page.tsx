@@ -240,7 +240,7 @@ export default function AdminDashboardPage() {
             size="sm"
             onClick={() => fetchDashboardData(true)}
             disabled={refreshing || loading}
-            className="flex items-center gap-1.5 bg-white text-slate-700 hover:text-[#00636b]"
+            className="flex items-center gap-1.5 bg-white text-slate-700 hover:text-[#0274b3]"
           >
             <RefreshCw className={`h-4 w-4 ${refreshing ? "animate-spin" : ""}`} />
             <span>{refreshing ? "রিফ্রেশ হচ্ছে..." : "রিফ্রেশ"}</span>
@@ -268,7 +268,7 @@ export default function AdminDashboardPage() {
       {/* 0. Financial Highlights (Monthly & Yearly Collection / Due) */}
       <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-4 sm:gap-6">
         {/* Monthly Collection */}
-        <Card className="border-l-4 border-l-[#00636b] shadow-xs bg-gradient-to-br from-white to-teal-50/20">
+        <Card className="border-l-4 border-l-[#0274b3] shadow-xs bg-gradient-to-br from-white to-teal-50/20">
           <CardContent className="p-5">
             <div className="flex items-center justify-between">
               <div>
@@ -286,14 +286,14 @@ export default function AdminDashboardPage() {
                   আদায় হার: {toBanglaNumber(data?.financials?.currentMonth?.collectionRate ?? 0)}%
                 </p>
               </div>
-              <div className="h-12 w-12 rounded-xl bg-teal-50 flex items-center justify-center text-[#00636b] shadow-xs">
+              <div className="h-12 w-12 rounded-xl bg-teal-50 flex items-center justify-center text-[#0274b3] shadow-xs">
                 <TrendingUp className="h-6 w-6" />
               </div>
             </div>
             <div className="mt-3 pt-3 border-t border-slate-100 flex items-center justify-between text-xs">
               <Link
                 href="/admin/payments"
-                className="text-[#00636b] font-medium hover:underline flex items-center gap-1"
+                className="text-[#0274b3] font-medium hover:underline flex items-center gap-1"
               >
                 <span>ফি কালেকশন ব্যবস্থাপনা</span>
                 <ArrowRight className="h-3 w-3" />
@@ -414,12 +414,12 @@ export default function AdminDashboardPage() {
         <Card className="lg:col-span-2 shadow-xs bg-white border border-slate-200">
           <CardHeader className="pb-3 border-b border-slate-100 flex flex-row items-center justify-between">
             <CardTitle className="text-base font-semibold text-slate-800 flex items-center gap-2">
-              <TrendingUp className="h-4 w-4 text-[#00636b]" />
+              <TrendingUp className="h-4 w-4 text-[#0274b3]" />
               <span>কোচিংয়ের বার্ষিক ফি আদায় ও বকেয়ার তুলনামূলক গ্রাফ</span>
             </CardTitle>
             <Link
               href="/admin/payments"
-              className="text-xs text-[#00636b] hover:underline font-medium flex items-center gap-1"
+              className="text-xs text-[#0274b3] hover:underline font-medium flex items-center gap-1"
             >
               <span>বিস্তারিত রিপোর্ট</span>
               <ArrowRight className="h-3 w-3" />
@@ -443,12 +443,12 @@ export default function AdminDashboardPage() {
         <Card className="lg:col-span-1 shadow-xs bg-white border border-slate-200">
           <CardHeader className="pb-3 border-b border-slate-100 flex flex-row items-center justify-between">
             <CardTitle className="text-base font-semibold text-slate-800 flex items-center gap-2">
-              <CreditCard className="h-4 w-4 text-[#00636b]" />
+              <CreditCard className="h-4 w-4 text-[#0274b3]" />
               <span>সাম্প্রতিক পেমেন্ট লেনদেন</span>
             </CardTitle>
             <Link
               href="/admin/payments"
-              className="text-xs text-[#00636b] hover:underline font-medium"
+              className="text-xs text-[#0274b3] hover:underline font-medium"
             >
               সকল দেখুন
             </Link>
@@ -466,7 +466,7 @@ export default function AdminDashboardPage() {
                 <p className="text-xs font-medium">এখনো কোনো পেমেন্ট রেকর্ড নেই</p>
                 <Link
                   href="/admin/payments"
-                  className="mt-2 inline-block text-xs font-bold text-[#00636b] hover:underline"
+                  className="mt-2 inline-block text-xs font-bold text-[#0274b3] hover:underline"
                 >
                   পেমেন্ট এন্ট্রি করুন
                 </Link>
@@ -519,7 +519,7 @@ export default function AdminDashboardPage() {
       {/* 1. Core Institutions Stat Cards */}
       <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-4 sm:gap-6">
         {/* Total Active Students */}
-        <Card className="border-l-4 border-l-[#00636b] shadow-xs">
+        <Card className="border-l-4 border-l-[#0274b3] shadow-xs">
           <CardContent className="p-5">
             <div className="flex items-center justify-between">
               <div>
@@ -537,14 +537,14 @@ export default function AdminDashboardPage() {
                   মোট ভর্তি: {toBanglaNumber(data?.counts.activeEnrollments ?? 0)} জন
                 </p>
               </div>
-              <div className="h-12 w-12 rounded-xl bg-teal-50 flex items-center justify-center text-[#00636b]">
+              <div className="h-12 w-12 rounded-xl bg-teal-50 flex items-center justify-center text-[#0274b3]">
                 <Users className="h-6 w-6" />
               </div>
             </div>
             <div className="mt-3 pt-3 border-t border-slate-100 flex items-center justify-between text-xs">
               <Link
                 href="/admin/students"
-                className="text-[#00636b] font-medium hover:underline flex items-center gap-1"
+                className="text-[#0274b3] font-medium hover:underline flex items-center gap-1"
               >
                 <span>শিক্ষার্থী তালিকা</span>
                 <ArrowRight className="h-3 w-3" />
@@ -663,7 +663,7 @@ export default function AdminDashboardPage() {
         <Card className="lg:col-span-1 shadow-xs">
           <CardHeader className="pb-3 border-b border-slate-100">
             <CardTitle className="text-base font-semibold text-slate-800 flex items-center gap-2">
-              <CalendarCheck className="h-4 w-4 text-[#00636b]" />
+              <CalendarCheck className="h-4 w-4 text-[#0274b3]" />
               <span>আজকের ডিজিটাল হাজিরা সারাংশ</span>
             </CardTitle>
           </CardHeader>
@@ -728,7 +728,7 @@ export default function AdminDashboardPage() {
         <Card className="lg:col-span-2 shadow-xs">
           <CardHeader className="pb-3 border-b border-slate-100 flex flex-row items-center justify-between">
             <CardTitle className="text-base font-semibold text-slate-800 flex items-center gap-2">
-              <Clock className="h-4 w-4 text-[#00636b]" />
+              <Clock className="h-4 w-4 text-[#0274b3]" />
               <span>
                 আজকের ক্লাসের সময়সূচী ({dayNamesBangla[currentDayOfWeek] || "আজ"})
               </span>
@@ -787,7 +787,7 @@ export default function AdminDashboardPage() {
             </CardTitle>
             <Link
               href="/admin/exams"
-              className="text-xs text-[#00636b] hover:underline font-medium"
+              className="text-xs text-[#0274b3] hover:underline font-medium"
             >
               সব দেখুন
             </Link>
@@ -827,7 +827,7 @@ export default function AdminDashboardPage() {
             </CardTitle>
             <Link
               href="/admin/students"
-              className="text-xs text-[#00636b] hover:underline font-medium"
+              className="text-xs text-[#0274b3] hover:underline font-medium"
             >
               সব দেখুন
             </Link>
@@ -873,7 +873,7 @@ export default function AdminDashboardPage() {
             </CardTitle>
             <Link
               href="/admin/notices"
-              className="text-xs text-[#00636b] hover:underline font-medium"
+              className="text-xs text-[#0274b3] hover:underline font-medium"
             >
               সব দেখুন
             </Link>

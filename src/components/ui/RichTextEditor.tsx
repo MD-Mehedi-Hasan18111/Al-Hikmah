@@ -203,7 +203,7 @@ export function RichTextEditor({
 
   const colors = [
     { label: "স্বাভাবিক (কালো)", value: "#1e293b" },
-    { label: "শিক্ষণ গাঢ় সবুজ", value: "#00636b" },
+    { label: "আল-হিকমাহ্ গাঢ় নীল", value: "#0274b3" },
     { label: "গাঢ় নীল", value: "#1d4ed8" },
     { label: "লাল / জরুরি", value: "#dc2626" },
     { label: "অ্যাম্বার / সতর্কতা", value: "#d97706" },
@@ -265,7 +265,7 @@ export function RichTextEditor({
       )}
 
       {/* Main Editor Wrapper */}
-      <div className="border border-slate-300 rounded-xl overflow-hidden bg-white shadow-2xs focus-within:border-[#00636b] focus-within:ring-1 focus-within:ring-[#00636b] transition-all">
+      <div className="border border-slate-300 rounded-xl overflow-hidden bg-white shadow-2xs focus-within:border-[#0274b3] focus-within:ring-1 focus-within:ring-[#0274b3] transition-all">
         {/* Formatting Toolbar (Only in visual tab) */}
         {activeTab === "visual" && (
           <div className="bg-slate-50 border-b border-slate-200 p-1.5 flex flex-wrap items-center gap-1 text-slate-700 select-none">
@@ -601,7 +601,7 @@ export function RichTextEditor({
         <div className="fixed inset-0 z-50 bg-black/50 backdrop-blur-xs flex items-center justify-center p-4">
           <div className="bg-white rounded-xl shadow-xl border border-slate-200 max-w-sm w-full p-5 space-y-4">
             <h4 className="font-bold text-sm text-slate-900 flex items-center gap-1.5">
-              <LinkIcon className="h-4 w-4 text-[#00636b]" />
+              <LinkIcon className="h-4 w-4 text-[#0274b3]" />
               <span>হাইপারলিঙ্ক যুক্ত করুন</span>
             </h4>
 
@@ -615,7 +615,7 @@ export function RichTextEditor({
                   value={linkText}
                   onChange={(e) => setLinkText(e.target.value)}
                   placeholder="যেমন: এখানে ক্লিক করুন"
-                  className="w-full px-3 py-2 border border-slate-300 rounded-lg focus:outline-none focus:border-[#00636b]"
+                  className="w-full px-3 py-2 border border-slate-300 rounded-lg focus:outline-none focus:border-[#0274b3]"
                 />
               </div>
 
@@ -628,7 +628,7 @@ export function RichTextEditor({
                   value={linkUrl}
                   onChange={(e) => setLinkUrl(e.target.value)}
                   placeholder="https://..."
-                  className="w-full px-3 py-2 border border-slate-300 rounded-lg focus:outline-none focus:border-[#00636b]"
+                  className="w-full px-3 py-2 border border-slate-300 rounded-lg focus:outline-none focus:border-[#0274b3]"
                   autoFocus
                 />
               </div>

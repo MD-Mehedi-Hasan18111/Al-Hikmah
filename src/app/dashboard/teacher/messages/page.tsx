@@ -437,7 +437,7 @@ export default function TeacherMessagesPage() {
           <div className="p-4 border-b border-slate-100 space-y-3">
             <div className="flex items-center justify-between">
               <h3 className="font-bold text-slate-800 text-sm flex items-center gap-2">
-                <MessageSquare className="h-4 w-4 text-[#00636b]" />
+                <MessageSquare className="h-4 w-4 text-[#0274b3]" />
                 <span>কথোপকথন তালিকা</span>
               </h3>
               <Button
@@ -447,7 +447,7 @@ export default function TeacherMessagesPage() {
                   setNewChatModalOpen(true);
                   fetchContacts("");
                 }}
-                className="h-8 gap-1 text-xs text-[#00636b] hover:bg-slate-50"
+                className="h-8 gap-1 text-xs text-[#0274b3] hover:bg-slate-50"
               >
                 <Plus className="h-3.5 w-3.5" />
                 <span>নতুন চ্যাট</span>
@@ -510,11 +510,11 @@ export default function TeacherMessagesPage() {
                     className={cn(
                       "w-full p-3.5 text-left flex items-start gap-3 transition cursor-pointer select-none group relative",
                       isActive
-                        ? "bg-[#d7eef1]/40 border-l-4 border-[#00636b]"
+                        ? "bg-[#e0f0fe]/40 border-l-4 border-[#0274b3]"
                         : "hover:bg-slate-50"
                     )}
                   >
-                    <div className="h-10 w-10 rounded-full bg-[#00636b] text-white flex items-center justify-center font-bold text-sm shrink-0 shadow-2xs overflow-hidden">
+                    <div className="h-10 w-10 rounded-full bg-[#0274b3] text-white flex items-center justify-center font-bold text-sm shrink-0 shadow-2xs overflow-hidden">
                       {other?.avatarUrl ? (
                         <img src={other.avatarUrl} alt="" className="h-full w-full object-cover" />
                       ) : (
@@ -619,8 +619,8 @@ export default function TeacherMessagesPage() {
             />
           ) : (
             <div className="flex-1 flex flex-col items-center justify-center p-8 text-center text-slate-400 space-y-3">
-              <div className="h-14 w-14 rounded-2xl bg-teal-50 border border-teal-100 flex items-center justify-center text-[#00636b] shadow-2xs">
-                <MessageSquare className="h-7 w-7 text-[#00636b]" />
+              <div className="h-14 w-14 rounded-2xl bg-teal-50 border border-teal-100 flex items-center justify-center text-[#0274b3] shadow-2xs">
+                <MessageSquare className="h-7 w-7 text-[#0274b3]" />
               </div>
               <div>
                 <h4 className="font-bold text-slate-800 text-sm">
@@ -641,7 +641,7 @@ export default function TeacherMessagesPage() {
           <div className="bg-white rounded-2xl max-w-md w-full p-5 shadow-2xl border border-slate-200 animate-in fade-in zoom-in-95">
             <div className="flex items-center justify-between pb-3 border-b border-slate-100">
               <h3 className="font-bold text-slate-900 text-sm flex items-center gap-2">
-                <Users className="h-4 w-4 text-[#00636b]" />
+                <Users className="h-4 w-4 text-[#0274b3]" />
                 <span>অনুমোদিত যোগাযোগ তালিকা</span>
               </h3>
               <button
@@ -679,7 +679,7 @@ export default function TeacherMessagesPage() {
                     className="w-full py-2.5 px-2 flex items-center justify-between hover:bg-slate-50 rounded-lg text-left transition"
                   >
                     <div className="flex items-center gap-2.5">
-                      <div className="h-8 w-8 rounded-full bg-[#00636b] text-white flex items-center justify-center font-bold text-xs">
+                      <div className="h-8 w-8 rounded-full bg-[#0274b3] text-white flex items-center justify-center font-bold text-xs">
                         {c.fullName?.charAt(0) || "U"}
                       </div>
                       <div>
